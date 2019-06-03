@@ -1,0 +1,35 @@
+@import "config";
+@import "menu";
+
+body {
+  @include background;
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: $container-width;
+  margin: 20px auto 20px auto;
+  overflow: hidden;
+
+  .home-item {
+    text-align: center;
+
+    .home-link {
+      text-decoration: none;
+      color: darken($primary-color, 30);
+
+      &:hover {
+        color: $secondary-color;
+
+        @include easeOut;
+      }
+    }
+  }
+
+  p {
+    color: $text-color;
+    padding: 20px;
+  }
+}

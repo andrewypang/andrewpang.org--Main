@@ -1,0 +1,77 @@
+$primary-color: #444;
+$secondary-color: #597859;
+$text-color: #999;
+$show-home-image: false;
+$home-image: url(../img/andrewpang-home-img.jpg);
+$background-opacity: 0.3;
+$container-width: 375px;
+
+@mixin easeOut {
+  transition: all 0.3s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
+
+h1 {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+h3 {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+p {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+blockquote {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+pre {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}

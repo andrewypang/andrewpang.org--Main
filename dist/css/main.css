@@ -1,0 +1,84 @@
+h1 {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px; }
+
+h3 {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px; }
+
+p {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px; }
+
+blockquote {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px; }
+
+pre {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px; }
+
+.menu {
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  text-align: center;
+  overflow: hidden; }
+  .menu-nav {
+    list-style: none;
+    padding: 0; }
+  .menu .nav-item {
+    display: inline-block; }
+  .menu .nav-link {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .menu a {
+    padding: 0.2rem;
+    text-decoration: none;
+    color: #919191; }
+    .menu a:hover {
+      color: #597859;
+      transition: all 0.3s ease-out; }
+
+body {
+  width: 100%;
+  overflow: hidden; }
+
+.container {
+  width: 375px;
+  margin: 20px auto 20px auto;
+  overflow: hidden; }
+  .container .home-item {
+    text-align: center; }
+    .container .home-item .home-link {
+      text-decoration: none;
+      color: black; }
+      .container .home-item .home-link:hover {
+        color: #597859;
+        transition: all 0.3s ease-out; }
+  .container p {
+    color: #999;
+    padding: 20px; }
+
+/*# sourceMappingURL=main.css.map */
