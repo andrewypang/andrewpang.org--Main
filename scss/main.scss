@@ -5,31 +5,46 @@ body {
   @include background;
 
   width: 100%;
-  overflow: hidden;
+
+  //overflow: hidden;
+  overflow-x: hidden;
 }
 
-.container {
-  width: $container-width;
-  margin: 20px auto 20px auto;
-  overflow: hidden;
+#header {
+  grid-area: header;
+  text-align: center;
 
-  .home-item {
-    text-align: center;
+  a {
+    text-decoration: none;
+    color: darken($primary-color, 30);
 
-    .home-link {
-      text-decoration: none;
-      color: darken($primary-color, 30);
+    &:hover {
+      color: $secondary-color;
 
-      &:hover {
-        color: $secondary-color;
-
-        @include easeOut;
-      }
+      @include easeOut;
     }
   }
+}
+
+#bio {
+  grid-area: bio;
 
   p {
     color: $text-color;
     width: 100%;
   }
+}
+
+#nav-menu {
+  grid-area: nav-menu;
+}
+
+.container {
+  //overflow: hidden;
+  display: grid;
+  grid-template-columns: 50px auto auto 50px;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header" ". bio bio ." ". nav-menu nav-menu .";
+  justify-content: center;
+  justify-items: center;
 }
