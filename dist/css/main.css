@@ -153,6 +153,8 @@ body span {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: #dddddd;
 }
 
