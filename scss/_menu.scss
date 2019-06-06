@@ -8,7 +8,7 @@
 
   .nav-icon {
     text-decoration: none;
-    color: lighten($primary-color, 30);
+    color: $text-color;
     display: flex;
     flex-direction: column;
     align-items: center;

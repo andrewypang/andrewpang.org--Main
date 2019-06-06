@@ -4,6 +4,7 @@
 
 body {
   @include background;
+  @include font;
 
   width: 100%;
   margin: 0;
@@ -18,7 +19,7 @@ body {
 #home {
   display: grid;
   grid-template-columns: 10% auto 10%;
-  grid-template-rows: 50px 150px 150px;
+  grid-template-rows: 50px 150px 100px;
   grid-template-areas: 
     "header header header"
     ". bio ."
@@ -32,7 +33,7 @@ body {
 
   a {
     text-decoration: none;
-    color: darken($primary-color, 30);
+    color: $text-color;
 
     &:hover {
       color: $secondary-color;
