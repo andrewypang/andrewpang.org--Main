@@ -1,0 +1,69 @@
+#home {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 50px 150px 100px;
+    grid-template-areas: 
+      "header header header"
+      ". bio ."
+      ". nav-menu ."
+  
+  }
+
+  #header {
+    grid-area: header;
+    text-align: center;
+  
+    a {
+      text-decoration: none;
+      color: $text-color;
+  
+      &:hover {
+        color: $secondary-color;
+  
+        @include easeOut;
+      }
+    }
+  }
+  
+  #bio {
+  
+     p {
+      @include font; 
+     }
+    grid-area: bio;
+    align-self: center;
+    justify-self: center;
+  
+  
+    color: $text-color;
+  }
+  
+  #nav-menu {
+    grid-area: nav-menu;
+  }
+
+// Nav Menu Overlay
+#nav-menu {
+    width: 100%;
+    opacity: 0.9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    .nav-icon {
+      text-decoration: none;
+      color: $text-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: $nav-icon-size;
+      height: $nav-icon-size;
+  
+      &:hover {
+        color: $secondary-color;
+  
+        @include easeOut;
+      }
+    }
+  }

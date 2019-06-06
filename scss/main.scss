@@ -1,6 +1,7 @@
 @import "config";
 @import "menu";
 @import "responsive";
+@import "home";
 
 body {
   @include background;
@@ -14,49 +15,5 @@ body {
   width: 100vw;
   height: 100vh;
 
-}
-
-#home {
-  display: grid;
-  grid-template-columns: 10% auto 10%;
-  grid-template-rows: 50px 150px 100px;
-  grid-template-areas: 
-    "header header header"
-    ". bio ."
-    ". nav-menu ."
-
-}
-
-#header {
-  grid-area: header;
-  text-align: center;
-
-  a {
-    text-decoration: none;
-    color: $text-color;
-
-    &:hover {
-      color: $secondary-color;
-
-      @include easeOut;
-    }
-  }
-}
-
-#bio {
-
-   p {
-    @include font; 
-   }
-  grid-area: bio;
-  align-self: center;
-  justify-self: center;
-
-
-  color: $text-color;
-}
-
-#nav-menu {
-  grid-area: nav-menu;
 }
 
