@@ -33,6 +33,15 @@ $nav-icon-size: 6em;
   }
 }
 
+@mixin font {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    font-size: 1.0em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px;
+}
+
 // Futura Font
 h1 {
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
