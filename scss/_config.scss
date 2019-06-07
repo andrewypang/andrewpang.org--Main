@@ -4,7 +4,8 @@ $text-color: rgb(221, 221, 221);
 $show-home-image: true;
 $home-image: url(../img/andrewpang-home-img.jpg);
 $background-opacity: 0.5;
-$nav-icon-size: 7em;
+$nav-icon-width: 7em;
+$nav-icon-height: 4em;
 
 
 @mixin easeOut {
