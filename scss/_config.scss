@@ -99,7 +99,7 @@ $breakpoint-xl-min: 1200px;
 
 //Landscape (height)
 @mixin mediaSmLandscape {
-  @media (max-height: 320px) {
+  @media (max-height: 330px) {
     @content;
   }
 }
