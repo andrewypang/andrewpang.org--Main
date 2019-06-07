@@ -1,9 +1,16 @@
+$nav-menu-width: auto;
+$nav-menu-height: auto;
+$nav-item-width: auto;
+$nav-item-height: auto;
+
+$bio-width: 250px;
+
 #home {
     @include background;
-    
+
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 75px 150px auto;
+    grid-template-rows: 70px 180px 180px;
     grid-template-areas:
         "header header header"
         ". bio ."
@@ -30,37 +37,59 @@
 
 #bio {
     grid-area: bio;
-    align-self: center;
+    // align-self: center;
     justify-self: center;
-
+    width: $bio-width;
+    height: auto;
 
     color: $text-color;
 
-}
-
-#nav-menu {
-    grid-area: nav-menu;
+    margin: 0;
 }
 
 // Nav Menu Overlay
 #nav-menu {
-    width: 100%;
-    height: $nav-icon-height;
-    opacity: 0.9;
+    grid-area: nav-menu;
+
+    // width: 100%;
+    width: $nav-menu-width;
+    height: $nav-menu-height;
+    opacity: 1.0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    // align-content: center;
 
-    .nav-icon {
+    //align-self: center;
+    justify-self: center;
+    // margin-top: 3vh;
+
+    align-items: flex-start;
+    
+
+    .nav-item {
         text-decoration: none;
         color: $text-color;
+
+        width: $nav-item-width;
+        height: $nav-item-height;
+        
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
+        
         justify-content: center;
         // width: $nav-icon-width;
-        height: $nav-icon-height;
-        margin: 0.5em;
+        // margin: 0.5em;
+        // height: 70px;
+        // padding-left: 10px;
+        // padding-right: 10px;
+
+        i {
+            padding-bottom: 10px;
+        }
+        
 
         @include easeOut;
 

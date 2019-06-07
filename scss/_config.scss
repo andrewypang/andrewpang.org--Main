@@ -77,17 +77,64 @@ $nav-icon-height: 4em;
     font-weight: 400;
     line-height: 1.4em;
   }
-}
 
-// Media Query Mixins
-@mixin mediaSm {
-  @media screen and (max-width: 767px) {
-      @content;
+  a {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    // font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 0;
   }
 }
 
+// Small phones (iPhone SE)
+$breakpoint-sm-min: 320px;
+// Small tablets (iPad)
+$breakpoint-md-min: 768px;
+// Small Desktops
+$breakpoint-lg-min: 992px;
+// Large Desktops
+$breakpoint-xl-min: 1200px;
+
+
+
+// Media Query Mixins
+// @mixin mediaXs {
+//   @media (max-width: 280px) {
+//     @content;
+//   }
+// }
+
+// Smaller displays
+@mixin mediaXs {
+  @media (max-width: #{$breakpoint-sm-min - 5}) {
+    @content;
+  }
+}
+
+// Small phones (iPhone SE)
+@mixin mediaSm {
+  @media (min-width: #{$breakpoint-sm-min}) {
+    @content;
+  }
+}
+
+// Small tablets (iPad)
 @mixin mediaMd {
-  @media screen and (min-width: 768px) {
-      @content;
+  @media (min-width: #{$breakpoint-md-min}) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media (min-width: #{$breakpoint-lg-min}) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media (min-width: #{$breakpoint-xl-min}) {
+    @content;
   }
 }

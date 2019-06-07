@@ -1,13 +1,45 @@
 // Tablets & Small Laptops
 
+@include mediaXs {
+    #home {
+        display:flex;
+        flex-direction: column;
+    }
+    // #header {
+    //     height: 40px;
+    // }
+    #bio {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 0.9em;
+    }
+}
+
+// Small phones (iPhone SE)
 @include mediaSm {
     
 }
 
+// Small tablets (iPad)
 @include mediaMd {
+
     #bio {
-        p {
-            font-size: 1.2em;
-        }
+        width: $bio-width * 1.5;    
+    }
+
+}
+
+@include mediaLg {
+    #bio {
+        // font-size:1.2em;
+        // line-height: 1.8em;
+    }
+
+}
+
+@include mediaXl {
+    #bio {
+        // font-size:1.5em;
+        // line-height: 1.8em;
     }
 }
