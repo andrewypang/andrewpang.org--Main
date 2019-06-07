@@ -46,3 +46,19 @@
         // line-height: 1.8em;
     }
 }
+
+//Landscape (height)
+@include mediaSmLandscape {
+    #bio {
+        width: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+  }

@@ -78,7 +78,7 @@ $nav-icon-height: 4em;
     line-height: 1.4em;
   }
 
-  a {
+  .icon-subtext {
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     // font-size: 14px;
     font-style: normal;
@@ -97,6 +97,12 @@ $breakpoint-lg-min: 992px;
 // Large Desktops
 $breakpoint-xl-min: 1200px;
 
+//Landscape (height)
+@mixin mediaSmLandscape {
+  @media (max-height: 320px) {
+    @content;
+  }
+}
 
 
 // Media Query Mixins
