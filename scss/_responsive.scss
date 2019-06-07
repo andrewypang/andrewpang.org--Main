@@ -24,15 +24,18 @@
 @include mediaMd {
 
     #bio {
-        width: $bio-width * 1.5;    
+        width: $bio-width * 1.5;
+        font-size: 1.3em;
+        // transition: 1s;
     }
 
 }
 
 @include mediaLg {
     #bio {
-        // font-size:1.2em;
-        // line-height: 1.8em;
+        width: $bio-width * 2;
+        font-size: 1.5em;
+        text-align: center;
     }
 
 }
