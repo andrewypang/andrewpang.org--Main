@@ -29,6 +29,11 @@
         text-align: center;
     }
 
+    #nav-menu {
+        width: 60vw;
+        max-width: 700px;
+    }
+
 }
 
 @include mediaLg {
