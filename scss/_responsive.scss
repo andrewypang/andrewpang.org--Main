@@ -1,17 +1,13 @@
 // Tablets & Small Laptops
 
 @include mediaSm {
-
+    
 }
 
 @include mediaMd {
-
-}
-
-@include mediaLg {
-
-}
-
-@include mediaXL {
-
+    #bio {
+        p {
+            font-size: 1.2em;
+        }
+    }
 }
