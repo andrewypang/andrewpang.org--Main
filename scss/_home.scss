@@ -1,7 +1,9 @@
 #home {
+    @include background;
+    
     display: grid;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 75px 150px 100px;
+    grid-template-rows: 75px 150px auto;
     grid-template-areas:
         "header header header"
         ". bio ."
@@ -43,6 +45,7 @@
 // Nav Menu Overlay
 #nav-menu {
     width: 100%;
+    height: $nav-icon-height;
     opacity: 0.9;
     display: flex;
     flex-wrap: wrap;
