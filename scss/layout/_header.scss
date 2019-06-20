@@ -3,6 +3,15 @@
     height: 90vh;
     background-color: $color-grey-light-1;
 
+    &__logo {
+        text-align: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-grey-dark-3;
+    }
+
 
     &__heading {
         text-align: center;
@@ -31,53 +40,6 @@
 
         }
 
-    }
-
-    &__navigation {
-        width: 50%;
-        animation: moveInBottom .5s cubic-bezier(.14,.93,.79,1.37) 0.7s;
-        animation-fill-mode: backwards;
-
-        padding: 2rem 0;
-        margin: 0 auto;
-    }
-
-    &__list {
-        list-style: none;
-        text-align: center;
-    }
-
-    &__item {
-        display: inline-block;
-        text-align: center;
-        margin: 1rem 0;
-
-        &:not(:last-child) {
-            margin-right: 1.5rem;
-        }
-    }
-
-    &__link {
-        &:link,
-        &:visited {
-            color: $color-grey-dark-3;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        &:hover {
-            transform: translateY(-1.5rem) scale(1.03);
-        }
-    }
-
-    
-
-    &__icon {
-        
-    }
-
-    &__icon-text {
-        display: block;
     }
 
 }

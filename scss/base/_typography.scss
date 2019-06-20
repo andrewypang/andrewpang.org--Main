@@ -8,5 +8,15 @@ body {
 }
 
 .heading-primary {
-    color: $color-grey-dark-1;
+    color: $color-grey-dark-3;
+}
+
+.heading-secondary {
+
+}
+
+.heading-third {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
 }

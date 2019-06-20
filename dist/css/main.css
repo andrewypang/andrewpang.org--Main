@@ -146,7 +146,13 @@ body {
 }
 
 .heading-primary {
-  color: #777;
+  color: #333;
+}
+
+.heading-third {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .u-center-text {
@@ -171,6 +177,56 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+
+.navigation {
+  width: 50%;
+  -webkit-animation: moveInBottom 0.5s cubic-bezier(0.14, 0.93, 0.79, 1.37) 0.7s;
+          animation: moveInBottom 0.5s cubic-bezier(0.14, 0.93, 0.79, 1.37) 0.7s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+.navigation__list {
+  list-style: none;
+  text-align: center;
+}
+
+.navigation__item {
+  display: inline-block;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.navigation__link:hover, .navigation__link:active {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  border-bottom: 3px solid #333;
+}
+
+.navigation__icon-text {
+  display: block;
+}
+
+.project-box {
+  width: 80%;
 }
 
 .row {
@@ -251,6 +307,15 @@ body {
   background-color: #f7f7f7;
 }
 
+.header__logo {
+  text-align: center;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #333;
+}
+
 .header__heading {
   text-align: center;
   padding: 2rem 0;
@@ -276,46 +341,6 @@ body {
   display: block;
   font-size: 2rem;
   font-weight: 500;
-}
-
-.header__navigation {
-  width: 50%;
-  -webkit-animation: moveInBottom 0.5s cubic-bezier(0.14, 0.93, 0.79, 1.37) 0.7s;
-          animation: moveInBottom 0.5s cubic-bezier(0.14, 0.93, 0.79, 1.37) 0.7s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  padding: 2rem 0;
-  margin: 0 auto;
-}
-
-.header__list {
-  list-style: none;
-  text-align: center;
-}
-
-.header__item {
-  display: inline-block;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.header__item:not(:last-child) {
-  margin-right: 1.5rem;
-}
-
-.header__link:link, .header__link:visited {
-  color: #333;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.header__link:hover {
-  -webkit-transform: translateY(-1.5rem) scale(1.03);
-          transform: translateY(-1.5rem) scale(1.03);
-}
-
-.header__icon-text {
-  display: block;
 }
 
 .section-project {
