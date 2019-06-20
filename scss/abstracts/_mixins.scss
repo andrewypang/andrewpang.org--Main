@@ -1,3 +1,11 @@
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 @mixin absCenter {
     position: absolute;
     top: 50%;
@@ -11,50 +19,65 @@
     transform: translate(-50%, -50%);
 }
 
-  //Landscape (height)
-@mixin mediaSmLandscape {
-    @media (max-height: 330px) {
-      @content;
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {@content}; //600px
     }
-  }
-  
-  
-  // Media Query Mixins
-  // @mixin mediaXs {
-  //   @media (max-width: 280px) {
-  //     @content;
-  //   }
-  // }
-  
-  // Smaller displays
-  @mixin mediaXs {
-    @media (max-width: #{$breakpoint-sm-min - 5}) {
-      @content;
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {@content}; //900px
     }
-  }
-  
-  // Small phones (iPhone SE)
-  @mixin mediaSm {
-    @media (min-width: #{$breakpoint-sm-min}) {
-      @content;
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) {@content}; //1200px
     }
-  }
-  
-  // Small tablets (iPad)
-  @mixin mediaMd {
-    @media (min-width: #{$breakpoint-md-min}) {
-      @content;
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {@content}; //1800px
     }
-  }
+}
+
+//   //Landscape (height)
+// @mixin mediaSmLandscape {
+//     @media (max-height: 330px) {
+//       @content;
+//     }
+//   }
   
-  @mixin mediaLg {
-    @media (min-width: #{$breakpoint-lg-min}) {
-      @content;
-    }
-  }
   
-  @mixin mediaXl {
-    @media (min-width: #{$breakpoint-xl-min}) {
-      @content;
-    }
-  }
+//   // Media Query Mixins
+//   // @mixin mediaXs {
+//   //   @media (max-width: 280px) {
+//   //     @content;
+//   //   }
+//   // }
+  
+//   // Smaller displays
+//   @mixin mediaXs {
+//     @media (max-width: #{$breakpoint-sm-min - 5}) {
+//       @content;
+//     }
+//   }
+  
+//   // Small phones (iPhone SE)
+//   @mixin mediaSm {
+//     @media (min-width: #{$breakpoint-sm-min}) {
+//       @content;
+//     }
+//   }
+  
+//   // Small tablets (iPad)
+//   @mixin mediaMd {
+//     @media (min-width: #{$breakpoint-md-min}) {
+//       @content;
+//     }
+//   }
+  
+//   @mixin mediaLg {
+//     @media (min-width: #{$breakpoint-lg-min}) {
+//       @content;
+//     }
+//   }
+  
+//   @mixin mediaXl {
+//     @media (min-width: #{$breakpoint-xl-min}) {
+//       @content;
+//     }
+//   }

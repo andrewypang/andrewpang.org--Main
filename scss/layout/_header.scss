@@ -64,6 +64,10 @@
             text-decoration: none;
             text-transform: uppercase;
         }
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+        }
     }
 
     
