@@ -1,70 +1,70 @@
 // Tablets & Small Laptops
 
-@include mediaXs {
-    #home {
-        display:flex;
-        flex-direction: column;
-    }
-    // #header {
-    //     height: 40px;
-    // }
-    #bio {
-        padding-left: 10%;
-        padding-right: 10%;
-        font-size: 0.9em;
-    }
-}
+// @include mediaXs {
+//     #home {
+//         display:flex;
+//         flex-direction: column;
+//     }
+//     // #header {
+//     //     height: 40px;
+//     // }
+//     #bio {
+//         padding-left: 10%;
+//         padding-right: 10%;
+//         font-size: 0.9em;
+//     }
+// }
 
-// Small phones (iPhone SE)
-@include mediaSm {
+// // Small phones (iPhone SE)
+// @include mediaSm {
     
-}
+// }
 
-// Small tablets (iPad)
-@include mediaMd {
+// // Small tablets (iPad)
+// @include mediaMd {
 
-    #bio {
-        width: $bio-width * 1.5;
-        font-size: 1.3em;
-        text-align: center;
-    }
+//     #bio {
+//         width: $bio-width * 1.5;
+//         font-size: 1.3em;
+//         text-align: center;
+//     }
 
-    #nav-menu {
-        width: 60vw;
-        max-width: 700px;
-    }
+//     #nav-menu {
+//         width: 60vw;
+//         max-width: 700px;
+//     }
 
-}
+// }
 
-@include mediaLg {
-    #bio {
-        width: $bio-width * 2;
-        font-size: 1.5em;
-        text-align: center;
-    }
+// @include mediaLg {
+//     #bio {
+//         width: $bio-width * 2;
+//         font-size: 1.5em;
+//         text-align: center;
+//     }
 
-}
+// }
 
-@include mediaXl {
-    #bio {
-        // font-size:1.5em;
-        // line-height: 1.8em;
-    }
-}
+// @include mediaXl {
+//     #bio {
+//         // font-size:1.5em;
+//         // line-height: 1.8em;
+//     }
+// }
 
-//Landscape (height)
-@include mediaSmLandscape {
-    #bio {
-        width: auto;
-        padding-left: 10%;
-        padding-right: 10%;
-        font-size: 0.8em;
-    }
+// //Landscape (height)
+// @include mediaSmLandscape {
+//     #bio {
+//         width: auto;
+//         padding-left: 10%;
+//         padding-right: 10%;
+//         font-size: 0.8em;
+//     }
 
-    #home {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
+//     #home {
+//         display: flex;
+//         flex-direction: column;
+//         overflow: hidden;
+//     }
 
-  }
+//   }

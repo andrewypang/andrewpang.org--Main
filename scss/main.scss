@@ -1,7 +1,10 @@
-@import "abstracts/responsive";
+// @import "abstracts/responsive";
+@import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/base";
+@import "base/typography";
+
+@import "layout/header";
 
 @import "pages/home";
-

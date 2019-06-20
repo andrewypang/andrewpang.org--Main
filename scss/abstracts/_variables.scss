@@ -1,6 +1,20 @@
 $primary-color: #444;
-$secondary-color: #597859;
-$text-color: rgb(221, 221, 221);
+
+$color-primary-light: #597859;
+$color-primary-dark: #465f46;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+// $text-color: rgb(221, 221, 221);
+
 $show-home-image: true;
 $home-image: url(../img/andrewpang-home-img.jpg);
 $background-opacity: 0.5;

@@ -1,0 +1,62 @@
+.header {
+
+    height: 90vh;
+    background-color: $color-grey-light-1;
+
+
+    &__heading {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    &__text {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+    &__navigation {
+        width: 50%;
+        // @include absCenterX;
+        padding: 2rem 0;
+        margin: 0 auto;
+    }
+
+    &__list {
+        list-style: none;
+        text-align: center;
+    }
+
+    &__item {
+        display: inline-block;
+        text-align: center;
+        margin: 1rem 0;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+
+
+
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-dark-3;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+
+    
+
+    &__icon {
+        // display: inline-block;
+    }
+
+    &__icon-text {
+        display: block;
+    }
+
+}
