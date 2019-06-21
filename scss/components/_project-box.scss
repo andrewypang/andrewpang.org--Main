@@ -1,10 +1,7 @@
 .project-box {
-    width: 80%;
-    background: $color-primary;
-    margin: 0 auto;
-    font-size: 1.5rem;
+    width: 100%;
+    background-color: $color-surface;
     padding: 2.5rem;
-    text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
@@ -13,6 +10,30 @@
 
     &__image {
         font-size: 6rem;
+        text-align: center;
+        
+    }
+
+    &__content {
+        font-size: 1.4rem;
+
+    }
+
+    &__text {
+
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px solid $color-black;
+        hyphens: auto;
+    }
+
+    &__name {
+        border-bottom: 2px solid $color-black;
+        margin-bottom: 2rem;
+    }
+
+    &__tech-figure {
+        text-align: center;
     }
 
     &__tech-list {
@@ -28,10 +49,17 @@
     }
 
     &__tech-icon {
-        font-size: 2rem;
+        font-size: 5rem;
     }
 
-    &:hover {
-        transform: translateY(-1.5rem);
+    &__tech-icon-text {
+        color: $color-on-background;
+        opacity: 0;
+        transition: all .5s;
+
+    }
+
+    &__tech-figure:hover &__tech-icon-text {
+        opacity: 1;
     }
 }

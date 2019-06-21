@@ -1,4 +1,4 @@
-.btn {
+.btn-text {
     &,
     &:link,
     &:visited {
@@ -6,9 +6,29 @@
         text-decoration: none;
         display: inline-block;
         font-size: $default-font-size;
-
-        //Change for the <button> element
-        border: none;
+        font-weight: 700;
+        border-radius: 5px;
+        background-color: transparent;
+        border: 0;
+        box-shadow: inset 0 0 0 2px rgba($color-black, 0.9);
         cursor: pointer;
+        padding: 0 3rem;
+
+        transition: transform .2s;
+        
+    }
+
+    &:hover {
+        background-color: darken($color-surface, 5);
+        // color: $color-white;
+        // border-bottom: 2px solid $color-primary;
+        // box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        // transform: translateY(-2px);
+        
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
     }
 }

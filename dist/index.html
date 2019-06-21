@@ -60,46 +60,134 @@
 
         <main>
             <section class="section-project">
-                <div class="u-center-text u-margin-bottom-big">
-                    <span class="fas fa-laptop-code fa-2x"></span>
-                    <h1 class="heading-primary">
-                        Projects
-                    </h1>
+
+                <div class="row">
+                    <div class="section-project__heading u-margin-bottom-small">
+                        <span class="fas fa-laptop-code fa-2x"></span>
+                        <span class="heading-primary">
+                            Projects
+                        </span>
+                    </div>
                 </div>
+                
                 <div class="row">
                     <div class="col-1-of-2">
                         <div class="project-box">
-                            <span class="project-box__image fas fa-wind fa-2x u-margin-bottom-medium"></span>
-                            <h2 class="heading-secondary u-margin-bottom-small">Wind Map</h2>
-                            <p class="project-box__des">
-                                Real time wind data over California
-                            </p>
-                            <p class="project-box__features">
-                                Features:
-                                <br>
-                                API
-                            </p>
-                            <p class="project-box__tech">
-                                Technology Used:
-                                <br>
-                                <ul class="project-box__tech-list">
-                                    <li class="project-box__tech-item"><span class="project-box__tech-icon fab fa-html5"></span></li>
-                                    <li class="project-box__tech-item"><span class="project-box__tech-icon fab fa-css3-alt"></span></li>
-                                    <li class="project-box__tech-item"><span class="project-box__tech-icon fab fa-js"></span></li>
-                                </ul>
-                            </p>
-
+                            <div class="project-box__image">
+                                <span class="fas fa-wind"></span>
+                            </div>
+                            <div class="project-box__content u-margin-bottom-medium">
+                                <div class="project-box__name heading-secondary">Wind Map</div>
+                                <div class="project-box__des">
+                                    <p>Real time wind display over California.</p>
+                                    <ul class="project-box__tech-list u-margin-top-medium">
+                                        <li class="project-box__tech-item">
+                                            <figure class="project-box__tech-figure">
+                                                <span class="project-box__tech-icon fab fa-html5"></span>
+                                                <figcaption class="project-box__tech-icon-text">HTML5</figcaption>
+                                            </figure>
+                                        </li>
+                                        <li class="project-box__tech-item">
+                                            <figure class="project-box__tech-figure">
+                                                <span class="project-box__tech-icon fab fa-css3-alt"></span>
+                                                <figcaption class="project-box__tech-icon-text">CSS</figcaption>
+                                            </figure>
+                                        </li>
+                                        <li class="project-box__tech-item">
+                                            <figure class="project-box__tech-figure">
+                                                <span class="project-box__tech-icon fab fa-js-square"></span>
+                                                <figcaption class="project-box__tech-icon-text">JavaScript</figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="row">
-                                <div class="col-1-of-3"><a href="#" class="btn-text">Live</a></div>
-                                <div class="col-1-of-3"><a href="#" class="btn-text">GitHub</a></div>
-                                <div class="col-1-of-3"><a href="#" class="btn-text">More</a></div>
+                                <div class="col-1-of-2">
+                                    <div class="btn-text">Live</div>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <div class="btn-text">GitHub</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-1-of-2">
+                        <div class="project-box">
+                            <div class="project-box__image">
+                                <span class="fas fa-home"></span>
+                            </div>
+                            <div class="project-box__content u-margin-bottom-medium">
+                                <div class="project-box__name heading-secondary">California Housing</div>
+                                <div class="project-box__des">
+                                    <p>California Housing Data Map</p>
+                                    <ul class="project-box__tech-list u-margin-top-medium">
+                                        <li class="project-box__tech-item">
+                                            <figure class="project-box__tech-figure">
+                                                <span class="project-box__tech-icon fab fa-html5"></span>
+                                                <figcaption class="project-box__tech-icon-text">HTML5</figcaption>
+                                            </figure>
+                                        </li>
+                                        <li class="project-box__tech-item">
+                                            <figure class="project-box__tech-figure">
+                                                <span class="project-box__tech-icon fab fa-css3-alt"></span>
+                                                <figcaption class="project-box__tech-icon-text">CSS</figcaption>
+                                            </figure>
+                                        </li>
+                                        <li class="project-box__tech-item">
+                                            <figure class="project-box__tech-figure">
+                                                <span class="project-box__tech-icon fab fa-js-square"></span>
+                                                <figcaption class="project-box__tech-icon-text">JavaScript</figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1-of-2">
+                                    <div class="btn-text">Live</div>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <div class="btn-text">GitHub</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+
+                    
+                </div>
+
+                <div class="row">
+                    <div class="project-box">
+                        <div class="project-box__image">
+                            <span class="fas fa-brain"></span>
+                        </div>
+                        <div class="project-box__content u-margin-bottom-medium">
+                            <div class="project-box__name heading-secondary">Machine Learning Sentiment Analysis on Movie Reviews</div>
+                            <div class="project-box__des">
+                                <p class="project-box__text">With the growing impact of online platforms like social media, such as Twitter, and review websites like Yelp and Rotten Tomatoes, it has become important to gather insights from the huge amounts of subjective data. In this project, you will learn how to derive insights from a corpus of movie reviews. To this end, you will be asked to automatically predicts sentiment of textual phrases from movie reviews. Specifically the Machine Learning task is as follows: given an input phrase, you have to classify it into one of the following sentiment categories: negative, somewhat negative, neutral, somewhat positive, positive. Solving this task allows us to analyze the intricacies of sentiment and to capture complex linguistic phenomena.</p>
+                                <ul class="project-box__tech-list u-margin-top-medium">
+                                    <li class="project-box__tech-item">
+                                        <figure class="project-box__tech-figure">
+                                            <span class="project-box__tech-icon fab fa-python"></span>
+                                            <figcaption class="project-box__tech-icon-text">Python</figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1-of-2">
+                                <div class="btn-text">Live</div>
+                            </div>
+                            <div class="col-1-of-2">
+                                <div class="btn-text">GitHub</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </section>
 
             <footer class="footer">

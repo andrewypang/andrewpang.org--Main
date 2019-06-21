@@ -1,0 +1,12 @@
+.section-project {
+    background-color: $color-primary;
+
+    padding: 15% 0;
+    z-index: 0;
+    margin-top: -15%;
+
+    &__heading {
+        border-bottom: 2px solid $color-black;
+    }
+
+}
