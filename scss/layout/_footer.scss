@@ -1,0 +1,39 @@
+.footer {
+    padding: 10rem 5rem;
+    font-size: 1.6rem;
+    background-color: $color-surface;
+
+
+    &__logo-box {
+        text-align: center;
+        font-size: 6rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-on-background;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            transform: translateY(-.4rem);
+        }
+    }
+}

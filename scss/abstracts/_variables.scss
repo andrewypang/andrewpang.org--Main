@@ -1,14 +1,20 @@
-$primary-color: #444;
+$color-primary: #00c853;
+$color-primary-light: #5efc82;
+$color-primary-dark: #009624;
 
-$color-primary-light: #597859;
-$color-primary-dark: #465f46;
+$color-secondary: #5d4037;
+$color-secondary-light: #8b6b61;
+$color-secondary-dark: #321911;
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+$color-background: #ffffff;
+$color-surface: #eeeeee;
+$color-error: #b00020;
 
-$color-grey-dark-1: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
+$color-on-primary: #000000;
+$color-on-secondary: #ffffff;
+$color-on-background: #000000;
+$color-on-surface: #000000;
+$color-on-error: #ffffff;
 
 $color-white: #fff;
 $color-black: #000;
@@ -23,10 +29,13 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal:6rem;
 
 
+// IMG
+
+
+
 /////////
 
 $show-home-image: true;
-$home-image: url(../img/andrewpang-home-img.jpg);
 $background-opacity: 0.5;
 $nav-icon-width: 7em;
 $nav-icon-height: 4em;

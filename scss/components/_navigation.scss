@@ -27,17 +27,17 @@
         &:link,
         &:visited {
             display: inline-block;
-            color: $color-grey-dark-3;
             text-decoration: none;
             text-transform: uppercase;
             transition: transform .4s;
+            color: $color-on-background;
 
         }
 
         &:hover,
         &:active {
             transform: translateY(-1rem);
-            border-bottom: 3px solid $color-grey-dark-3;
+            border-bottom: 3px solid $color-black;
         }
     }
 

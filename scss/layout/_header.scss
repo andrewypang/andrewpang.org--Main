@@ -1,24 +1,27 @@
+.header-wrapper {
+    filter: drop-shadow(0 2rem 2rem rgba($color-black, 0.15));
+}
+
 .header {
 
     height: 90vh;
-    background-color: $color-grey-light-1;
+    background-color: $color-surface;
+    z-index: 10;
+    
+    //background-image: $home-image;
+    //background-size: cover;
+    background-position: top;
+    // -webkit-clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
     &__logo {
         text-align: center;
+        animation: moveInTop .7s ease-out;
     }
 
     &__link {
         text-decoration: none;
-        color: $color-grey-dark-3;
-    }
-
-
-    &__heading {
-        text-align: center;
-        padding: 2rem 0;
-
-        animation: moveInTop .7s ease-out;
-
+        color: $color-on-background;
     }
 
     &__text {
