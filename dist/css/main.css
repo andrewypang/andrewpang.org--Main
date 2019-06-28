@@ -271,11 +271,7 @@ body {
 
 .project-box {
   width: 100%;
-  background-color: #eeeeee;
   padding: 2.5rem;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
@@ -289,15 +285,6 @@ body {
 
 .project-box__content {
   font-size: 1.4rem;
-}
-
-.project-box__text {
-  -moz-column-count: 2;
-  -moz-column-gap: 4rem;
-  -moz-column-rule: 1px solid #000;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
 }
 
 .project-box__name {

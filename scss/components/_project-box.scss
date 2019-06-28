@@ -1,9 +1,9 @@
 .project-box {
     width: 100%;
-    background-color: $color-surface;
+    // background-color: $color-surface;
     padding: 2.5rem;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    // border-radius: 3px;
+    // box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 
     transition: transform .3s;
@@ -17,14 +17,6 @@
     &__content {
         font-size: 1.4rem;
 
-    }
-
-    &__text {
-
-        -moz-column-count: 2;
-        -moz-column-gap: 4rem;
-        -moz-column-rule: 1px solid $color-black;
-        hyphens: auto;
     }
 
     &__name {
