@@ -1,18 +1,30 @@
 .header-wrapper {
-    filter: drop-shadow(0 2rem 2rem rgba($color-black, 0.15));
+    filter: drop-shadow(0 0rem 2rem rgba($color-black, 0.2));
+    height: 100vh;
+    background-color: $color-background;
+    position: relative;
 }
 
 .header {
 
     height: 90vh;
+    width: 90vw;
     background-color: $color-surface;
     z-index: 10;
+    display: inline-block;
+
+    position: absolute;
+    @include absCenter;
+    overflow: hidden;
+
     
     //background-image: $home-image;
     //background-size: cover;
     background-position: top;
     // -webkit-clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    // clip-path: polygon(10% 0, 0 10%, 0% 100%, 90% 100%, 100% 90%, 100% 0%);
+    border-radius: 10px;
+    box-shadow: 0rem 0rem 5rem 1rem rgba($color-black, .2);
 
     &__logo {
         text-align: center;

@@ -193,6 +193,25 @@ body {
   margin-top: 10rem !important;
 }
 
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: .75;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-img__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .btn-text, .btn-text:link, .btn-text:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -310,6 +329,7 @@ body {
 
 .project-box__tech-icon {
   font-size: 5rem;
+  height: 5rem;
 }
 
 .project-box__tech-icon-text {
@@ -434,17 +454,30 @@ body {
 }
 
 .header-wrapper {
-  -webkit-filter: drop-shadow(0 2rem 2rem rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0 2rem 2rem rgba(0, 0, 0, 0.15));
+  -webkit-filter: drop-shadow(0 0rem 2rem rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 0rem 2rem rgba(0, 0, 0, 0.2));
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
 }
 
 .header {
   height: 90vh;
+  width: 90vw;
   background-color: #eeeeee;
   z-index: 10;
+  display: inline-block;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  border-radius: 10px;
+  -webkit-box-shadow: 0rem 0rem 5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0rem 5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .header__logo {
@@ -478,14 +511,14 @@ body {
   font-weight: 500;
 }
 
-.section-project {
-  background-color: #4caf50;
-  padding: 15% 0;
-  z-index: 0;
-  margin-top: -15%;
+.section-photography {
+  position: relative;
+  height: 50vh;
 }
 
-.section-project__heading {
-  border-bottom: 2px solid #000;
+.section-project {
+  background-color: #4caf50;
+  padding: 15% 0 10% 0;
+  z-index: 0;
 }
 /*# sourceMappingURL=main.css.map */
