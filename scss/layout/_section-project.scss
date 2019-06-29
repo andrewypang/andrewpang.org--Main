@@ -1,7 +1,18 @@
+.project-wrapper {
+    height: 100vh;
+    background-color: $color-background;
+    position: relative;
+}
+
 .section-project {
     background-color: $color-primary;
+    position: absolute;
+    @include absCenter;
+    height: 90%;
+    width: 90%;
 
-    padding: 15% 0 10% 0;
     z-index: 0;
+
+
 
 }

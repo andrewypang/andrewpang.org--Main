@@ -454,16 +454,14 @@ body {
 }
 
 .header-wrapper {
-  -webkit-filter: drop-shadow(0 0rem 2rem rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0 0rem 2rem rgba(0, 0, 0, 0.2));
   height: 100vh;
   background-color: #ffffff;
   position: relative;
 }
 
 .header {
-  height: 90vh;
-  width: 90vw;
+  height: 90%;
+  width: 90%;
   background-color: #eeeeee;
   z-index: 10;
   display: inline-block;
@@ -516,9 +514,22 @@ body {
   height: 50vh;
 }
 
+.project-wrapper {
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+}
+
 .section-project {
   background-color: #4caf50;
-  padding: 15% 0 10% 0;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 90%;
+  width: 90%;
   z-index: 0;
 }
 /*# sourceMappingURL=main.css.map */
