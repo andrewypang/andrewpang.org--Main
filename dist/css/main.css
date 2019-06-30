@@ -284,7 +284,9 @@ body {
 }
 
 .project-box {
+  height: 30rem;
   width: 100%;
+  padding: 0 2rem;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
@@ -292,7 +294,7 @@ body {
 }
 
 .project-box__image {
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -303,6 +305,8 @@ body {
 .project-box__name {
   border-bottom: 2px solid #000;
   margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .project-box__tech-figure {
@@ -468,8 +472,8 @@ body {
   overflow: hidden;
   background-position: top;
   border-radius: 10px;
-  -webkit-box-shadow: 0rem 0rem 5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0rem 0rem 5rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
 .header__logo {
@@ -510,12 +514,12 @@ body {
 
 .project-wrapper {
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #4caf50;
   position: relative;
 }
 
 .section-project {
-  background-color: #4caf50;
+  background-color: #eeeeee;
   position: absolute;
   position: absolute;
   top: 50%;
@@ -524,5 +528,42 @@ body {
           transform: translate(-50%, -50%);
   height: 90%;
   width: 90%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.section-project__left, .section-project__right {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.section-project__right {
+  padding: 1rem 0;
+}
+
+.section-project__heading {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+}
+
+.section-project__list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  overflow-y: scroll;
+}
+
+.section-project__item {
+  display: inline-block;
+  width: 50%;
 }
 /*# sourceMappingURL=main.css.map */
