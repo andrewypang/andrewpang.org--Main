@@ -4,7 +4,7 @@
 }
 
 .section-photography {
-    
+
     background-color: $color-surface;
     position: absolute;
     @include absCenter;
@@ -16,7 +16,7 @@
 
 
     background-image: linear-gradient(to bottom right, rgba($color-grey, .3), rgba($color-grey-dark, .3)),
-        url(/dist/img/andrewpang-photography.jpg);
+        url(../img/andrewpang-photography.jpg);
     background-size: cover;
 
 }

@@ -11,32 +11,32 @@
     transition: transform .3s;
 
     &--1 {
-        background-image: linear-gradient(to bottom right, rgba($color-grey, .2), rgba($color-grey-dark, .2)),
-            url(/dist/img/project-wind-map.jpg);
+        background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
+            url(../img/project-wind-map.jpg);
         background-size: cover;
     }
 
     &--2 {
         background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
-            url(/dist/img/project-cali-housing-map.jpg);
+            url(../img/project-cali-housing-map.jpg);
         background-size: cover;
     }
 
     &--3 {
         background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
-            url(/dist/img/project-gravity-sim.jpg);
+            url(../img/project-gravity-sim.jpg);
         background-size: cover;
     }
 
     &--4 {
         background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
-            url(/dist/img/project-movie-review.jpg);
+            url(../img/project-movie-review.jpg);
         background-size: cover;
     }
 
     &--5 {
         background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
-            url(/dist/img/project-cranex7.jpg);
+            url(../img/project-cranex7.jpg);
         background-size: cover;
     }
 

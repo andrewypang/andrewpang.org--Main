@@ -318,32 +318,32 @@ body {
 }
 
 .project-box--1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.2)), to(rgba(97, 97, 97, 0.2))), url(/dist/img/project-wind-map.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.2), rgba(97, 97, 97, 0.2)), url(/dist/img/project-wind-map.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-wind-map.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-wind-map.jpg);
   background-size: cover;
 }
 
 .project-box--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(/dist/img/project-cali-housing-map.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(/dist/img/project-cali-housing-map.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-cali-housing-map.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-cali-housing-map.jpg);
   background-size: cover;
 }
 
 .project-box--3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(/dist/img/project-gravity-sim.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(/dist/img/project-gravity-sim.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-gravity-sim.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-gravity-sim.jpg);
   background-size: cover;
 }
 
 .project-box--4 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(/dist/img/project-movie-review.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(/dist/img/project-movie-review.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-movie-review.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-movie-review.jpg);
   background-size: cover;
 }
 
 .project-box--5 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(/dist/img/project-cranex7.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(/dist/img/project-cranex7.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-cranex7.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-cranex7.jpg);
   background-size: cover;
 }
 
@@ -583,8 +583,8 @@ body {
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
   padding: 5rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.3)), to(rgba(97, 97, 97, 0.3))), url(/dist/img/andrewpang-photography.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.3), rgba(97, 97, 97, 0.3)), url(/dist/img/andrewpang-photography.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.3)), to(rgba(97, 97, 97, 0.3))), url(../img/andrewpang-photography.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.3), rgba(97, 97, 97, 0.3)), url(../img/andrewpang-photography.jpg);
   background-size: cover;
 }
 
@@ -606,7 +606,6 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
-  padding: 5rem 0;
 }
 
 .section-project__list {
