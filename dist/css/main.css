@@ -284,22 +284,56 @@ body {
 }
 
 .project-box {
-  height: 30rem;
-  width: 100%;
-  padding: 0 2rem;
+  height: 26rem;
+  width: calc(26rem * 1.6);
+  border-radius: 3px;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
 }
 
+.project-box--1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.2)), to(rgba(97, 97, 97, 0.2))), url(/dist/img/project-wind-map.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.2), rgba(97, 97, 97, 0.2)), url(/dist/img/project-wind-map.jpg);
+  background-size: cover;
+}
+
+.project-box--2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(/dist/img/project-cali-housing-map.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(/dist/img/project-cali-housing-map.jpg);
+  background-size: cover;
+}
+
+.project-box--3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(/dist/img/project-gravity-sim.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(/dist/img/project-gravity-sim.jpg);
+  background-size: cover;
+}
+
+.project-box--4 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(/dist/img/project-movie-review.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(/dist/img/project-movie-review.jpg);
+  background-size: cover;
+}
+
+.project-box--5 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(/dist/img/project-cranex7.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(/dist/img/project-cranex7.jpg);
+  background-size: cover;
+}
+
 .project-box__image {
+  height: 35%;
   font-size: 5rem;
   text-align: center;
 }
 
 .project-box__content {
+  height: 65%;
   font-size: 1.4rem;
+  padding: 0 1rem;
+  background-color: rgba(245, 245, 245, 0.3);
 }
 
 .project-box__name {
@@ -513,8 +547,8 @@ body {
 }
 
 .project-wrapper {
-  height: 100vh;
-  background-color: #4caf50;
+  height: 120vh;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -526,21 +560,10 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 90%;
   width: 90%;
   border-radius: 10px;
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
-}
-
-.section-project__left, .section-project__right {
-  height: 100%;
-  width: 50%;
-  float: left;
-}
-
-.section-project__right {
-  padding: 1rem 0;
 }
 
 .section-project__heading {
@@ -550,7 +573,6 @@ body {
 
 .section-project__list {
   width: 100%;
-  height: 100%;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -559,11 +581,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  overflow-y: scroll;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section-project__item {
   display: inline-block;
-  width: 50%;
+  margin: 1rem;
+  -webkit-box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

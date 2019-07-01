@@ -1,23 +1,56 @@
 .project-box {
-    height: 30rem;
-    width: 100%;
+    height: $project-box-height;
+    width: calc(#{$project-box-height} * 1.6);
     // border: 2px solid $color-black;
     // background-color: $color-surface;
-    padding: 0 2rem;
-    // border-radius: 3px;
+    // padding: 0 2rem;
+    border-radius: 3px;
     // box-shadow: 0 0rem 4rem rgba($color-black, .15);
 
 
     transition: transform .3s;
 
+    &--1 {
+        background-image: linear-gradient(to bottom right, rgba($color-grey, .2), rgba($color-grey-dark, .2)),
+            url(/dist/img/project-wind-map.jpg);
+        background-size: cover;
+    }
+
+    &--2 {
+        background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
+            url(/dist/img/project-cali-housing-map.jpg);
+        background-size: cover;
+    }
+
+    &--3 {
+        background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
+            url(/dist/img/project-gravity-sim.jpg);
+        background-size: cover;
+    }
+
+    &--4 {
+        background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
+            url(/dist/img/project-movie-review.jpg);
+        background-size: cover;
+    }
+
+    &--5 {
+        background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
+            url(/dist/img/project-cranex7.jpg);
+        background-size: cover;
+    }
+
     &__image {
+        height: 35%;
         font-size: 5rem;
-        text-align: center;        
+        text-align: center;
     }
 
     &__content {
+        height: 65%;
         font-size: 1.4rem;
-
+        padding: 0 1rem;
+        background-color: rgba($color-grey-light, 0.3);
     }
 
     &__name {

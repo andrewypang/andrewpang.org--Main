@@ -1,6 +1,6 @@
 .project-wrapper {
-    height: 100vh;
-    background-color: $color-primary;
+    height: 120vh;
+    background-color: $color-background;
     position: relative;
 }
 
@@ -8,21 +8,11 @@
     background-color: $color-surface;
     position: absolute;
     @include absCenter;
-    height: 90%;
+    // height: 90%;
     width: 90%;
 
     border-radius: 10px;
     box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
-
-    &__left, &__right {
-        height: 100%;
-        width: 50%;
-        float: left;
-    }
-
-    &__right {
-        padding: 1rem 0;
-    }
 
     &__heading{
         font-size: 4rem;
@@ -31,17 +21,17 @@
 
     &__list {
         width: 100%;
-        height: 100%;
         list-style: none;
         display: flex;
         flex-flow: row wrap;
-        overflow-y: scroll;
+        justify-content: center;
 
     }
 
     &__item {
         display: inline-block;
-        width: 50%;
+        margin: 1rem;
+        box-shadow: 0 0 2rem .2rem rgba($color-black, 0.2);
     }
 
 }
