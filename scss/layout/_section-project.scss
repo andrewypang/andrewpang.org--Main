@@ -1,6 +1,6 @@
 .project-wrapper {
     height: 120vh;
-    background-color: $color-background;
+    // background-color: $color-green;
     position: relative;
 }
 
@@ -8,15 +8,15 @@
     background-color: $color-surface;
     position: absolute;
     @include absCenter;
-    // height: 90%;
+    min-height: 90%;
     width: 90%;
-
     border-radius: 10px;
     box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
+    padding: 5rem 0;
 
     &__heading{
-        font-size: 4rem;
-        letter-spacing: 1rem;
+        // font-size: 4rem;
+        // letter-spacing: 1rem;
     }
 
     &__list {

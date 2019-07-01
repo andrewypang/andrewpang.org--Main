@@ -1,6 +1,22 @@
-.section-photography {
+.photography-wrapper {
+    height: 100vh;
     position: relative;
+}
 
-    height: 50vh;
+.section-photography {
+    
+    background-color: $color-surface;
+    position: absolute;
+    @include absCenter;
+    min-height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
+    padding: 5rem 0;
+
+
+    background-image: linear-gradient(to bottom right, rgba($color-grey, .3), rgba($color-grey-dark, .3)),
+        url(/dist/img/andrewpang-photography.jpg);
+    background-size: cover;
 
 }

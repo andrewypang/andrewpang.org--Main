@@ -193,6 +193,30 @@ body {
   margin-top: 10rem !important;
 }
 
+.u-padding-top-small {
+  padding-top: 1.5rem !important;
+}
+
+.u-padding-top-medium {
+  padding-top: 4rem !important;
+}
+
+.u-padding-top-big {
+  padding-top: 8rem !important;
+}
+
+.u-padding-bottom-small {
+  padding-bottom: 1.5rem !important;
+}
+
+.u-padding-bottom-medium {
+  padding-bottom: 4rem !important;
+}
+
+.u-padding-bottom-big {
+  padding-bottom: 8rem !important;
+}
+
 .bg-img {
   position: absolute;
   top: 0;
@@ -495,7 +519,6 @@ body {
   height: 90%;
   width: 90%;
   background-color: #eeeeee;
-  z-index: 10;
   display: inline-block;
   position: absolute;
   position: absolute;
@@ -541,14 +564,32 @@ body {
   font-weight: 500;
 }
 
-.section-photography {
+.photography-wrapper {
+  height: 100vh;
   position: relative;
-  height: 50vh;
+}
+
+.section-photography {
+  background-color: #eeeeee;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-height: 90%;
+  width: 90%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
+  padding: 5rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.3)), to(rgba(97, 97, 97, 0.3))), url(/dist/img/andrewpang-photography.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.3), rgba(97, 97, 97, 0.3)), url(/dist/img/andrewpang-photography.jpg);
+  background-size: cover;
 }
 
 .project-wrapper {
   height: 120vh;
-  background-color: #ffffff;
   position: relative;
 }
 
@@ -560,15 +601,12 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  min-height: 90%;
   width: 90%;
   border-radius: 10px;
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
-}
-
-.section-project__heading {
-  font-size: 4rem;
-  letter-spacing: 1rem;
+  padding: 5rem 0;
 }
 
 .section-project__list {

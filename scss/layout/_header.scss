@@ -10,12 +10,13 @@
     height: 90%;
     width: 90%;
     background-color: $color-surface;
-    z-index: 10;
     display: inline-block;
 
     position: absolute;
     @include absCenter;
     overflow: hidden;
+
+
 
     
     //background-image: $home-image;
