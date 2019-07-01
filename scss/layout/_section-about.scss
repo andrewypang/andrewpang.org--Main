@@ -1,0 +1,16 @@
+.about-wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+.section-about {
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    @include absCenter;
+
+    border-radius: 10px;
+
+    background-color: $color-surface;
+
+}
