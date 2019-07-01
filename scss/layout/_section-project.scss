@@ -1,6 +1,6 @@
 .project-wrapper {
-    height: 120vh;
-    // background-color: $color-green;
+    height: 100vh;
+    background-color: $color-green;
     position: relative;
 }
 
@@ -8,8 +8,10 @@
     background-color: $color-surface;
     position: absolute;
     @include absCenter;
-    min-height: 90%;
     width: 90%;
+    height: 90%;
+    // margin: 5% auto;
+
     border-radius: 10px;
     box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
 
