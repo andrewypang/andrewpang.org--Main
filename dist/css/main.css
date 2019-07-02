@@ -134,8 +134,8 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#72a0e0), color-stop(40%, #313d9d), color-stop(80%, #170e53), to(#060214));
-  background-image: linear-gradient(0deg, #72a0e0 0%, #313d9d 40%, #170e53 80%, #060214 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #d95f5f), color-stop(45%, #31439e), color-stop(80%, #1e1861), to(#060214));
+  background-image: linear-gradient(0deg, #d95f5f 15%, #31439e 45%, #1e1861 80%, #060214 100%);
 }
 
 body {
@@ -401,20 +401,12 @@ body {
 }
 
 .footer {
-  height: 70rem;
+  height: 90vh;
   font-size: 1.6rem;
   position: relative;
   background-image: url(../img/mountains.svg);
   background-size: cover;
-  background-position: center;
-}
-
-.footer__image {
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  -webkit-transform: translateY(-20rem);
-          transform: translateY(-20rem);
+  background-position: center top;
 }
 
 .footer__logo-box {
@@ -529,7 +521,7 @@ body {
 .header {
   height: 90%;
   width: 90%;
-  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.7);
   display: inline-block;
   position: absolute;
   position: absolute;
@@ -590,7 +582,7 @@ body {
           transform: translate(-50%, -50%);
   border-radius: 10px;
   padding: 4rem 0;
-  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.7);
 }
 
 .section-about__left, .section-about__right {
@@ -658,7 +650,7 @@ body {
 }
 
 .section-project {
-  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.7);
   width: 90%;
   margin: 0 auto;
   padding: 3rem 0;
