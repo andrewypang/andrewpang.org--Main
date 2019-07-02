@@ -311,6 +311,7 @@ body {
 
 .project-box {
   height: 100%;
+  width: 100%;
   border-radius: 3px;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -662,12 +663,10 @@ body {
 }
 
 .section-project__heading {
-  height: 10%;
   width: 100%;
 }
 
 .section-project__content {
-  height: 90%;
   width: 100%;
 }
 
@@ -691,7 +690,7 @@ body {
 }
 
 .section-project__item {
-  height: 27rem;
+  height: 28rem;
   width: 45%;
   display: inline-block;
   margin: 1rem;
