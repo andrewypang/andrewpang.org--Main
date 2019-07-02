@@ -8,23 +8,27 @@
     background-color: $color-surface;
     position: absolute;
     @include absCenter;
-    min-height: 90%;
+    height: 90%;
     width: 90%;
     border-radius: 10px;
     box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
-    padding: 5rem 0;
+    padding: 3rem 0;
 
 
-    background-image: linear-gradient(to bottom right, rgba($color-grey, .3), rgba($color-grey-dark, .3)),
+    background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
         url(../img/andrewpang-photography.jpg);
     background-size: cover;
 
     &__heading {
-        height: 10;
+        // height: 10%;
     }
 
     &__content {
-
+        // height: 90%;
+        position: absolute;
+        @include absCenter;
+        background-color: $color-white;
+        
     }
 
 }

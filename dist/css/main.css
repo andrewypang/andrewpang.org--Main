@@ -134,6 +134,8 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#72a0e0), color-stop(40%, #313d9d), color-stop(80%, #170e53), to(#060214));
+  background-image: linear-gradient(0deg, #72a0e0 0%, #313d9d 40%, #170e53 80%, #060214 100%);
 }
 
 body {
@@ -399,9 +401,20 @@ body {
 }
 
 .footer {
-  padding: 10rem 5rem;
+  height: 70rem;
   font-size: 1.6rem;
-  background-color: #eeeeee;
+  position: relative;
+  background-image: url(../img/mountains.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__image {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  -webkit-transform: translateY(-20rem);
+          transform: translateY(-20rem);
 }
 
 .footer__logo-box {
@@ -510,7 +523,6 @@ body {
 
 .header-wrapper {
   height: 100vh;
-  background-color: #ffffff;
   position: relative;
 }
 
@@ -577,7 +589,33 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 10px;
+  padding: 4rem 0;
   background-color: #eeeeee;
+}
+
+.section-about__left, .section-about__right {
+  height: 100%;
+  width: 49%;
+  float: left;
+  position: relative;
+}
+
+.section-about__heading {
+  padding-left: 5rem;
+}
+
+.section-about__content {
+  padding: 0 6rem;
+}
+
+.section-about__photo {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 4px;
 }
 
 .photography-wrapper {
@@ -593,23 +631,28 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-height: 90%;
+  height: 90%;
   width: 90%;
   border-radius: 10px;
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
-  padding: 5rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.3)), to(rgba(97, 97, 97, 0.3))), url(../img/andrewpang-photography.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.3), rgba(97, 97, 97, 0.3)), url(../img/andrewpang-photography.jpg);
+  padding: 3rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/andrewpang-photography.jpg);
+  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/andrewpang-photography.jpg);
   background-size: cover;
 }
 
-.section-photography__heading {
-  height: 10;
+.section-photography__content {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
 }
 
 .project-wrapper {
-  background-color: #4CAF50;
   position: relative;
   padding: 5rem 0;
 }

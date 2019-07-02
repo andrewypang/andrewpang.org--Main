@@ -1,8 +1,22 @@
 .footer {
-    padding: 10rem 5rem;
+    // padding: 26rem 0;
+    height: 70rem;
     font-size: 1.6rem;
-    background-color: $color-surface;
+    position: relative;
+    // background-color: $color-surface;
 
+    background-image: url(../img/mountains.svg);
+    background-size: cover;
+    background-position: center;
+    // background-attachment: fixed;
+
+    &__image {
+        // height: 100%;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        transform: translateY(-20rem);
+    }
 
     &__logo-box {
         text-align: center;
