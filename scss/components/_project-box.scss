@@ -14,6 +14,7 @@
         background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
             url(../img/project-wind-map.jpg);
         background-size: cover;
+        background-position: 50% bottom;
     }
 
     &--2 {
@@ -38,6 +39,7 @@
         background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
             url(../img/project-cranex7.jpg);
         background-size: cover;
+        background-position: 50% 72%;
     }
 
     &__image {

@@ -322,6 +322,7 @@ body {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-wind-map.jpg);
   background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-wind-map.jpg);
   background-size: cover;
+  background-position: 50% bottom;
 }
 
 .project-box--2 {
@@ -346,6 +347,7 @@ body {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-cranex7.jpg);
   background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-cranex7.jpg);
   background-size: cover;
+  background-position: 50% 72%;
 }
 
 .project-box__image {
@@ -689,6 +691,7 @@ body {
 }
 
 .section-project__item {
+  height: 27rem;
   width: 45%;
   display: inline-block;
   margin: 1rem;
