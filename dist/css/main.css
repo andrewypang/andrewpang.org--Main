@@ -136,6 +136,7 @@ body {
           box-sizing: border-box;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #d95f5f), color-stop(45%, #31439e), color-stop(80%, #1e1861), to(#060214));
   background-image: linear-gradient(0deg, #d95f5f 15%, #31439e 45%, #1e1861 80%, #060214 100%);
+  scroll-behavior: smooth;
 }
 
 body {
