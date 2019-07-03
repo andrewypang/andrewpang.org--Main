@@ -320,9 +320,20 @@ body {
 }
 
 .project-box__image {
-  height: 35%;
-  font-size: 5rem;
+  height: 100%;
+  font-size: 8rem;
   text-align: center;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.project-box__image__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .project-box__content {
@@ -331,7 +342,7 @@ body {
   overflow: hidden;
   font-size: 1.4rem;
   padding: 0 1rem;
-  background-color: rgba(245, 245, 245, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   position: absolute;
@@ -351,39 +362,44 @@ body {
 }
 
 .project-box--1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-wind-map.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-wind-map.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-wind-map.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-wind-map.jpg);
   background-size: cover;
   background-position: 50% bottom;
 }
 
 .project-box--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-cali-housing-map.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-cali-housing-map.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-cali-housing-map.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-cali-housing-map.jpg);
   background-size: cover;
 }
 
 .project-box--3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-gravity-sim.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-gravity-sim.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-gravity-sim.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-gravity-sim.jpg);
   background-size: cover;
 }
 
 .project-box--4 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-movie-review.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-movie-review.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-movie-review.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-movie-review.jpg);
   background-size: cover;
 }
 
 .project-box--5 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(158, 158, 158, 0.5)), to(rgba(97, 97, 97, 0.5))), url(../img/project-cranex7.jpg);
-  background-image: linear-gradient(to bottom right, rgba(158, 158, 158, 0.5), rgba(97, 97, 97, 0.5)), url(../img/project-cranex7.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-cranex7.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-cranex7.jpg);
   background-size: cover;
   background-position: 50% 72%;
 }
 
 .project-box:hover .project-box__content {
   height: 65%;
+}
+
+.project-box:hover .project-box__image {
+  height: 35%;
+  font-size: 5rem;
 }
 
 .footer {
