@@ -721,6 +721,8 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: inherit;
   transition: inherit;
   opacity: 1;
