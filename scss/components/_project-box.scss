@@ -1,14 +1,45 @@
 .project-box {
     height: 100%;
     width: 100%;
+    position: relative;
     // border: 2px solid $color-black;
     // background-color: $color-surface;
     // padding: 0 2rem;
     border-radius: 3px;
     // box-shadow: 0 0rem 4rem rgba($color-black, .15);
 
+    overflow: hidden;
+    transition: all .3s;
 
-    transition: transform .3s;
+    &__image {
+        height: 35%;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    &__content {
+        height: $project-box-name-height;
+        width: 100%;
+        overflow: hidden;
+        font-size: 1.4rem;
+        padding: 0 1rem;
+        background-color: rgba($color-grey-light, 0.3);
+        transition: all .5s ease;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__name {
+        height: $project-box-name-height;
+        width: 100%;
+        border-bottom: 2px solid $color-black;
+        margin-bottom: 2rem;
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: $project-box-name-height;
+        letter-spacing: .3rem;
+    }
 
     &--1 {
         background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
@@ -42,56 +73,12 @@
         background-position: 50% 72%;
     }
 
-    &__image {
-        height: 35%;
-        font-size: 5rem;
-        text-align: center;
+    &:hover,
+    &:active {
+        // transform: scale(1.05);
     }
 
-    &__content {
+    &:hover &__content {
         height: 65%;
-        font-size: 1.4rem;
-        padding: 0 1rem;
-        background-color: rgba($color-grey-light, 0.3);
-    }
-
-    &__name {
-        border-bottom: 2px solid $color-black;
-        margin-bottom: 2rem;
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
-
-    &__tech-figure {
-        text-align: center;
-    }
-
-    &__tech-list {
-        list-style: none;
-    }
-
-    &__tech-item {
-        display: inline-block;
-
-        &:not(:last-child) {
-            margin-right: 1.5rem;
-        }
-    }
-
-    &__tech-icon {
-        font-size: 5rem;
-        height: 5rem;
-        
-    }
-
-    &__tech-icon-text {
-        color: $color-on-background;
-        opacity: 0;
-        transition: all .5s;
-
-    }
-
-    &__tech-figure:hover &__tech-icon-text {
-        opacity: 1;
     }
 }
