@@ -44,7 +44,7 @@
         font-weight: 700;
         text-align: center;
         line-height: $project-box-name-height;
-        letter-spacing: .1rem;
+        letter-spacing: $letter-spacing-medium;
         transition: inherit;
 
     }
@@ -88,7 +88,7 @@
 
     &:hover &__name {
         font-size: 1.8rem;
-        letter-spacing: .05rem;
+        letter-spacing: $letter-spacing-small;
     }
 
     &:hover &__content {

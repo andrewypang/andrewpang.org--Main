@@ -358,7 +358,7 @@ body {
   font-weight: 700;
   text-align: center;
   line-height: 4rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   -webkit-transition: inherit;
   transition: inherit;
 }
@@ -397,7 +397,7 @@ body {
 
 .project-box:hover .project-box__name {
   font-size: 1.8rem;
-  letter-spacing: .05rem;
+  letter-spacing: 0.01rem;
 }
 
 .project-box:hover .project-box__content {
@@ -418,7 +418,7 @@ body {
 .footer__image {
   background-image: url(../img/mountains.svg);
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   position: absolute;
   top: 0%;
   left: 50%;
@@ -631,35 +631,44 @@ body {
 }
 
 .photography-wrapper {
-  height: 100vh;
   position: relative;
   -webkit-transition: all 0.5 ease;
   transition: all 0.5 ease;
+  padding: 7rem 0;
 }
 
 .section-photography {
+  height: 70rem;
+  width: 90%;
   background-color: #eeeeee;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 0 auto;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
-  height: 90%;
-  width: 90%;
   border-radius: 10px;
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
-  padding: 3rem 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
 .section-photography:hover {
-  -webkit-transform: translate(-50%, -50%) scale(1.01);
-          transform: translate(-50%, -50%) scale(1.01);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.section-photography:hover .section-photography__heading {
+  opacity: 1;
+}
+
+.section-photography:hover .section-photography__image {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: .6;
+}
+
+.section-photography:hover .section-photography__caption {
+  opacity: 1;
 }
 
 .section-photography__heading {
@@ -668,6 +677,9 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: inherit;
+  transition: inherit;
+  opacity: 0;
 }
 
 .section-photography__content {
@@ -680,19 +692,36 @@ body {
   background-color: #fff;
 }
 
+.section-photography__shape {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.section-photography__caption {
+  color: #fff;
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  opacity: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
 .section-photography__image {
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 10px;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: inherit;
   transition: inherit;
-  opacity: 0.8;
 }
 
 .project-wrapper {
@@ -701,8 +730,8 @@ body {
 }
 
 .section-project {
-  background-color: rgba(238, 238, 238, 0.7);
   width: 90%;
+  background-color: rgba(238, 238, 238, 0.7);
   margin: 0 auto;
   padding: 3rem 0;
   border-radius: 10px;
