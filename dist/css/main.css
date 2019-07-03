@@ -550,6 +550,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding: 5rem 0;
   background-position: top;
   border-radius: 10px;
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
@@ -577,8 +578,8 @@ body {
 }
 
 .header__text--main {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 .header__text--sub {
