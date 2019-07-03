@@ -646,16 +646,20 @@ body {
 }
 
 .section-about__icons__link:link, .section-about__icons__link:visited {
+  display: inline-block;
   color: #424242;
   text-decoration: none;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
 }
 
 .section-about__icons__link:hover, .section-about__icons__link:active {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
-  color: #4CAF50;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
 }
 
 .section-about__photo {

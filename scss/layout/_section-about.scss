@@ -57,16 +57,21 @@
         &__link {
             &:link,
             &:visited {
+                display: inline-block;
                 color: $color-grey-dark;
                 text-decoration: none;
 
                 transition: all .2s ease;
+
+                backface-visibility:     hidden;
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility:    hidden;
+                -ms-backface-visibility:     hidden;
             }
 
             &:hover,
             &:active {
-                transform: translateY(-1rem);
-                color: $color-green;
+                transform: translateY(-.5rem);
             }
         }
     }
