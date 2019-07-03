@@ -26,16 +26,55 @@
 
     &__heading {
         padding-left: $padding-medium;
+        color: darken($color-grey-dark, 10%);
     }
 
     &__content {
         padding: 0 $padding-large;
+        hyphens: auto;
+        color: $color-grey-dark;
+
+    }
+
+
+    &__icons {
+        font-size: $icon-size-small;
+        padding: $padding-small 0;
+        transition: all .3s ease;
+
+        &__list {
+            list-style: none;
+        }
+
+        &__item {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+
+        &__link {
+            &:link,
+            &:visited {
+                color: $color-grey-dark;
+                text-decoration: none;
+
+                transition: all .2s ease;
+            }
+
+            &:hover,
+            &:active {
+                transform: translateY(-1rem);
+                color: $color-green;
+            }
+        }
     }
 
     &__photo {
         height: 100%;
-        @include absCenter;
         border-radius: 4px;
+        float: right;
         // width: 100%;
         // background-image: url(../img/andrewpang-about.jpg);
         // background-size: auto 100%;

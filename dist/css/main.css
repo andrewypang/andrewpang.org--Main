@@ -615,20 +615,53 @@ body {
 
 .section-about__heading {
   padding-left: 5rem;
+  color: #292929;
 }
 
 .section-about__content {
   padding: 0 7rem;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  color: #424242;
+}
+
+.section-about__icons {
+  font-size: 3rem;
+  padding: 1.5rem 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.section-about__icons__list {
+  list-style: none;
+}
+
+.section-about__icons__item {
+  display: inline-block;
+}
+
+.section-about__icons__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.section-about__icons__link:link, .section-about__icons__link:visited {
+  color: #424242;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.section-about__icons__link:hover, .section-about__icons__link:active {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  color: #4CAF50;
 }
 
 .section-about__photo {
   height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   border-radius: 4px;
+  float: right;
 }
 
 .photography-wrapper {
