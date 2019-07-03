@@ -670,18 +670,23 @@ body {
 }
 
 .photography-wrapper {
+  height: 100vh;
   position: relative;
   -webkit-transition: all 0.5 ease;
   transition: all 0.5 ease;
-  padding: 7rem 0;
   overflow: hidden;
 }
 
 .section-photography {
-  height: 70rem;
+  height: 90%;
   width: 90%;
   background-color: #eeeeee;
   margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
@@ -691,8 +696,8 @@ body {
 }
 
 .section-photography:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: translate(-50%, -50%) scale(1.01);
+          transform: translate(-50%, -50%) scale(1.01);
 }
 
 .section-photography:hover .section-photography__heading {
