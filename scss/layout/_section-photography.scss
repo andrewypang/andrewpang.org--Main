@@ -1,26 +1,39 @@
 .photography-wrapper {
     height: 100vh;
     position: relative;
+    transition: all 0.5 ease;
+
 }
 
 .section-photography {
 
     background-color: $color-surface;
     position: absolute;
-    @include absCenter;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all $page-float-out-time ease;
+    overflow: hidden;
+    
     height: 90%;
     width: 90%;
     border-radius: 10px;
     box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
     padding: 3rem 0;
+    backface-visibility: hidden;
 
 
-    background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
-        url(../img/andrewpang-photography.jpg);
-    background-size: cover;
+    // background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
+    //     url(../img/andrewpang-photography.jpg);
+    // background-size: cover;
+
+    &:hover {
+        transform: translate(-50%, -50%) scale(1.01);
+    }
 
     &__heading {
         // height: 10%;
+        @include absCenter;
     }
 
     &__content {
@@ -29,6 +42,29 @@
         @include absCenter;
         background-color: $color-white;
         
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        // background-image: linear-gradient(to bottom right, rgba($color-grey, .5), rgba($color-grey-dark, .5)),
+        //     url(../img/andrewpang-photography.jpg);
+        // background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        // backface-visibility: hidden;
+        border-radius: 10px;
+        transform: scale(1.1);
+        transition: inherit;
+        opacity: 0.8;
+
+
+        // &:hover {
+        //     transform: scale(1);
+        // }
+
     }
 
 }

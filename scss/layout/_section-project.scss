@@ -18,9 +18,11 @@
     box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
 
 
+
     &__heading{
-        // height: 10%;
+        // height: 100%;
         width: 100%;
+        padding: $padding-small;
     }
 
     &__content {

@@ -9,14 +9,14 @@
     // box-shadow: 0 0rem 4rem rgba($color-black, .15);
 
     overflow: hidden;
-    transition: all .3s;
+    transition: all .5s;
 
     &__image {
         height: 100%;
         font-size: $icon-size-large;
         text-align: center;
         position: relative;
-        transition: all .5s ease;
+        transition: inherit;
 
         &__icon {
             @include absCenter;
@@ -30,7 +30,7 @@
         font-size: 1.4rem;
         padding: 0 1rem;
         background-color: rgba($color-white, 0.6);
-        transition: all .5s ease;
+        transition: inherit;
         position: absolute;
         bottom: 0;
     }
@@ -40,11 +40,13 @@
         width: 100%;
         border-bottom: 2px solid $color-black;
         margin-bottom: 2rem;
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-weight: 700;
         text-align: center;
         line-height: $project-box-name-height;
-        letter-spacing: .3rem;
+        letter-spacing: .1rem;
+        transition: inherit;
+
     }
 
     &--1 {
@@ -85,7 +87,8 @@
     }
 
     &:hover &__name {
-        // font-size: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: .05rem;
     }
 
     &:hover &__content {

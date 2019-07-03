@@ -24,11 +24,11 @@
     }
 
     &__heading {
-        padding-left: 5rem;
+        padding-left: $padding-medium;
     }
 
     &__content {
-        padding: 0 6rem;
+        padding: 0 $padding-large;
     }
 
     &__photo {
