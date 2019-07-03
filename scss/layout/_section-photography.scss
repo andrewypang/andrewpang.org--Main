@@ -58,6 +58,18 @@
 
     }
 
+    &__link {
+        text-decoration: none;
+        color: $color-black;
+        border-radius: 2px;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-black;
+            padding: $padding-small;
+        }
+    }
+
     &__content {
         // height: 90%;
         position: absolute;
