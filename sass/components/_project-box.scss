@@ -86,7 +86,7 @@
 
     &:hover,
     &:active {
-        // transform: scale(1.05);
+
     }
 
     &:hover &__name {
@@ -104,5 +104,25 @@
 
     &:hover &__icon {
         font-size: $icon-size-medium;
+    }
+
+    @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
+            &__name {
+                font-size: 1.8rem;
+                letter-spacing: $letter-spacing-small;
+            }
+
+            &__content {
+                height: 65%;
+            }
+        
+            &__image {
+                height: 35%;
+            }
+        
+            &__icon {
+                font-size: $icon-size-medium;
+            }
     }
 }

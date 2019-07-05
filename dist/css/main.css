@@ -421,6 +421,22 @@ body {
   font-size: 5rem;
 }
 
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .project-box__name {
+    font-size: 1.8rem;
+    letter-spacing: 0.01rem;
+  }
+  .project-box__content {
+    height: 65%;
+  }
+  .project-box__image {
+    height: 35%;
+  }
+  .project-box__icon {
+    font-size: 5rem;
+  }
+}
+
 .footer {
   height: 90vh;
   font-size: 1.6rem;
@@ -583,7 +599,7 @@ body {
 .header__text {
   display: block;
   text-align: center;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   -webkit-animation: moveInLeft .7s ease-out;
           animation: moveInLeft .7s ease-out;
