@@ -39,7 +39,7 @@
     }
 
     &__name {
-        height: $project-box-name-height;
+        // height: $project-box-name-height;
         width: 100%;
         border-bottom: 2px solid $color-black;
         margin-bottom: 2rem;
@@ -50,6 +50,10 @@
         letter-spacing: $letter-spacing-medium;
         transition: inherit;
 
+    }
+
+    &__links {
+        padding: 1rem 0;
     }
 
     &--1 {
@@ -75,6 +79,7 @@
         background-image: linear-gradient(to bottom, rgba($color-white, .2), rgba($color-white, .2)),
             url(../img/project-movie-review.jpg);
         background-size: cover;
+
     }
 
     &--5 {
@@ -84,27 +89,25 @@
         background-position: 50% 72%;
     }
 
-    &:hover,
-    &:active {
-
+    @media only screen and (hover: hover) {
+        &:hover &__name {
+            font-size: 1.8rem;
+            letter-spacing: $letter-spacing-small;
+        }
+    
+        &:hover &__content {
+            height: 65%;
+        }
+    
+        &:hover &__image {
+            height: 35%;
+        }
+    
+        &:hover &__icon {
+            font-size: $icon-size-medium;
+        }
     }
 
-    &:hover &__name {
-        font-size: 1.8rem;
-        letter-spacing: $letter-spacing-small;
-    }
-
-    &:hover &__content {
-        height: 65%;
-    }
-
-    &:hover &__image {
-        height: 35%;
-    }
-
-    &:hover &__icon {
-        font-size: $icon-size-medium;
-    }
 
     @media only screen and (max-width: 56.25em),
         only screen and (hover: none) {

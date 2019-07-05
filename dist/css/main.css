@@ -272,6 +272,11 @@ body {
           animation-fill-mode: backwards;
   padding: 2rem 0;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .navigation__list {
@@ -314,6 +319,15 @@ body {
 
 .navigation__icon-text {
   display: block;
+}
+
+@media (max-width: 37.5em) {
+  .navigation__item {
+    font-size: 1rem;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 .project-box {
@@ -359,7 +373,6 @@ body {
 }
 
 .project-box__name {
-  height: 4rem;
   width: 100%;
   border-bottom: 2px solid #000;
   margin-bottom: 2rem;
@@ -370,6 +383,10 @@ body {
   letter-spacing: 0.1rem;
   -webkit-transition: inherit;
   transition: inherit;
+}
+
+.project-box__links {
+  padding: 1rem 0;
 }
 
 .project-box--1 {
@@ -404,21 +421,20 @@ body {
   background-position: 50% 72%;
 }
 
-.project-box:hover .project-box__name {
-  font-size: 1.8rem;
-  letter-spacing: 0.01rem;
-}
-
-.project-box:hover .project-box__content {
-  height: 65%;
-}
-
-.project-box:hover .project-box__image {
-  height: 35%;
-}
-
-.project-box:hover .project-box__icon {
-  font-size: 5rem;
+@media only screen and (hover: hover) {
+  .project-box:hover .project-box__name {
+    font-size: 1.8rem;
+    letter-spacing: 0.01rem;
+  }
+  .project-box:hover .project-box__content {
+    height: 65%;
+  }
+  .project-box:hover .project-box__image {
+    height: 35%;
+  }
+  .project-box:hover .project-box__icon {
+    font-size: 5rem;
+  }
 }
 
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
@@ -578,6 +594,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow: hidden scroll;
   padding: 5rem 0;
   background-position: top;
   border-radius: 10px;
@@ -616,6 +633,20 @@ body {
   display: block;
   font-size: 2rem;
   font-weight: 550;
+}
+
+@media (max-width: 37.5em) {
+  .header__link {
+    font-size: 2rem;
+  }
+  .header__text--main {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+  }
+  .header__text--sub {
+    font-size: 1.4rem;
+  }
 }
 
 .about-wrapper {
@@ -868,5 +899,17 @@ body {
   margin: 1rem;
   -webkit-box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-project__item {
+    height: 35rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-project__item {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
