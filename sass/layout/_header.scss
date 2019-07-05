@@ -10,7 +10,11 @@
     height: 90%;
     width: 90%;
     background-color: rgba($color-surface, .7);
+    // background-image: linear-gradient(to bottom, rgba($color-surface, 0.1),rgba($color-surface, 1)),
+    //     url(../img/qbkls.png);
+    background-size: contain;
     display: inline-block;
+
 
     position: absolute;
     @include absCenter;
@@ -31,11 +35,13 @@
     &__logo {
         text-align: center;
         animation: moveInTop .7s ease-out;
+
     }
 
     &__link {
         text-decoration: none;
-        color: $color-on-background;
+        color: darken($color-grey-dark, 10%);
+
     }
 
     &__text {
@@ -44,16 +50,19 @@
         width: 50%;
         margin: 0 auto;
         animation: moveInLeft .7s ease-out;
+        color: darken($color-grey-dark, 10%);
+
 
         &--main {
             font-size: 3rem;
-            font-weight: 500;
+            font-weight: 600;
+            letter-spacing: .1rem;
         }
 
         &--sub {
             display: block;
             font-size: 2rem;
-            font-weight: 500;
+            font-weight: 550;
 
         }
 

@@ -13,14 +13,17 @@
 
     &__image {
         height: 100%;
-        font-size: $icon-size-large;
         text-align: center;
         position: relative;
         transition: inherit;
 
-        &__icon {
-            @include absCenter;
-        }
+    }
+
+    &__icon {
+        @include absCenter;
+        font-size: $icon-size-large;
+        transition: inherit;
+
     }
 
     &__content {
@@ -97,6 +100,9 @@
 
     &:hover &__image {
         height: 35%;
-        font-size: 5rem;
+    }
+
+    &:hover &__icon {
+        font-size: $icon-size-medium;
     }
 }

@@ -1,12 +1,10 @@
 .navigation {
-    width: 50%;
+    width: 80%;
     animation: moveInBottom .5s cubic-bezier(.14,.93,.79,1.37) 0.7s;
     animation-fill-mode: backwards;
 
     padding: 2rem 0;
     margin: 0 auto;
-
-
 
     &__list {
         list-style: none;
@@ -19,7 +17,7 @@
         margin: 1rem 0;
 
         &:not(:last-child) {
-            margin-right: 1.5rem;
+            margin-right: 2.5rem;
         }
     }
 
@@ -30,7 +28,9 @@
             text-decoration: none;
             text-transform: uppercase;
             transition: transform .4s;
-            color: $color-on-background;
+            color: darken($color-grey-dark, 10%);
+            letter-spacing: .1rem;
+            font-weight: 600;
 
         }
 
@@ -42,7 +42,7 @@
     }
 
     &__icon {
-        
+        font-size: $icon-size-small;
     }
 
     &__icon-text {

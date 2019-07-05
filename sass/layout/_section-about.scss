@@ -27,6 +27,7 @@
     &__heading {
         padding-left: $padding-medium;
         color: darken($color-grey-dark, 10%);
+        letter-spacing: 0.2rem;
     }
 
     &__content {
@@ -63,10 +64,11 @@
 
                 transition: all .2s ease;
 
-                backface-visibility:     hidden;
                 -webkit-backface-visibility: hidden;
                 -moz-backface-visibility:    hidden;
                 -ms-backface-visibility:     hidden;
+                backface-visibility:     hidden;
+
             }
 
             &:hover,
