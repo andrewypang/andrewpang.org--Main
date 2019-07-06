@@ -1,17 +1,20 @@
 .navigation {
-    width: 80%;
+    width: 60%;
+    max-width: 55rem;
     animation: moveInBottom .5s cubic-bezier(.14,.93,.79,1.37) 0.7s;
     animation-fill-mode: backwards;
 
-    padding: 2rem 0;
+    // padding: 2rem 0;
     margin: 0 auto;
 
-    display: flex;
-    justify-content: space-around;
 
     &__list {
         list-style: none;
         text-align: center;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
 
     &__item {
@@ -20,7 +23,7 @@
         margin: 1rem 0;
 
         &:not(:last-child) {
-            margin-right: 2.5rem;
+            margin-right: 1.5rem;
         }
     }
 
@@ -54,9 +57,6 @@
 
     @include respond(phone) {
         &__item {
-            &:not(:last-child) {
-                margin-right: 1rem;
-            }
 
             font-size: 1rem;
         }
