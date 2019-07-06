@@ -2,11 +2,7 @@
     height: 100%;
     width: 100%;
     position: relative;
-    // border: 2px solid $color-black;
-    // background-color: $color-surface;
-    // padding: 0 2rem;
     border-radius: 3px;
-    // box-shadow: 0 0rem 4rem rgba($color-black, .15);
 
     overflow: hidden;
     transition: all .5s;
@@ -23,6 +19,7 @@
         @include absCenter;
         font-size: $icon-size-large;
         transition: inherit;
+        color: $color-grey-extra-dark;
 
     }
 
@@ -41,7 +38,7 @@
     &__name {
         // height: $project-box-name-height;
         width: 100%;
-        border-bottom: 2px solid $color-black;
+        border-bottom: 2px solid $color-grey-extra-dark;
         margin-bottom: 2rem;
         font-size: 2rem;
         font-weight: 700;
@@ -49,11 +46,18 @@
         line-height: $project-box-name-height;
         letter-spacing: $letter-spacing-medium;
         transition: inherit;
+        color: $color-grey-extra-dark;
 
     }
 
+    &__des {
+        color: $color-grey-dark;
+    }
+
     &__links {
-        padding: 1rem 0;
+        padding-top: 2rem;
+        text-align: center;
+        color: $color-grey-extra-dark;
     }
 
     &--1 {

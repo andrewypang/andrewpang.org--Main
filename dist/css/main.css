@@ -358,6 +358,7 @@ body {
   font-size: 6rem;
   -webkit-transition: inherit;
   transition: inherit;
+  color: #292929;
 }
 
 .project-box__content {
@@ -375,7 +376,7 @@ body {
 
 .project-box__name {
   width: 100%;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #292929;
   margin-bottom: 2rem;
   font-size: 2rem;
   font-weight: 700;
@@ -384,10 +385,17 @@ body {
   letter-spacing: 0.1rem;
   -webkit-transition: inherit;
   transition: inherit;
+  color: #292929;
+}
+
+.project-box__des {
+  color: #424242;
 }
 
 .project-box__links {
-  padding: 1rem 0;
+  padding-top: 2rem;
+  text-align: center;
+  color: #292929;
 }
 
 .project-box--1 {
@@ -868,6 +876,7 @@ body {
   width: 100%;
   padding: 1.5rem;
   letter-spacing: .2rem;
+  color: #292929;
 }
 
 .section-project__content {
