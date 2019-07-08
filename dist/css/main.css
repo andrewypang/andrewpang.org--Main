@@ -247,9 +247,10 @@ body {
   font-weight: 700;
   background-color: transparent;
   cursor: pointer;
+  color: #292929;
   -webkit-transition: all .2s;
   transition: all .2s;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #424242;
 }
 
 .btn-text:hover {
@@ -282,8 +283,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -446,7 +447,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+@media only screen and (max-width: 70.625em), only screen and (hover: none) {
   .project-box__name {
     font-size: 1.8rem;
     letter-spacing: 0.01rem;

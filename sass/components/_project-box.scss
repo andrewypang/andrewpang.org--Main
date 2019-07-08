@@ -93,6 +93,7 @@
         background-position: 50% 72%;
     }
 
+    // If media has hover capability
     @media only screen and (hover: hover) {
         &:hover &__name {
             font-size: 1.8rem;
@@ -112,8 +113,9 @@
         }
     }
 
-
-    @media only screen and (max-width: 56.25em),
+    // If media has less than 70.625em OR has no hover capability
+    // 70.625em because Machine Learning Project has long name
+    @media only screen and (max-width: 70.625em),
         only screen and (hover: none) {
             &__name {
                 font-size: 1.8rem;
