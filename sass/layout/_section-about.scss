@@ -8,20 +8,26 @@
 .section-about {
     height: 90%;
     width: 90%;
-    position: absolute;
+    padding: 4rem 0;
+    border-radius: 10px;
+
+    
+
+    // position: absolute;
     @include absCenter;
 
-    border-radius: 10px;
-    padding: 4rem 0;
+
 
     background-color: rgba($color-surface, .7);
 
 
-    &__left, &__right {
-        height: 100%;
-        width: 49%;
-        float: left;
-        position: relative;
+    &__box {
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex: 0 1 auto;
     }
 
     &__heading {
@@ -31,8 +37,7 @@
     }
 
     &__content {
-        padding: 0 $padding-large;
-        hyphens: auto;
+        padding-left: $padding-large;
         color: $color-grey-dark;
 
     }
@@ -79,13 +84,44 @@
     }
 
     &__photo {
-        height: 100%;
+        padding: 0 1rem;
         border-radius: 4px;
-        float: right;
-        // width: 100%;
-        // background-image: url(../img/andrewpang-about.jpg);
-        // background-size: auto 100%;
-        // background-repeat:no-repeat;
+        object-fit: contain;
+    }
+    @media only screen and (max-width: 56.25em) {
+        // &__bio {
+        //     // font-size: 1.4rem;
+        // }
+
+        // &__heading {
+        //     padding-left: $padding-small;
+        // }
+
+        // &__content {
+        //     padding: 0 $padding-medium;
+        // }
+    }
+    
+
+    // Small screen, remove photo
+    @media only screen and (max-width: 47.5em) {
+        &__photo {
+            display: none;
+        }
+
+        &__heading {
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__content {
+            padding: 0 $padding-medium;
+        }
+
+        &__bio {
+            font-size: 1.4rem;
+        }
     }
 
 }
