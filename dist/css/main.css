@@ -773,16 +773,16 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   border-radius: 10px;
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
 .section-photography:hover {
-  -webkit-transform: translate(-50%, -50%) scale(1.01);
-          transform: translate(-50%, -50%) scale(1.01);
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .section-photography:hover .section-photography__heading {
@@ -790,13 +790,19 @@ body {
 }
 
 .section-photography:hover .section-photography__image {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
   opacity: .6;
 }
 
 .section-photography:hover .section-photography__caption {
   opacity: 1;
+}
+
+.section-photography:hover .section-photography__link::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  visibility: visible;
 }
 
 .section-photography__heading {
@@ -813,16 +819,48 @@ body {
 }
 
 .section-photography__link {
+  position: relative;
+  padding: .5rem;
   text-decoration: none;
   color: #000;
   border-radius: 2px;
   letter-spacing: .2rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, transparent), color-stop(50%, #000));
+  background-image: linear-gradient(to bottom, transparent 0, transparent 50%, #000 50%);
+  background-size: 100% 200%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .section-photography__link:hover {
   color: #fff;
+  background-position: 0 100%;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.section-photography__link::before {
+  content: "";
+  height: 3px;
+  width: 96%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
   background-color: #000;
-  padding: 1.5rem;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: all .4s ease .2s;
+  transition: all .4s ease .2s;
+  visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .section-photography__content {
@@ -862,8 +900,8 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translate3d(0, 0, 0) scale(1.06);
+  transform: translate3d(0, 0, 0) scale(1.06);
   -webkit-transition: inherit;
   transition: inherit;
   opacity: 1;
