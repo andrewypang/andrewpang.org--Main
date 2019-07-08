@@ -2,7 +2,6 @@
     height: 100vh;
     position: relative;
     transition: all 0.5 ease;
-    // padding: $padding-large 0;
     overflow: hidden;
 }
 
@@ -23,7 +22,6 @@
 
     // Hovering over the photography section
     &:hover {
-        // transform: translate(-50%, -50%) scale(1.01);
         -webkit-transform: translate3d(-50%,-50%,0) scale(1);
         transform: translate3d(-50%,-50%,0) scale(1);
 
@@ -32,7 +30,6 @@
         }
 
         .section-photography__image {
-            // transform: scale(1.0);
             -webkit-transform: translate3d(0,0,0) scale(1);
             transform: translate3d(0,0,0) scale(1);
             opacity: .6;
@@ -55,10 +52,8 @@
     }
 
     &__heading {
-        // height: 10%;
         @include absCenter;
         color: $color-black;
-        // padding-left: $padding-large;
         transition: inherit;
         opacity: 0;
         z-index: 1;
@@ -78,11 +73,6 @@
         background-size: 100% 200%;
         transition: all .3s ease;
 
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility:    hidden;
-        -ms-backface-visibility:     hidden;
-        backface-visibility:     hidden;
-
 
         &:hover {
             color: $color-white;
@@ -98,7 +88,7 @@
 
     &__link::before {
         content: "";
-        height: 3px;
+        height: 4px;
         width: 96%;
         position: absolute;
         bottom: 0;
@@ -117,7 +107,6 @@
     }
 
     &__content {
-        // height: 90%;
         position: absolute;
         @include absCenter;
         background-color: $color-white;
@@ -127,9 +116,6 @@
     &__shape {
         height: 100%;
         width: 100%;
-        // position: absolute;
-        // top: 0;
-        // left: 0;
         z-index: -1;
         transition: inherit;
         

@@ -830,8 +830,6 @@ body {
   background-size: 100% 200%;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .section-photography__link:hover {
@@ -845,7 +843,7 @@ body {
 
 .section-photography__link::before {
   content: "";
-  height: 3px;
+  height: 4px;
   width: 96%;
   position: absolute;
   bottom: 0;
