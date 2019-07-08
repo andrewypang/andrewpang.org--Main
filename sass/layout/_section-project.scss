@@ -47,15 +47,13 @@
         box-shadow: 0 0 2rem .2rem rgba($color-black, 0.2);
     }
 
-    @media only screen and (max-width: 56.25em) {
-        &__item {
-            height: 35rem;
-        }
-    }
-
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 47.5em) {
         &__item {
             width: 90%;
+        }
+
+        .project-box__name {
+            font-size: 2rem;
         }
     }
 
