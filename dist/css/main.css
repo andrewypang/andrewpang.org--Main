@@ -997,7 +997,7 @@ body {
 }
 
 .section-project__item {
-  height: 28rem;
+  height: 35rem;
   width: 45%;
   display: inline-block;
   margin: 1rem;
@@ -1007,10 +1007,17 @@ body {
 
 @media only screen and (max-width: 47.5em) {
   .section-project__item {
+    height: 40rem;
     width: 90%;
   }
   .section-project .project-box__name {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .section-project .project-box__name {
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
