@@ -11,37 +11,38 @@
     padding: 4rem 0;
     border-radius: 10px;
 
-    
-
     // position: absolute;
     @include absCenter;
 
-
-
     background-color: rgba($color-surface, .7);
 
+    // The Heading -- ABOUT ME
+    &__heading {
+        color: darken($color-grey-dark, 10%);
+    }
 
+    // The Flex Box
     &__box {
         height: 80%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: center;
         flex: 0 1 auto;
+        align-items: flex-start;
+
+        // & > *:not(:last-child) {
+        //     margin-right: 2rem;
+        // }
     }
 
-    &__heading {
-        padding-left: $padding-medium;
-        color: darken($color-grey-dark, 10%);
-        letter-spacing: 0.2rem;
-    }
 
-    &__content {
-        padding-left: $padding-large;
-        color: $color-grey-dark;
+
+    &__left {
+        width: 50%;
+        text-align: left;
 
     }
-
 
     &__icons {
         font-size: $icon-size-small;
@@ -86,41 +87,29 @@
     &__photo {
         padding: 0 1rem;
         border-radius: 4px;
-        object-fit: contain;
+        // object-fit: contain;
+        height: 100%;
     }
+    // Remove Photo
+    // 56.25em = 900px
     @media only screen and (max-width: 56.25em) {
-        // &__bio {
-        //     // font-size: 1.4rem;
-        // }
-
-        // &__heading {
-        //     padding-left: $padding-small;
-        // }
-
-        // &__content {
-        //     padding: 0 $padding-medium;
-        // }
-    }
-    
-
-    // Small screen, remove photo
-    @media only screen and (max-width: 47.5em) {
         &__photo {
             display: none;
         }
 
-        &__heading {
-            padding: 0;
-            width: 100%;
+        &__left {
+            width: 70%;
             text-align: center;
         }
 
-        &__content {
-            padding: 0 $padding-medium;
-        }
+    }
+    
 
-        &__bio {
-            font-size: 1.4rem;
+    // 37.5em = 600px
+    @media only screen and (max-width: 37.5em) {
+        &__left {
+            width: 90%;
+            font-size: 1.5rem;
         }
     }
 
