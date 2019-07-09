@@ -756,6 +756,21 @@ body {
   padding: 2rem;
 }
 
+.section-about__link:link, .section-about__link:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #424242;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.section-about__link:hover, .section-about__link:active {
+  -webkit-transform: translateY(-0.4rem);
+          transform: translateY(-0.4rem);
+}
+
 .section-about__icons {
   font-size: 3rem;
   padding: 1.5rem 0;
@@ -810,6 +825,12 @@ body {
   .section-about__left {
     width: 90%;
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .section-about__left {
+    font-size: 1.4rem;
   }
 }
 

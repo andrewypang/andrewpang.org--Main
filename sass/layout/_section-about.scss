@@ -45,6 +45,26 @@
 
     }
 
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: $default-font-size;
+            color: $color-grey-dark;
+            transition: all .2s ease;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility:    hidden;
+            -ms-backface-visibility:     hidden;
+            backface-visibility:     hidden;
+
+        }
+
+        &:hover,
+        &:active {
+            transform: translateY(-.4rem);
+        }
+    }
+
     &__icons {
         font-size: $icon-size-small;
         padding: $padding-small 0;
@@ -113,6 +133,13 @@
         &__left {
             width: 90%;
             font-size: 1.5rem;
+        }
+    }
+
+    // 25em = 400px
+    @media only screen and (max-width: 25em) {
+        &__left {
+            font-size: 1.4rem;
         }
     }
 
