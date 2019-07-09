@@ -524,6 +524,10 @@ body {
   font-size: 6rem;
 }
 
+.footer__navigation {
+  padding: 0 1rem;
+}
+
 .footer__list {
   list-style: none;
 }
@@ -548,6 +552,16 @@ body {
 .footer__link:hover, .footer__link:active {
   -webkit-transform: translateY(-0.4rem);
           transform: translateY(-0.4rem);
+}
+
+.footer__copyright {
+  padding: 1rem 0;
+}
+
+@media only screen and (max-width: 25em) {
+  .footer__link {
+    font-size: 1.4rem;
+  }
 }
 
 .row {
@@ -738,6 +752,7 @@ body {
 .section-about__left {
   width: 50%;
   text-align: left;
+  padding: 2rem;
 }
 
 .section-about__icons {
@@ -775,7 +790,7 @@ body {
 }
 
 .section-about__photo {
-  padding: 0 1rem;
+  padding: 2rem;
   border-radius: 4px;
   height: 100%;
 }
@@ -865,9 +880,9 @@ body {
 
 .section-photography__link {
   position: relative;
-  padding: .5rem;
   text-decoration: none;
   color: #000;
+  padding: .5rem;
   border-radius: 2px;
   letter-spacing: .2rem;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, transparent), color-stop(50%, #000));
@@ -948,6 +963,12 @@ body {
   -webkit-transition: inherit;
   transition: inherit;
   opacity: 1;
+}
+
+@media only screen and (max-width: 25em) {
+  .section-photography__link {
+    font-size: 2.5rem;
+  }
 }
 
 .project-wrapper {

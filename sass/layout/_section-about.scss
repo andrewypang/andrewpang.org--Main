@@ -41,6 +41,7 @@
     &__left {
         width: 50%;
         text-align: left;
+        padding: 2rem;
 
     }
 
@@ -85,7 +86,9 @@
     }
 
     &__photo {
-        padding: 0 1rem;
+        // padding: 0 1rem;
+        padding: 2rem;
+
         border-radius: 4px;
         // object-fit: contain;
         height: 100%;

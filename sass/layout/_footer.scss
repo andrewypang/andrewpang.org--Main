@@ -24,6 +24,10 @@
         font-size: 6rem;
     }
 
+    &__navigation {
+        padding: 0 1rem;
+    }
+
     &__list {
         list-style: none;
     }
@@ -49,6 +53,16 @@
         &:hover,
         &:active {
             transform: translateY(-.4rem);
+        }
+    }
+
+    &__copyright {
+        padding: 1rem 0;
+    }
+
+    @media only screen and (max-width: 25em) {
+        &__link {
+            font-size: 1.4rem;
         }
     }
 }
