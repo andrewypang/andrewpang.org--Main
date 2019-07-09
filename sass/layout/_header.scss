@@ -47,7 +47,7 @@
     &__text {
         display: block;
         text-align: center;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         animation: moveInLeft .7s ease-out;
         color: darken($color-grey-dark, 10%);
@@ -70,18 +70,18 @@
 
     @include respond(phone) {
         &__link {
-            font-size: 2rem;
+            // font-size: 2rem;
         }
 
         &__text {
             &--main {
-                font-size: 2rem;
-                font-weight: 600;
-                letter-spacing: .1rem;
+                // font-size: 2.7rem;
+                // font-weight: 600;
+                // letter-spacing: .1rem;
             }
 
             &--sub {
-                font-size: 1.4rem;
+                font-size: 1.7rem;
             }
         }
         
