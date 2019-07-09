@@ -246,6 +246,7 @@ body {
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 700;
+  line-height: 1.6rem;
   background-color: transparent;
   cursor: pointer;
   color: #292929;
