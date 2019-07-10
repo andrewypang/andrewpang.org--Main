@@ -42,7 +42,6 @@
         padding: 0 1rem;
         text-decoration: none;
         color: darken($color-grey-dark, 10%);
-
     }
 
     &__text {
@@ -72,13 +71,17 @@
     @include respond(phone) {
         padding: 2rem 0;
 
+        &__link {
+            // font-size: 2.5rem;
+        }
+
         &__text {
             &--main {
-
+                font-size: 2rem;
             }
 
             &--sub {
-                font-size: 1.7rem;
+                font-size: 1.5rem;
             }
         }
         
