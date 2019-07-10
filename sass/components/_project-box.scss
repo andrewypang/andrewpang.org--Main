@@ -9,9 +9,11 @@
 
     &__image {
         height: 100%;
+        width: 100%;
         text-align: center;
         position: relative;
         transition: inherit;
+        // @include absCenter;
 
     }
 
@@ -21,6 +23,18 @@
         transition: inherit;
         color: $color-grey-extra-dark;
 
+    }
+
+    &__svg-wrapper {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    &__svg {
+        height: $icon-size-large;
+        @include absCenter;
+        transition: all .5s;
     }
 
     &__content {
@@ -125,6 +139,10 @@
             font-size: $icon-size-medium;
         }
 
+        &:hover &__svg {
+            height: $icon-size-medium;
+        }
+
         &:hover &__name {
             letter-spacing: $letter-spacing-small;
         }
@@ -146,6 +164,10 @@
 
             &__icon {
                 font-size: $icon-size-medium;
+            }
+
+            &__svg {
+                height: $icon-size-medium;
             }
 
             &__name {
