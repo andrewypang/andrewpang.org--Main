@@ -396,6 +396,7 @@ body {
 
 .project-box__svg {
   height: 8rem;
+  width: 8rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -499,6 +500,7 @@ body {
     font-size: 6rem;
   }
   .project-box:hover .project-box__svg {
+    width: 6rem;
     height: 6rem;
   }
   .project-box:hover .project-box__name {
@@ -517,6 +519,7 @@ body {
     font-size: 6rem;
   }
   .project-box__svg {
+    width: 6rem;
     height: 6rem;
   }
   .project-box__name {

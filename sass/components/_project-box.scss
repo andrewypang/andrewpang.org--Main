@@ -33,6 +33,7 @@
 
     &__svg {
         height: $icon-size-large;
+        width: $icon-size-large;
         @include absCenter;
         transition: all .5s;
     }
@@ -140,6 +141,7 @@
         }
 
         &:hover &__svg {
+            width: $icon-size-medium;
             height: $icon-size-medium;
         }
 
@@ -167,6 +169,7 @@
             }
 
             &__svg {
+                width: $icon-size-medium;
                 height: $icon-size-medium;
             }
 
