@@ -697,6 +697,7 @@ body {
 }
 
 .header__link {
+  padding: 0 1rem;
   text-decoration: none;
   color: #292929;
 }
