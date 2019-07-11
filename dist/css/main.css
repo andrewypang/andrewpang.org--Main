@@ -1098,5 +1098,8 @@ body {
   .section-project .project-box__name {
     font-size: 1.4rem;
   }
+  .section-project .project-box__des {
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

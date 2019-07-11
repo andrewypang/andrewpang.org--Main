@@ -59,11 +59,15 @@
         }
     }
 
-        // 25em = 400px
-        @media only screen and (max-width: 25em) {
-            .project-box__name {
-                font-size: 1.4rem;
-            }
+    // 25em = 400px
+    @media only screen and (max-width: 25em) {
+        .project-box__name {
+            font-size: 1.4rem;
         }
+
+        .project-box__des {
+            font-size: 1.3rem;
+        }
+    }
 
 }
