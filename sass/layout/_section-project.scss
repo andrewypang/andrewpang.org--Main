@@ -40,7 +40,7 @@
     }
 
     &__item {
-        height: 35rem;
+        height: 45rem;
         width: 45%;
         display: inline-block;
         margin: 1rem;
@@ -51,7 +51,6 @@
     // Turn project boxes into rows
     @media only screen and (max-width: 47.5em) {
         &__item {
-            height: 40rem;
             width: 90%;
         }
 

@@ -418,7 +418,7 @@ body {
   overflow: hidden;
   font-size: 1.4rem;
   padding: 0 1rem;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.85);
   -webkit-transition: inherit;
   transition: inherit;
   position: absolute;
@@ -1077,7 +1077,7 @@ body {
 }
 
 .section-project__item {
-  height: 35rem;
+  height: 45rem;
   width: 45%;
   display: inline-block;
   margin: 1rem;
@@ -1087,7 +1087,6 @@ body {
 
 @media only screen and (max-width: 47.5em) {
   .section-project__item {
-    height: 40rem;
     width: 90%;
   }
   .section-project .project-box__name {
