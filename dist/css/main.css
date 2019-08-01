@@ -905,31 +905,63 @@ body {
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
-.section-photography:hover {
-  -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
-  transform: translate3d(-50%, -50%, 0) scale(1);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+@media only screen and (hover: hover) {
+  .section-photography:hover {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .section-photography:hover .section-photography__heading {
+    opacity: 1;
+  }
+  .section-photography:hover .section-photography__image {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: .6;
+  }
+  .section-photography:hover .section-photography__caption {
+    opacity: 1;
+  }
+  .section-photography:hover .section-photography__link::before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    visibility: visible;
+  }
 }
 
-.section-photography:hover .section-photography__heading {
-  opacity: 1;
+@media only screen and (hover: none) {
+  .section-photography {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .section-photography .section-photography__heading {
+    opacity: 1;
+  }
+  .section-photography .section-photography__image {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: .6;
+  }
+  .section-photography .section-photography__caption {
+    opacity: 1;
+  }
 }
 
-.section-photography:hover .section-photography__image {
-  -webkit-transform: translate3d(0, 0, 0) scale(1);
-  transform: translate3d(0, 0, 0) scale(1);
-  opacity: .6;
+@media only screen and (hover: none) and (max-width: 320px) {
+  .section-photography .section-photography__caption {
+    font-size: 1rem;
+  }
 }
 
-.section-photography:hover .section-photography__caption {
-  opacity: 1;
-}
-
-.section-photography:hover .section-photography__link::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  visibility: visible;
+@media only screen and (hover: none) {
+  .section-photography .section-photography__link::before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    visibility: visible;
+  }
 }
 
 .section-photography__heading {
@@ -1012,7 +1044,7 @@ body {
   bottom: 3rem;
   right: 3rem;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 1.5rem;
+  padding: 1rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
   opacity: 0;

@@ -21,36 +21,79 @@
     border-radius: 10px;
     box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
 
-    // Hovering over the photography section
-    &:hover {
-        -webkit-transform: translate3d(-50%,-50%,0) scale(1);
-        transform: translate3d(-50%,-50%,0) scale(1);
+    // If media has hover capability, show project name ONLY and allow hover to show description
+    @media only screen and (hover: hover) {
 
-        .section-photography__heading {
-            opacity: 1;
+        // Hovering over the photography section
+        &:hover {
+            -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+
+            .section-photography__heading {
+                opacity: 1;
+            }
+
+            .section-photography__image {
+                -webkit-transform: translate3d(0, 0, 0) scale(1);
+                transform: translate3d(0, 0, 0) scale(1);
+                opacity: .6;
+            }
+
+            .section-photography__caption {
+                opacity: 1;
+            }
+
+            .section-photography__link::before {
+                transform: scaleX(1);
+                visibility: visible;
+            }
+
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+
         }
+    }
 
-        .section-photography__image {
-            -webkit-transform: translate3d(0,0,0) scale(1);
-            transform: translate3d(0,0,0) scale(1);
-            opacity: .6;
-        }
+    @media only screen and (hover: none) {
 
-        .section-photography__caption {
-            opacity: 1;
-        }
+            -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
 
-        .section-photography__link::before{
-            transform: scaleX(1);
-            visibility: visible;
-        }
+            .section-photography__heading {
+                opacity: 1;
+            }
 
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility:    hidden;
-        -ms-backface-visibility:     hidden;
-        backface-visibility:     hidden;
+            .section-photography__image {
+                -webkit-transform: translate3d(0, 0, 0) scale(1);
+                transform: translate3d(0, 0, 0) scale(1);
+                opacity: .6;
+            }
+
+            .section-photography__caption {
+                opacity: 1;
+
+                @media only screen and (max-width: $breakpoint-sm-min) {
+                    font-size: 1rem;
+                }
+
+            }
+
+            .section-photography__link::before {
+                transform: scaleX(1);
+                visibility: visible;
+            }
+
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+
 
     }
+
+
 
     &__heading {
         @include absCenter;
@@ -60,8 +103,6 @@
         z-index: 1;
 
     }
-
-    
 
     &__link {
         position: relative;
@@ -81,9 +122,9 @@
             transform: translateY(1rem);
 
             -webkit-backface-visibility: hidden;
-            -moz-backface-visibility:    hidden;
-            -ms-backface-visibility:     hidden;
-            backface-visibility:     hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
     }
 
@@ -111,7 +152,7 @@
         position: absolute;
         @include absCenter;
         background-color: $color-white;
-        
+
     }
 
     &__shape {
@@ -119,7 +160,7 @@
         width: 100%;
         z-index: -1;
         transition: inherit;
-        
+
 
     }
 
@@ -129,12 +170,12 @@
         bottom: 3rem;
         right: 3rem;
         background-color: rgba($color-black, 0.6);
-        padding: $padding-small;
+        padding: 1rem;
         font-weight: 600;
         letter-spacing: $letter-spacing-medium;
         opacity: 0;
         transition: inherit;
-        
+
 
     }
 
@@ -143,11 +184,11 @@
         width: 100%;
         object-fit: cover;
 
-        -webkit-transform: translate3d(0,0,0) scale(1.06);
-        transform: translate3d(0,0,0) scale(1.06);
+        -webkit-transform: translate3d(0, 0, 0) scale(1.06);
+        transform: translate3d(0, 0, 0) scale(1.06);
         transition: inherit;
         opacity: 1;
-        
+
     }
 
     // Small screen, make photography link font smaller
