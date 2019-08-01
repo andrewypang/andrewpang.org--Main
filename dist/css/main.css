@@ -652,11 +652,11 @@ body {
 }
 
 .header {
-  height: 90%;
   width: 90%;
+  height: 90%;
   max-width: 100rem;
+  padding: 4rem 0;
   background-color: rgba(238, 238, 238, 0.7);
-  background-size: contain;
   display: inline-block;
   position: absolute;
   position: absolute;
@@ -665,8 +665,6 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   overflow: hidden;
-  padding: 4rem 0;
-  background-position: top;
   border-radius: 10px;
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);

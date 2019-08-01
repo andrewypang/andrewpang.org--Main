@@ -1,42 +1,29 @@
 .header-wrapper {
-    // filter: drop-shadow(0 0rem 2rem rgba($color-black, 0.2));
     height: 100vh;
-    // background-color: $color-background;
     position: relative;
 }
 
 .header {
+    width: $section-width;
+    height: $section-height;
+    max-width: $section-max-width;
 
-    height: 90%;
-    width: 90%;
-    max-width: 100rem;
-    background-color: rgba($color-surface, .7);
-    // background-image: linear-gradient(to bottom, rgba($color-surface, 0.1),rgba($color-surface, 1)),
-    //     url(../img/qbkls.png);
-    background-size: contain;
+    padding: $padding-medium 0;
+
+    background-color: $section-background-color-default;
+
     display: inline-block;
-
-
     position: absolute;
     @include absCenter;
     overflow: hidden;
-    padding: $padding-medium 0;
 
+    border-radius: $border-radius-default;
+    box-shadow: $box-shadow-default;
 
-
-    
-    //background-image: $home-image;
-    //background-size: cover;
-    background-position: top;
-    // -webkit-clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0);
-    // clip-path: polygon(10% 0, 0 10%, 0% 100%, 90% 100%, 100% 90%, 100% 0%);
-    border-radius: 10px;
-    box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
-
+    // The ANDREW PANG part
     &__logo {
         text-align: center;
         animation: moveInTop .7s ease-out;
-
     }
 
     &__link {
