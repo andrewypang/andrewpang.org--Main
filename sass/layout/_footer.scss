@@ -3,8 +3,7 @@
     height: auto;
     font-size: 1.6rem;
     position: relative;
-    color: rgba(238, 238, 238, 0.7);
-    // background-color: $color-surface;
+    color: $section-background-color-default;
 
     &__image {
         position: absolute;
