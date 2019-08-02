@@ -3,7 +3,7 @@ $section-width: 90%;
 $section-height: 90%;
 $section-max-width: 100rem;
 $section-background-color-default: rgba(#eeeeee, .7);
-
+$section-inner-padding: 3rem;
 
 $border-radius-default: 10px;
 
@@ -59,9 +59,9 @@ $color-deep-purple: #673AB7;
 $color-deep-purple-dark: #512DA8;
 $color-deep-purple-light: #D1C4E9;
 
-$color-grey: #9E9E9E;
+$color-grey: #2c3e50;
 $color-grey-dark: #424242;
-$color-grey-extra-dark: darken($color-grey-dark,10%);
+$color-grey-extra-dark: #292929;
 $color-grey-light: #F5F5F5;
 
 // PROJECT BOX IN PROJECT SECTION

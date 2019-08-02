@@ -6,24 +6,23 @@
 }
 
 .section-about {
-    height: 90%;
-    width: 90%;
-    max-width: 100rem;
-    padding: 4rem 0;
-    border-radius: 10px;
+    width: $section-width;
+    height: $section-height;
+    max-width: $section-max-width;
+    background-color: $section-background-color-default;
+    padding: $section-inner-padding 0;
+    border-radius: $border-radius-default;
 
-    // position: absolute;
     @include absCenter;
 
-    background-color: rgba($color-surface, .7);
 
     // The Heading -- ABOUT ME
     &__heading {
-        color: darken($color-grey-dark, 10%);
+        color: $color-grey-extra-dark;
     }
 
     // The Flex Box
-    &__box {
+    &__content {
         height: 80%;
         display: flex;
         flex-direction: row;
@@ -31,13 +30,7 @@
         justify-content: center;
         flex: 0 1 auto;
         align-items: flex-start;
-
-        // & > *:not(:last-child) {
-        //     margin-right: 2rem;
-        // }
     }
-
-
 
     &__left {
         width: 50%;
@@ -48,6 +41,10 @@
         flex-direction: column;
         justify-content: space-between;
 
+    }
+
+    &__bio {
+        color: $color-grey-dark;
     }
 
     &__link {

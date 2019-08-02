@@ -6,10 +6,10 @@
 }
 
 .section-photography {
-    height: 90%;
-    width: 90%;
-    max-width: 100rem;
-    background-color: $color-surface;
+    width: $section-width;
+    height: $section-height;
+    max-width: $section-max-width;
+    background-color: $section-background-color-default;
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -18,82 +18,8 @@
     transition: all $page-float-out-time ease;
     overflow: hidden;
 
-    border-radius: 10px;
-    box-shadow: 0rem 0rem 4rem .2rem rgba($color-black, .2);
-
-    // If media has hover capability, show project name ONLY and allow hover to show description
-    @media only screen and (hover: hover) {
-
-        // Hovering over the photography section
-        &:hover {
-            -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
-            transform: translate3d(-50%, -50%, 0) scale(1);
-
-            .section-photography__heading {
-                opacity: 1;
-            }
-
-            .section-photography__image {
-                -webkit-transform: translate3d(0, 0, 0) scale(1);
-                transform: translate3d(0, 0, 0) scale(1);
-                opacity: .6;
-            }
-
-            .section-photography__caption {
-                opacity: 1;
-            }
-
-            .section-photography__link::before {
-                transform: scaleX(1);
-                visibility: visible;
-            }
-
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            -ms-backface-visibility: hidden;
-            backface-visibility: hidden;
-
-        }
-    }
-
-    @media only screen and (hover: none) {
-
-            -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
-            transform: translate3d(-50%, -50%, 0) scale(1);
-
-            .section-photography__heading {
-                opacity: 1;
-            }
-
-            .section-photography__image {
-                -webkit-transform: translate3d(0, 0, 0) scale(1);
-                transform: translate3d(0, 0, 0) scale(1);
-                opacity: .6;
-            }
-
-            .section-photography__caption {
-                opacity: 1;
-
-                @media only screen and (max-width: $breakpoint-sm-min) {
-                    font-size: 1rem;
-                }
-
-            }
-
-            .section-photography__link::before {
-                transform: scaleX(1);
-                visibility: visible;
-            }
-
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            -ms-backface-visibility: hidden;
-            backface-visibility: hidden;
-
-
-    }
-
-
+    border-radius: $border-radius-default;
+    box-shadow: $box-shadow-default;
 
     &__heading {
         @include absCenter;
@@ -114,7 +40,6 @@
         background-image: linear-gradient(to bottom, transparent 0, transparent 50%, $color-black 50%);
         background-size: 100% 200%;
         transition: all .3s ease;
-
 
         &:hover {
             color: $color-white;
@@ -148,35 +73,24 @@
         transform-style: preserve-3d;
     }
 
-    &__content {
-        position: absolute;
-        @include absCenter;
-        background-color: $color-white;
-
-    }
-
-    &__shape {
+    &__figure {
         height: 100%;
         width: 100%;
         z-index: -1;
         transition: inherit;
 
-
-    }
-
-    &__caption {
-        color: $color-white;
-        position: absolute;
-        bottom: 3rem;
-        right: 3rem;
-        background-color: rgba($color-black, 0.6);
-        padding: 1rem;
-        font-weight: 600;
-        letter-spacing: $letter-spacing-medium;
-        opacity: 0;
-        transition: inherit;
-
-
+        &__figcaption {
+            color: $color-white;
+            position: absolute;
+            bottom: 3rem;
+            right: 3rem;
+            background-color: rgba($color-black, 0.6);
+            padding: 1rem;
+            font-weight: 600;
+            letter-spacing: $letter-spacing-medium;
+            opacity: 0;
+            transition: inherit;
+        }
     }
 
     &__image {
@@ -188,6 +102,78 @@
         transform: translate3d(0, 0, 0) scale(1.06);
         transition: inherit;
         opacity: 1;
+
+    }
+
+    // If media has hover capability, show project name ONLY and allow hover to show description
+    @media only screen and (hover: hover) {
+
+        // Hovering over the photography section
+        &:hover {
+            -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1);
+
+            .section-photography__heading {
+                opacity: 1;
+            }
+
+            .section-photography__image {
+                -webkit-transform: translate3d(0, 0, 0) scale(1);
+                transform: translate3d(0, 0, 0) scale(1);
+                opacity: .6;
+            }
+
+            .section-photography__figure__figcaption {
+                opacity: 1;
+            }
+
+            .section-photography__link::before {
+                transform: scaleX(1);
+                visibility: visible;
+            }
+
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+        }
+    }
+
+    @media only screen and (hover: none) {
+
+        -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+        transform: translate3d(-50%, -50%, 0) scale(1);
+
+        .section-photography__heading {
+            opacity: 1;
+        }
+
+        .section-photography__image {
+            -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
+            opacity: .6;
+        }
+
+        .section-photography__figure__figcaption {
+            opacity: 1;
+
+            @media only screen and (max-width: $breakpoint-sm-min) {
+                font-size: 1rem;
+            }
+
+        }
+
+        .section-photography__link::before {
+            transform: scaleX(1);
+            visibility: visible;
+        }
+
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+
 
     }
 
