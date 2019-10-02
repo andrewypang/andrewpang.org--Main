@@ -13,8 +13,6 @@
         text-align: center;
         position: relative;
         transition: inherit;
-        // @include absCenter;
-
     }
 
     &__icon {
@@ -51,7 +49,6 @@
     }
 
     &__name {
-        // height: $project-box-name-height;
         width: 100%;
         border-bottom: 2px solid $color-grey-extra-dark;
         margin-bottom: 2rem;
