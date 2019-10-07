@@ -363,6 +363,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-movie-review.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-movie-review.jpg);
   background-size: cover;
+  background-position: 43% 0;
 }
 
 .project-box--5 {
@@ -804,6 +805,7 @@ body {
   padding: 1.5rem 0;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  text-align: center;
 }
 
 .section-about__icons__list {
