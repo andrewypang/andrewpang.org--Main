@@ -362,6 +362,7 @@ body {
 .project-box__link {
   margin: 0rem 2rem;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .project-box--1 {
@@ -454,7 +455,6 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: inherit;
-  line-height: inherit;
   color: #424242;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
