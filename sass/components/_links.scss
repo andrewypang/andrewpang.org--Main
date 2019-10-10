@@ -1,0 +1,45 @@
+.txt-link {
+
+    &:link,
+    &:visited {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        font-size: $default-font-size;
+        line-height: $default-font-size;
+        color: $color-grey-dark;
+        transition: all .3s ease;
+    }
+
+    &:hover,
+    &:active {
+        color: $color-white;
+        &::before {
+            height: 125%;
+            z-index: -1;
+        }
+
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+    }
+
+}
+
+.txt-link::before {
+    content: "";
+    height: 2px;
+    width: 104%;
+    position: absolute;
+    bottom: -2px;
+    left: -2%;
+    margin: 0 auto;
+    background-color: $color-black;
+    transition: all .3s ease;
+
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
