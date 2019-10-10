@@ -334,10 +334,20 @@ body {
   color: #424242;
 }
 
-.project-box__links {
-  padding-top: 2rem;
+.project-box__links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4rem;
   text-align: center;
   color: #292929;
+}
+
+.project-box__link {
+  margin: 0rem 2rem;
 }
 
 .project-box--1 {
@@ -425,7 +435,7 @@ body {
   }
 }
 
-.txt-link:link, .section-about__link:link, .txt-link:visited, .section-about__link:visited {
+.txt-link:link, .project-box__link:link, .section-about__link:link, .txt-link:visited, .project-box__link:visited, .section-about__link:visited {
   position: relative;
   text-decoration: none;
   display: inline-block;
@@ -434,20 +444,21 @@ body {
   color: #424242;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  z-index: 1;
 }
 
-.txt-link:hover, .section-about__link:hover, .txt-link:active, .section-about__link:active {
+.txt-link:hover, .project-box__link:hover, .section-about__link:hover, .txt-link:active, .project-box__link:active, .section-about__link:active {
   color: #fff;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.txt-link:hover::before, .section-about__link:hover::before, .txt-link:active::before, .section-about__link:active::before {
+.txt-link:hover::before, .project-box__link:hover::before, .section-about__link:hover::before, .txt-link:active::before, .project-box__link:active::before, .section-about__link:active::before {
   height: 125%;
   z-index: -1;
 }
 
-.txt-link::before, .section-about__link::before {
+.txt-link::before, .project-box__link::before, .section-about__link::before {
   content: "";
   height: 2px;
   width: 104%;

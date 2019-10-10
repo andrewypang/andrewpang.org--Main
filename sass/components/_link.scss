@@ -9,6 +9,7 @@
         line-height: $default-font-size;
         color: $color-grey-dark;
         transition: all .3s ease;
+        z-index: 1;
     }
 
     &:hover,
