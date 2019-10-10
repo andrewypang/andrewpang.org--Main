@@ -5,8 +5,8 @@
         position: relative;
         text-decoration: none;
         display: inline-block;
-        font-size: $default-font-size;
-        line-height: $default-font-size;
+        font-size: inherit;
+        line-height: inherit;
         color: $color-grey-dark;
         transition: all .3s ease;
         z-index: 1;

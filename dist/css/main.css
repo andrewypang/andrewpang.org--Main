@@ -331,7 +331,18 @@ body {
 }
 
 .project-box__des {
+  height: 65%;
   color: #424242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project-box__links-container {
@@ -343,11 +354,14 @@ body {
           justify-content: center;
   padding-top: 4rem;
   text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
   color: #292929;
 }
 
 .project-box__link {
   margin: 0rem 2rem;
+  text-transform: uppercase;
 }
 
 .project-box--1 {
@@ -439,8 +453,8 @@ body {
   position: relative;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  font-size: inherit;
+  line-height: inherit;
   color: #424242;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
