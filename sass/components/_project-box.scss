@@ -82,9 +82,10 @@
     }
 
     &__link {
+
         margin: 0rem 2rem;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 700;  
         
         @extend .txt-link;
 
@@ -139,6 +140,11 @@
             font-size: 1.4rem;
             letter-spacing: $letter-spacing-small;
         }
+    }
+
+    // iPhone SE size
+    @media only screen and (max-width: 320px) {
+
     }
 
     // If media has hover capability, show project name ONLY and allow hover to show description
