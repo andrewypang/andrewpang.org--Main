@@ -15,6 +15,7 @@
     &:hover,
     &:active {
         color: $color-white;
+
         &::before {
             height: 125%;
             z-index: -1;
