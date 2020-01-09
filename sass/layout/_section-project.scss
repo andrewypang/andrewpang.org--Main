@@ -1,14 +1,18 @@
 .project-wrapper {
     position: relative;
-    // Padding for in-between
-    padding: 5rem 0;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr 2rem;
 }
 
 .section-project {
-    width: $section-width;
+    // width: $section-width;
+    width: 100%;
     height: auto;
     max-width: $section-max-width;
+
+    grid-column: 2 / span 2;
+
     background-color: $section-background-color-default;
     margin: 0 auto;
     padding: $section-inner-padding 0;
@@ -16,11 +20,12 @@
     box-shadow: $box-shadow-default;
 
     // The PROJECT headline
-    &__heading{
+    &__heading {
         width: 100%;
         padding: $padding-small;
         letter-spacing: .2rem;
         color: $color-grey-extra-dark;
+        font-size: 3rem;
     }
 
     &__content {

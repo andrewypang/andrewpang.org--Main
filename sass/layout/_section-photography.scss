@@ -23,6 +23,8 @@
 
     &__heading {
         @include absCenter;
+        font-size: 3rem;
+        font-weight: 700;
         color: $color-black;
         transition: inherit;
         opacity: 0;
