@@ -6,8 +6,6 @@
 }
 
 .section-about {
-    // width: $section-width;
-    // height: $section-height;
     width: 100%;
     height: 100%;
     max-width: $section-max-width;
@@ -98,11 +96,9 @@
     }
 
     &__photo {
-        // padding: 0 1rem;
         padding: 2rem;
 
         border-radius: 4px;
-        // object-fit: contain;
         height: 100%;
     }
 
@@ -136,4 +132,13 @@
         }
     }
 
+}
+
+// Top level CSS for phone
+// phone = 37.5em = 600px
+@include respond(phone) {
+
+    .section-about__bio {
+        font-size: 1.2rem;
+    }
 }
