@@ -1,16 +1,18 @@
 .project-wrapper {
     position: relative;
     overflow: hidden;
+    padding: 5rem;
+
 }
 
 .section-project {
-    width: $section-width;
+    // width: $section-width;
     height: auto;
     max-width: $section-max-width;
 
     background-color: $section-background-color-default;
-    margin: 0 auto;
-    padding: $section-inner-padding 0;
+    // margin: 0 auto;
+    // padding: $section-inner-padding 0;
     border-radius: $border-radius-default;
     box-shadow: $box-shadow-default;
 

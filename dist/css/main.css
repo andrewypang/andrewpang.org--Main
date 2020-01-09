@@ -883,23 +883,17 @@ body {
 
 .photography-wrapper {
   height: 100vh;
-  position: relative;
   -webkit-transition: all 0.5 ease;
   transition: all 0.5 ease;
   overflow: hidden;
+  padding: 5rem;
 }
 
 .section-photography {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   max-width: 90rem;
-  background-color: rgba(238, 238, 238, 0.7);
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
@@ -927,8 +921,7 @@ body {
   position: relative;
   text-decoration: none;
   color: #000;
-  padding: .5rem;
-  border-radius: 2px;
+  padding: 0.5rem 0;
   letter-spacing: .2rem;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, transparent), color-stop(50%, #000));
   background-image: linear-gradient(to bottom, transparent 0, transparent 50%, #000 50%);
@@ -949,11 +942,10 @@ body {
 .section-photography__link::before {
   content: "";
   height: 4px;
-  width: 96%;
+  width: 95%;
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 0 auto;
   background-color: #000;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -972,13 +964,14 @@ body {
   z-index: -1;
   -webkit-transition: inherit;
   transition: inherit;
+  position: relative;
 }
 
 .section-photography__figure__figcaption {
   color: #fff;
   position: absolute;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 0rem;
+  right: 0rem;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   font-weight: 600;
@@ -1002,8 +995,7 @@ body {
 
 @media only screen and (hover: hover) {
   .section-photography:hover {
-    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
-    transform: translate3d(-50%, -50%, 0) scale(1);
+    background-color: rgba(238, 238, 238, 0.4);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -1068,15 +1060,13 @@ body {
 .project-wrapper {
   position: relative;
   overflow: hidden;
+  padding: 5rem;
 }
 
 .section-project {
-  width: 90%;
   height: auto;
   max-width: 90rem;
   background-color: rgba(238, 238, 238, 0.7);
-  margin: 0 auto;
-  padding: 3rem 0;
   border-radius: 10px;
   -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
