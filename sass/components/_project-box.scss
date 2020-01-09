@@ -76,17 +76,18 @@
 
         padding-top: 4rem;
         text-align: center;
-        font-size: 1.7rem;
-        line-height: 1.7rem;
         color: $color-grey-extra-dark;
     }
 
     &__link {
 
+        font-size: 1.7rem;
+        line-height: 1.7rem;
         margin: 0rem 2rem;
         text-transform: uppercase;
-        font-weight: 700;  
-        
+        font-size: 1rem;
+        font-weight: 700;
+
         @extend .txt-link;
 
     }
@@ -143,17 +144,15 @@
     }
 
     // iPhone SE size
-    @media only screen and (max-width: 320px) {
-
-    }
+    @media only screen and (max-width: 320px) {}
 
     // If media has hover capability, show project name ONLY and allow hover to show description
     @media only screen and (hover: hover) {
-    
+
         &:hover &__content {
             height: 65%;
         }
-    
+
         &:hover &__image {
             height: 35%;
         }
@@ -170,33 +169,33 @@
         &:hover &__name {
             letter-spacing: $letter-spacing-small;
         }
-    
+
     }
 
     // If media has less than 70.625em(1130px) OR has no hover capability
     // 70.625em because Machine Learning Project has long name
     @media only screen and (max-width: 70.625em),
-        only screen and (hover: none) {
+    only screen and (hover: none) {
 
-            &__content {
-                height: 65%;
-            }
-        
-            &__image {
-                height: 35%;
-            }
+        &__content {
+            height: 65%;
+        }
 
-            &__icon {
-                font-size: $icon-size-medium;
-            }
+        &__image {
+            height: 35%;
+        }
 
-            &__svg {
-                width: $icon-size-medium;
-                height: $icon-size-medium;
-            }
+        &__icon {
+            font-size: $icon-size-medium;
+        }
 
-            &__name {
-                letter-spacing: $letter-spacing-small;
-            }
+        &__svg {
+            width: $icon-size-medium;
+            height: $icon-size-medium;
+        }
+
+        &__name {
+            letter-spacing: $letter-spacing-small;
+        }
     }
 }
