@@ -189,7 +189,7 @@
 @include respond(phone) {
 
     .header-wrapper {
-        grid-template-columns: 2rem 1fr 1fr 2rem;
+        padding: 2rem;
     }
 
     .section-header {

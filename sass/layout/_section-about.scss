@@ -138,6 +138,10 @@
 // phone = 37.5em = 600px
 @include respond(phone) {
 
+    .about-wrapper {
+        padding: 2rem;
+    }
+
     .section-about__bio {
         font-size: 1.2rem;
     }

@@ -651,8 +651,7 @@ body {
 
 @media (max-width: 37.5em) {
   .header-wrapper {
-    -ms-grid-columns: 2rem 1fr 1fr 2rem;
-        grid-template-columns: 2rem 1fr 1fr 2rem;
+    padding: 2rem;
   }
   .section-header__text--main {
     font-size: 1.6rem;
@@ -799,6 +798,9 @@ body {
 }
 
 @media (max-width: 37.5em) {
+  .about-wrapper {
+    padding: 2rem;
+  }
   .section-about__bio {
     font-size: 1.2rem;
   }
@@ -978,6 +980,12 @@ body {
   }
 }
 
+@media (max-width: 37.5em) {
+  .photography-wrapper {
+    padding: 2rem;
+  }
+}
+
 .project-wrapper {
   position: relative;
   overflow: hidden;
@@ -1048,6 +1056,12 @@ body {
   }
   .section-project .project-box__des {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .project-wrapper {
+    padding: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
