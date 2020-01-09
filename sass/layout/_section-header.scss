@@ -9,14 +9,18 @@
     height: $section-height;
     max-width: $section-max-width;
 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
     padding: 2rem;
+    margin: calc((100% - #{$section-width}) / 2) auto;
 
     background-color: $section-background-color-default;
 
     // To be center of wrapper
-    display: inline-block;
-    position: absolute;
-    @include absCenter;
+    // display: inline-block;
+    // position: absolute;
+    // @include absCenter;
 
     overflow: hidden;
 
