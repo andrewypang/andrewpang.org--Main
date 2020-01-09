@@ -80,6 +80,7 @@
     }
 
     &__link {
+        @extend .txt-link;
 
         font-size: 1.7rem;
         line-height: 1.7rem;
@@ -88,7 +89,6 @@
         font-size: 1rem;
         font-weight: 700;
 
-        @extend .txt-link;
 
     }
 
