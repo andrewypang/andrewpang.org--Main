@@ -621,6 +621,7 @@ body {
 }
 
 .header-wrapper {
+  width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -634,6 +635,8 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
   padding: 2rem;
   margin: calc((100% - 90%) / 2) auto;
   background-color: rgba(238, 238, 238, 0.7);
@@ -644,12 +647,12 @@ body {
 }
 
 .section-header--center-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
 }
 
 .section-header__heading {
@@ -665,29 +668,6 @@ body {
   color: #292929;
 }
 
-.section-header__text {
-  width: 100%;
-  margin: 1rem 0;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  -webkit-animation: moveInLeft .7s ease-out;
-          animation: moveInLeft .7s ease-out;
-  color: #292929;
-}
-
-.section-header__text--main {
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: .1rem;
-}
-
-.section-header__text--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 550;
-}
-
 .section-header__navigation {
   width: 100%;
   max-width: 60rem;
@@ -695,7 +675,6 @@ body {
           animation: moveInBottom 0.5s cubic-bezier(0.14, 0.93, 0.79, 1.37) 0.7s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-  margin: 2rem auto;
 }
 
 .section-header__navigation__list {
@@ -717,7 +696,6 @@ body {
 .section-header__navigation__item {
   display: inline-block;
   text-align: center;
-  margin: 1rem 0;
   position: relative;
 }
 
@@ -740,7 +718,6 @@ body {
 
 .section-header__navigation__link:hover::before, .section-header__navigation__link:active::before {
   height: 125%;
-  z-index: -1;
   background-color: #000;
 }
 
@@ -751,6 +728,7 @@ body {
   position: absolute;
   bottom: -1px;
   left: calc(((108% - 100%) / 2) * -1);
+  z-index: -1;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   -webkit-transform-style: preserve-3d;
@@ -759,16 +737,11 @@ body {
 
 .section-header__navigation__icon {
   font-size: 3rem;
+  display: none;
 }
 
 .section-header__navigation__icon-text {
   display: block;
-}
-
-@media only screen and (max-width: 25em) {
-  .section-header__navigation {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 37.5em) {

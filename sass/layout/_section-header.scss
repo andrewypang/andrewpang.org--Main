@@ -1,4 +1,5 @@
 .header-wrapper {
+    width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -11,6 +12,7 @@
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
 
     padding: 2rem;
     margin: calc((100% - #{$section-width}) / 2) auto;
@@ -28,8 +30,10 @@
     box-shadow: $box-shadow-default;
 
     &--center-box {
-        @include absCenter;
-        width: 100%;
+        // @include absCenter;
+        // width: 100%;
+        grid-column: 2 / span 10;
+        grid-row: 2 / span 1;
     }
 
     // The ANDREW PANG part
@@ -40,37 +44,36 @@
     }
 
     &__link {
-        // padding: 0 1rem;
         font-size: 3rem;
         text-decoration: none;
         color: darken($color-grey-dark, 10%);
     }
 
-    &__text {
-        width: 100%;
-        margin: 1rem 0;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        animation: moveInLeft .7s ease-out;
-        color: darken($color-grey-dark, 10%);
+    // &__text {
+    //     width: 100%;
+    //     margin: 1rem 0;
+    //     display: block;
+    //     text-align: center;
+    //     margin: 0 auto;
+    //     animation: moveInLeft .7s ease-out;
+    //     color: darken($color-grey-dark, 10%);
 
 
-        &--main {
-            font-size: 2.5rem;
-            font-weight: 600;
-            letter-spacing: .1rem;
+    //     &--main {
+    //         font-size: 2.5rem;
+    //         font-weight: 600;
+    //         letter-spacing: .1rem;
 
-        }
+    //     }
 
-        &--sub {
-            display: block;
-            font-size: 2rem;
-            font-weight: 550;
+    //     &--sub {
+    //         display: block;
+    //         font-size: 2rem;
+    //         font-weight: 550;
 
-        }
+    //     }
 
-    }
+    // }
 
     &__navigation {
         width: 100%;
@@ -78,7 +81,7 @@
         animation: moveInBottom .5s cubic-bezier(.14, .93, .79, 1.37) 0.7s;
         animation-fill-mode: backwards;
 
-        margin: 2rem auto;
+        // margin: 2rem auto;
 
 
         &__list {
@@ -95,7 +98,7 @@
             // width: 100%;
             display: inline-block;
             text-align: center;
-            margin: 1rem 0;
+            // margin: 1rem 0;
             position: relative;
 
             &:not(:last-child) {
@@ -114,6 +117,7 @@
                 color: darken($color-grey-dark, 10%);
                 letter-spacing: .1rem;
                 font-weight: 700;
+                // z-index: 0;
 
             }
 
@@ -123,8 +127,9 @@
 
                 &::before {
                     height: 125%;
-                    z-index: -1;
                     background-color: $color-black;
+                    // color: $color-black;
+
                 }
             }
 
@@ -137,6 +142,7 @@
                 position: absolute;
                 bottom: -1px;
                 left: calc(((#{$effect-width} - 100%) / 2) * -1);
+                z-index: -1;
 
                 transition: all .3s ease;
 
@@ -148,10 +154,13 @@
 
         &__icon {
             font-size: $icon-size-small;
+            display: none;
+            // z-index: 10;
         }
 
         &__icon-text {
             display: block;
+            // z-index: 10;
         }
 
         // 760px = 47.5em
@@ -163,9 +172,9 @@
 
 
 
-        @media only screen and (max-width: 25em) {
-            font-size: 1rem;
-        }
+        // @media only screen and (max-width: 25em) {
+        //     font-size: 1rem;
+        // }
 
     }
 
