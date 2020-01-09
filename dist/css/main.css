@@ -711,9 +711,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .section-header__navigation__item {
@@ -721,10 +721,6 @@ body {
   text-align: center;
   margin: 1rem 0;
   position: relative;
-}
-
-.section-header__navigation__item:not(:last-child) {
-  margin-right: 1.6rem;
 }
 
 .section-header__navigation__link:link, .section-header__navigation__link:visited {
@@ -737,7 +733,7 @@ body {
   transition: transform .4s, -webkit-transform .4s;
   color: #292929;
   letter-spacing: .1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .section-header__navigation__link:hover, .section-header__navigation__link:active {
@@ -771,27 +767,6 @@ body {
   display: block;
 }
 
-@media only screen and (max-width: 43.75em) {
-  .section-header__navigation__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .section-header__navigation {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-  .section-header__navigation__icon {
-    font-size: 3rem;
-  }
-  .section-header__navigation__item:not(:last-child) {
-    margin-right: .8rem;
-  }
-}
-
 @media only screen and (max-width: 25em) {
   .section-header__navigation {
     font-size: 1rem;
@@ -803,11 +778,24 @@ body {
     -ms-grid-columns: 2rem 1fr 1fr 2rem;
         grid-template-columns: 2rem 1fr 1fr 2rem;
   }
-  .header__text--main {
+  .section-header__text--main {
     font-size: 1.6rem;
   }
-  .header__text--sub {
+  .section-header__text--sub {
     font-size: 1.6rem;
+  }
+  .section-header__navigation {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .section-header__navigation__icon {
+    font-size: 3rem;
+  }
+  .section-header__navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
   }
 }
 
@@ -1131,19 +1119,12 @@ body {
 .project-wrapper {
   position: relative;
   overflow: hidden;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2rem 1fr 1fr 2rem;
-      grid-template-columns: 2rem 1fr 1fr 2rem;
 }
 
 .section-project {
-  width: 100%;
+  width: 90%;
   height: auto;
   max-width: 90rem;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / span 2;
   background-color: rgba(238, 238, 238, 0.7);
   margin: 0 auto;
   padding: 3rem 0;

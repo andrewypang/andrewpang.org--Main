@@ -1,17 +1,12 @@
 .project-wrapper {
     position: relative;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 2rem 1fr 1fr 2rem;
 }
 
 .section-project {
-    // width: $section-width;
-    width: 100%;
+    width: $section-width;
     height: auto;
     max-width: $section-max-width;
-
-    grid-column: 2 / span 2;
 
     background-color: $section-background-color-default;
     margin: 0 auto;

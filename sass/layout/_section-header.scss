@@ -1,20 +1,13 @@
 .header-wrapper {
-    // width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    // display: grid;
-    // grid-template-columns: 4rem 1fr 1fr 4rem;
 }
 
 .section-header {
     width: $section-width;
     height: $section-height;
     max-width: $section-max-width;
-
-    // width: 100%;
-    // height: 100%;
-    // grid-column: 2 / span 2;
 
     padding: 2rem;
 
@@ -32,7 +25,6 @@
 
     &--center-box {
         @include absCenter;
-
         width: 100%;
     }
 
@@ -92,7 +84,7 @@
 
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
 
         &__item {
@@ -103,7 +95,7 @@
             position: relative;
 
             &:not(:last-child) {
-                margin-right: 1.6rem;
+                // margin-right: 1.6rem;
             }
         }
 
@@ -117,14 +109,12 @@
                 transition: transform .4s;
                 color: darken($color-grey-dark, 10%);
                 letter-spacing: .1rem;
-                font-weight: 600;
+                font-weight: 700;
 
             }
 
             &:hover,
             &:active {
-                // transform: translateY(-1rem);
-                // border-bottom: 3px solid $color-black;
                 color: $color-white;
 
                 &::before {
@@ -144,7 +134,6 @@
                 bottom: -1px;
                 left: calc(((#{$effect-width} - 100%) / 2) * -1);
 
-                // background-color: $color-black;
                 transition: all .3s ease;
 
 
@@ -162,28 +151,13 @@
         }
 
         // 760px = 47.5em
-        @media only screen and (max-width: 43.75em) {
-            &__list {
-                justify-content: center;
-            }
-        }
+        // @media only screen and (max-width: 43.75em) {
+        //     &__list {
+        //         justify-content: center;
+        //     }
+        // }
 
-        // phone = 37.5em = 600px
-        @include respond(phone) {
-            width: 100%;
-            // padding: 0 1rem;
-            font-size: 1.2rem;
 
-            &__icon {
-                font-size: $icon-size-small;
-            }
-
-            &__item {
-                &:not(:last-child) {
-                    margin-right: .8rem;
-                }
-            }
-        }
 
         @media only screen and (max-width: 25em) {
             font-size: 1rem;
@@ -194,13 +168,14 @@
 }
 
 // Top level CSS for phone
+// phone = 37.5em = 600px
 @include respond(phone) {
 
     .header-wrapper {
         grid-template-columns: 2rem 1fr 1fr 2rem;
     }
 
-    .header {
+    .section-header {
         &__text {
             &--main {
                 font-size: 1.6rem;
@@ -209,6 +184,19 @@
             &--sub {
                 font-size: 1.6rem;
             }
+        }
+    }
+
+    .section-header__navigation {
+        width: 100%;
+        font-size: 1.2rem;
+
+        &__icon {
+            font-size: $icon-size-small;
+        }
+
+        &__list {
+            flex-flow: column wrap;
         }
     }
 
