@@ -2,18 +2,18 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-
+    padding: 5rem;
 }
 
 .section-about {
-    width: $section-width;
-    height: $section-height;
+    // width: $section-width;
+    // height: $section-height;
+    width: 100%;
+    height: 100%;
     max-width: $section-max-width;
     background-color: $section-background-color-default;
     padding: $section-inner-padding 0;
     border-radius: $border-radius-default;
-
-    @include absCenter;
 
 
     // The Heading -- ABOUT ME
@@ -47,6 +47,7 @@
 
     &__bio {
         color: $color-grey-dark;
+        font-size: 1.4rem;
     }
 
     &__link {
@@ -124,14 +125,14 @@
     @media only screen and (max-width: 37.5em) {
         &__left {
             width: 90%;
-            font-size: 1.5rem;
+            // font-size: 1.5rem;
         }
     }
 
     // 25em = 400px
     @media only screen and (max-width: 25em) {
         &__left {
-            font-size: 1.4rem;
+            // font-size: 1.4rem;
         }
     }
 

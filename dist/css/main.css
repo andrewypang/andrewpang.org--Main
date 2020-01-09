@@ -752,20 +752,16 @@ body {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  padding: 5rem;
 }
 
 .section-about {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   max-width: 90rem;
   background-color: rgba(238, 238, 238, 0.7);
   padding: 3rem 0;
   border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .section-about__heading {
@@ -815,6 +811,7 @@ body {
 
 .section-about__bio {
   color: #424242;
+  font-size: 1.4rem;
 }
 
 .section-about__icons {
@@ -871,13 +868,6 @@ body {
 @media only screen and (max-width: 37.5em) {
   .section-about__left {
     width: 90%;
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 25em) {
-  .section-about__left {
-    font-size: 1.4rem;
   }
 }
 
