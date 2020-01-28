@@ -255,10 +255,12 @@ body {
 }
 
 .project-box {
-  height: 100%;
+  height: 50rem;
   width: 100%;
   position: relative;
   border-radius: 3px;
+  -webkit-box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -388,7 +390,8 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-movie-review.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-movie-review.jpg);
   background-size: cover;
-  background-position: 43% 0;
+  background-position: 50% 0;
+  grid-column: 1 / -1;
 }
 
 .project-box--5 {
