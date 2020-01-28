@@ -41,25 +41,6 @@
 
     }
 
-    // &__item {
-    //     height: 50rem;
-    //     width: 100%;
-    //     display: inline-block;
-    //     box-shadow: 0 0 2rem .2rem rgba($color-black, 0.2);
-    // }
-
-    // 25em = 400px
-    // breakpoint to make project font smaller
-    // @media only screen and (max-width: 25em) {
-    //     .project-box__name {
-    //         font-size: 1.4rem;
-    //     }
-
-    //     .project-box__article {
-    //         font-size: 1.3rem;
-    //     }
-    // }
-
 }
 
 @include respond(tab-port) {
