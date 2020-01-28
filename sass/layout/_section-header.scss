@@ -3,82 +3,49 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .section-header {
-    // width: $section-width;
-    // height: $section-height;
     width: 100%;
     height: 100%;
     max-width: $section-max-width;
+    padding: $section-inner-padding;
+
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
-    // padding: 2rem;
-    // margin: calc((100% - #{$section-width}) / 2) auto;
     margin: 0rem auto;
-
-
     background-color: $section-background-color-default;
-
-    // To be center of wrapper
-    // display: inline-block;
-    // position: absolute;
-    // @include absCenter;
-
     overflow: hidden;
 
     border-radius: $border-radius-default;
     box-shadow: $box-shadow-default;
 
     &--center-box {
-        // @include absCenter;
-        // width: 100%;
         grid-column: 2 / span 10;
         grid-row: 2 / span 1;
     }
 
     // The ANDREW PANG part
     &__heading {
-        margin: 2rem 0;
+        font-size: $heading-size-large;
+        text-transform: uppercase;
         text-align: center;
+        padding: 2rem 0;
+        width: 100%;
+        color: $color-grey-extra-dark;
+        letter-spacing: .2rem;
+
         animation: moveInTop .7s ease-out;
     }
 
     &__link {
-        font-size: 3rem;
         text-decoration: none;
         color: darken($color-grey-dark, 10%);
     }
-
-    // &__text {
-    //     width: 100%;
-    //     margin: 1rem 0;
-    //     display: block;
-    //     text-align: center;
-    //     margin: 0 auto;
-    //     animation: moveInLeft .7s ease-out;
-    //     color: darken($color-grey-dark, 10%);
-
-
-    //     &--main {
-    //         font-size: 2.5rem;
-    //         font-weight: 600;
-    //         letter-spacing: .1rem;
-
-    //     }
-
-    //     &--sub {
-    //         display: block;
-    //         font-size: 2rem;
-    //         font-weight: 550;
-
-    //     }
-
-    // }
 
     &__navigation {
         width: 100%;

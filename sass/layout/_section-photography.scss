@@ -2,22 +2,16 @@
     height: 100vh;
     transition: all 0.5 ease;
     overflow: hidden;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .section-photography {
-    // width: $section-width;
-    // height: $section-height;
     width: 100%;
     height: 100%;
     max-width: $section-max-width;
+
     position: relative;
-    // background-color: $section-background-color-default;
     margin: 0 auto;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
     transition: all $page-float-out-time ease;
     overflow: hidden;
 
@@ -26,9 +20,14 @@
 
     &__heading {
         @include absCenter;
-        font-size: 3rem;
-        font-weight: 700;
-        color: $color-black;
+        font-size: $heading-size-large;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem 0;
+        width: 100%;
+        color: $color-grey-extra-dark;
+        letter-spacing: .2rem;
+
         transition: inherit;
         opacity: 0;
         z-index: 1;
@@ -64,11 +63,10 @@
     &__link::before {
         content: "";
         height: 4px;
-        width: 95%;
+        width: 95.5%;
         position: absolute;
         bottom: 0;
         left: 0;
-        // margin: 0 auto;
         background-color: $color-black;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);

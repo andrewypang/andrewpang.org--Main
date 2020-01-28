@@ -2,15 +2,15 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .section-about {
     width: 100%;
     height: 100%;
     max-width: $section-max-width;
+    padding: $section-inner-padding;
     background-color: $section-background-color-default;
-    padding: $section-inner-padding 0;
     border-radius: $border-radius-default;
     margin: 0rem auto;
 
@@ -18,9 +18,13 @@
 
     // The Heading -- ABOUT ME
     &__heading {
-        font-size: 3rem;
-        font-weight: 700;
+        font-size: $heading-size-large;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem 0;
+        width: 100%;
         color: $color-grey-extra-dark;
+        letter-spacing: .2rem;
     }
 
     // The Flex Box
