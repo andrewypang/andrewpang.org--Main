@@ -330,8 +330,8 @@ body {
   color: #292929;
 }
 
-.project-box__des {
-  height: 65%;
+.project-box__article {
+  height: 23rem;
   color: #424242;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,7 +352,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 4rem;
   text-align: center;
   color: #292929;
 }
@@ -397,20 +396,6 @@ body {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-cranex7.jpg);
   background-size: cover;
   background-position: 50% 72%;
-}
-
-@media only screen and (max-width: 70.625em) {
-  .project-box__name {
-    font-size: 1.7rem;
-    letter-spacing: 0.01rem;
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  .project-box__name {
-    font-size: 1.4rem;
-    letter-spacing: 0.01rem;
-  }
 }
 
 @media only screen and (hover: hover) {
@@ -1037,51 +1022,17 @@ body {
   height: 100%;
   width: 100%;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 2rem;
 }
 
-.section-project__item {
-  height: 45rem;
-  width: 45%;
-  display: inline-block;
-  margin: 1rem;
-  -webkit-box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.2);
-}
-
-@media only screen and (max-width: 47.5em) {
-  .section-project__item {
-    width: 90%;
-  }
-  .section-project .project-box__name {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 25em) {
-  .section-project .project-box__name {
-    font-size: 1.4rem;
-  }
-  .section-project .project-box__des {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .project-wrapper {
-    padding: 2rem;
+@media (max-width: 56.25em) {
+  .section-project__list {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -62,8 +62,8 @@
 
     }
 
-    &__des {
-        height: 65%;
+    &__article {
+        height: 23rem;
         color: $color-grey-dark;
         display: flex;
         flex-direction: column;
@@ -74,7 +74,7 @@
         display: flex;
         justify-content: center;
 
-        padding-top: 4rem;
+        // padding-top: 4rem;
         text-align: center;
         color: $color-grey-extra-dark;
     }
@@ -116,7 +116,6 @@
             url(../img/project-movie-review.jpg);
         background-size: cover;
         background-position: 43% 0;
-
     }
 
     &--5 {
@@ -129,18 +128,18 @@
     // SCREEN SIZE CHANGES
     // 70.625em = 1130px
     @media only screen and (max-width: 70.625em) {
-        &__name {
-            font-size: 1.7rem;
-            letter-spacing: $letter-spacing-small;
-        }
+        // &__name {
+        //     font-size: 1.7rem;
+        //     letter-spacing: $letter-spacing-small;
+        // }
     }
 
     // // 56.25em = 900px
     @media only screen and (max-width: 56.25em) {
-        &__name {
-            font-size: 1.4rem;
-            letter-spacing: $letter-spacing-small;
-        }
+        // &__name {
+        //     font-size: 1.4rem;
+        //     letter-spacing: $letter-spacing-small;
+        // }
     }
 
     // iPhone SE size
