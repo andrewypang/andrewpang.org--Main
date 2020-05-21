@@ -1,45 +1,33 @@
-.project-wrapper {
-    position: relative;
-    overflow: hidden;
-    padding: 2rem;
-
-}
-
 .section-project {
-    height: auto;
-    max-width: $section-max-width;
-    padding: $section-inner-padding;
 
+    @extend .section;
 
-    background-color: $section-background-color-default;
-    margin: 0 auto;
-    border-radius: $border-radius-default;
-    box-shadow: $box-shadow-default;
-
-    // The PROJECT headline
-    &__heading {
-        font-size: $heading-size-large;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 2rem 0;
-        width: 100%;
-        color: $color-grey-extra-dark;
-        letter-spacing: .2rem;
+    // The PROJECT title
+    &__title {
+        grid-column: 1 / -1;
+        justify-self: center;
     }
 
-    &__content {
+    &__project-box-container {
         width: 100%;
-    }
+        grid-column: 3 / span 8;
+        grid-row: 2 / -1;
 
-    &__list {
-        height: 100%;
-        width: 100%;
-        list-style: none;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem 2rem;
-
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px;
     }
+
+    // &__list {
+    //     height: 100%;
+    //     width: 100%;
+    //     list-style: none;
+    //     display: grid;
+    //     grid-template-columns: repeat(2, 1fr);
+    //     gap: 2rem 2rem;
+
+    // }
 
 }
 

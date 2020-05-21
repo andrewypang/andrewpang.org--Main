@@ -4,44 +4,44 @@
     &:visited {
         position: relative;
         text-decoration: none;
-        display: inline-block;
-        font-size: inherit;
+        // display: inline-block;
+        // font-size: inherit;
         // line-height: inherit;
         color: $color-grey-dark;
-        transition: all .3s ease;
-        z-index: 1;
+        // transition: all .3s ease;
+        // z-index: 1;
     }
 
     &:hover,
     &:active {
-        color: $color-white;
+        // color: $color-white;
 
         &::before {
-            height: 125%;
-            z-index: -1;
+            // height: 125%;
+            // z-index: -1;
         }
 
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
-        backface-visibility: hidden;
+        // -webkit-backface-visibility: hidden;
+        // -moz-backface-visibility: hidden;
+        // -ms-backface-visibility: hidden;
+        // backface-visibility: hidden;
 
     }
 
 }
 
-.txt-link::before {
-    content: "";
-    height: 2px;
-    width: 104%;
-    position: absolute;
-    bottom: -2px;
-    left: -2%;
-    margin: 0 auto;
-    background-color: $color-black;
-    transition: all .3s ease;
+// .txt-link::before {
+//     content: "";
+//     height: 2px;
+//     width: 104%;
+//     position: absolute;
+//     bottom: -2px;
+//     left: -2%;
+//     margin: 0 auto;
+//     background-color: $color-black;
+//     transition: all .3s ease;
 
 
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
+//     -webkit-transform-style: preserve-3d;
+//     transform-style: preserve-3d;
+// }
