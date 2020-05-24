@@ -144,7 +144,7 @@ body {
   line-height: 1.7;
 }
 
-.section-title {
+.section-title, .section-photography__title {
   font-size: 3rem;
   line-height: 3.2rem;
   -ms-flex-item-align: center;
@@ -264,11 +264,13 @@ body {
   height: 45vw;
   width: 100%;
   position: relative;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   min-width: 256px;
   min-height: 256px;
   border-radius: 1rem;
+  overflow: hidden;
+  padding: 16px 0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project-box__body-background {
@@ -641,198 +643,59 @@ body {
   }
 }
 
-.photography-wrapper {
-  height: 100vh;
-  -webkit-transition: all 0.5 ease;
-  transition: all 0.5 ease;
-  overflow: hidden;
-  padding: 3rem;
-}
-
-.section-photography {
-  width: 100%;
-  height: 100%;
-  max-width: 110rem;
-  position: relative;
-  margin: 0 auto;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  border-radius: 10px;
-  -webkit-box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0rem 0rem 4rem 0.2rem rgba(0, 0, 0, 0.2);
-}
-
-.section-photography__heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 4rem;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 2rem 0;
-  width: 100%;
-  color: #292929;
-  letter-spacing: .2rem;
-  -webkit-transition: inherit;
-  transition: inherit;
-  opacity: 0;
-  z-index: 1;
-}
-
-.section-photography__link {
-  position: relative;
-  text-decoration: none;
-  color: #000;
-  padding: 0.5rem 0;
-  letter-spacing: .2rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(50%, transparent), color-stop(50%, #000));
-  background-image: linear-gradient(to bottom, transparent 0, transparent 50%, #000 50%);
-  background-size: 100% 200%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.section-photography__link:hover {
-  color: #fff;
-  background-position: 0 100%;
-  -webkit-transform: translateY(1rem);
-          transform: translateY(1rem);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.section-photography__link::before {
-  content: "";
-  height: 4px;
-  width: 95.5%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 50%;
-          transform-origin: 50%;
-  -webkit-transition: all .4s ease .2s;
-  transition: all .4s ease .2s;
-  visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.section-photography__figure {
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  -webkit-transition: inherit;
-  transition: inherit;
-  position: relative;
-}
-
-.section-photography__figure__figcaption {
-  color: #fff;
-  position: absolute;
-  bottom: 0rem;
-  right: 0rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  opacity: 0;
-  -webkit-transition: inherit;
-  transition: inherit;
-}
-
-.section-photography__image {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transform: translate3d(0, 0, 0) scale(1.06);
-  transform: translate3d(0, 0, 0) scale(1.06);
-  -webkit-transition: inherit;
-  transition: inherit;
-  opacity: 1;
-}
-
-@media only screen and (hover: hover) {
-  .section-photography:hover {
-    background-color: rgba(238, 238, 238, 0.4);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .section-photography:hover .section-photography__heading {
-    opacity: 1;
-  }
-  .section-photography:hover .section-photography__image {
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
-    opacity: .6;
-  }
-  .section-photography:hover .section-photography__figure__figcaption {
-    opacity: 1;
-  }
-  .section-photography:hover .section-photography__link::before {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    visibility: visible;
-  }
-}
-
-@media only screen and (hover: none) {
-  .section-photography {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .section-photography .section-photography__heading {
-    opacity: 1;
-  }
-  .section-photography .section-photography__image {
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
-    opacity: .6;
-  }
-  .section-photography .section-photography__figure__figcaption {
-    opacity: 1;
-  }
-}
-
-@media only screen and (hover: none) and (max-width: 320px) {
-  .section-photography .section-photography__figure__figcaption {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (hover: none) {
-  .section-photography .section-photography__link::before {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    visibility: visible;
-  }
-}
-
-@media only screen and (max-width: 25em) {
-  .section-photography__link {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .photography-wrapper {
-    padding: 2rem;
-  }
-}
-
-.section-project__title {
+.section-photography__title {
   grid-column: 1 / -1;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-.section-project__project-box-container {
+.section-photography__photography-portal {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3 / span 8;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  grid-row: 2 / span 5;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-photography__photography-portal__img-src {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-photography__astrophotography-portal {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3 / span 8;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 5;
+  grid-row: 7 / span 5;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-photography__astrophotography-portal__img-src {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-projects__title {
+  grid-column: 1 / -1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.section-projects__project-box-container {
   width: 100%;
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
@@ -854,28 +717,22 @@ body {
   }
 }
 
-.section-100vh {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: (1fr)[12];
-      grid-template-rows: repeat(12, 1fr);
-}
-
-.section, .section-header, .section-project {
+.section, .section-projects, .section-100vh, .section-header, .section-photography {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
+  padding: 32px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: (1fr)[12];
       grid-template-rows: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.section-100vh, .section-header, .section-photography {
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

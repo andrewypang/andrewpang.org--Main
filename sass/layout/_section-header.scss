@@ -1,6 +1,6 @@
 .section-header {
 
-    @extend .section;
+    @extend .section-100vh;
 
     &__title {
         grid-column: 1 / -1;
