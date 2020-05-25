@@ -129,6 +129,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -498,44 +499,111 @@ body {
       justify-self: center;
 }
 
-.section-photography__photography-portal {
+.section-photography__portal {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.section-photography__portal__img-src {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale3d(1.06, 1.06, 1);
+          transform: scale3d(1.06, 1.06, 1);
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.section-photography__portal__link::before {
+  content: "";
+  background: green;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.section-photography__portal__link:link, .section-photography__portal__link:visited {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  z-index: 1;
+  color: green;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  opacity: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.section-photography__portal--photography {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / span 8;
   -ms-grid-row: 2;
   -ms-grid-row-span: 5;
   grid-row: 2 / span 5;
-  overflow: hidden;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.section-photography__photography-portal__img-src {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.section-photography__astrophotography-portal {
+.section-photography__portal--astrophotography {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / span 8;
   -ms-grid-row: 7;
   -ms-grid-row-span: 5;
   grid-row: 7 / span 5;
-  overflow: hidden;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.section-photography__astrophotography-portal__img-src {
+.section-photography__portal {
+  /* 
+        2 stage transition for photography portal:
+        |-------------------------------------------------------------------------------|
+        |   1)When the mouse is over the portal,                                        |
+        |   fade into white img overlay, and show portal link & underline transition.   |
+        |                                                                               |
+        |   2)When the mouse is over the portal link,                                   |
+        |   fill underline height to 100% and change link color.                        |
+        |-------------------------------------------------------------------------------|
+    */
+}
+
+.section-photography__portal:hover .section-photography__portal__img-src, .section-photography__portal:active .section-photography__portal__img-src {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.01, 1.01, 1);
+          transform: scale3d(1.01, 1.01, 1);
+}
+
+.section-photography__portal:hover .section-photography__portal__link, .section-photography__portal:active .section-photography__portal__link {
+  opacity: 1;
+}
+
+.section-photography__portal:hover .section-photography__portal__link::before, .section-photography__portal:active .section-photography__portal__link::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.section-photography__portal:hover .section-photography__portal__link:hover::before, .section-photography__portal:hover .section-photography__portal__link:active::before, .section-photography__portal:active .section-photography__portal__link:hover::before, .section-photography__portal:active .section-photography__portal__link:active::before {
   height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .section-about-me__title {
@@ -581,6 +649,7 @@ body {
 
 .section-footer {
   position: relative;
+  width: 100%;
   height: 50vh;
 }
 
@@ -598,7 +667,7 @@ body {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   position: absolute;
-  bottom: 25%;
+  bottom: 50%;
 }
 
 .section-footer__credit-box__logo--moon {

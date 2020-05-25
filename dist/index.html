@@ -12,10 +12,10 @@
 
 <body>
     <!-- SECTION FOR THE HOME PAGE -->
-    <div class="section-header">
+    <section class="section-header">
         <h1 class="section-header__title section-title">Andrew Pang</h1>
         <ul class="section-header__site-nav">
-            <li class="section-header__site-nav__item"><a href="#project"
+            <li class="section-header__site-nav__item"><a href="#projects"
                     class="section-header__site-nav__link">Projects</a></li>
             <li class="section-header__site-nav__item"><a href="#photography"
                     class="section-header__site-nav__link">Photography</a></li>
@@ -49,122 +49,124 @@
             </li>
 
         </ul>
-    </div>
+    </section>
 
-    <main>
+    <!-- SECTION FOR PROJECT -->
+    <section class="section-projects" id="projects">
+        <!-- PROJECTS HEADING -->
+        <h2 class="section-projects__title section-title">
+            Projects
+        </h2>
 
-        <!-- SECTION FOR PROJECT -->
-        <section class="section-projects">
-            <!-- PROJECTS HEADING -->
-            <h2 class="section-projects__title section-title">
-                Projects
-            </h2>
+        <!-- UNORDERED LIST OF PROJECTS -->
+        <div class="section-projects__project-box-container">
 
-            <!-- UNORDERED LIST OF PROJECTS -->
-            <div class="section-projects__project-box-container">
-
-                <!-- Project Box for OpenCR & CRANE-X7 -->
-                <div class="project-box project-box--5">
-                    <div class="project-box__body-background">
-                        <div class="project-box__title">Frontier Summer Lab Research
-                        </div>
-                        <p class="project-box__description">
-                            Internship at Hosoda Laboratory in Osaka Univerity, Japan. <br>
-                            Contributed into the development of the CRANE-X7 by RT CORPORATION.
-                        </p>
-                        <div class="project-box__links-container">
-                            <a href="https://www.youtube.com/watch?v=N_jZu9cy7EY" target="_blank"
-                                class="project-box__link">Demo</a>
-                            <a href="https://www.github.com/andrewypang/Frontier-Lab-Research-at-Osaka" target="_blank"
-                                class="project-box__link">GitHub</a>
-                        </div>
+            <!-- Project Box for OpenCR & CRANE-X7 -->
+            <div class="project-box project-box--5">
+                <div class="project-box__body-background">
+                    <div class="project-box__title">Frontier Summer Lab Research
                     </div>
-                </div>
-                <!-- Project Box for Gravity Simulator -->
-                <div class="project-box project-box--3">
-                    <div class="project-box__body-background">
-                        <div class="project-box__title">Gravity Simulator
-                        </div>
-                        <p class="project-box__description">
-                            A p5.js gravity simulator
-                        </p>
-                        <div class="project-box__links-container">
-                            <a href="" target="_blank" class="project-box__link">Live</a>
-                            <a href="" target="_blank" class="project-box__link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Box for Machine Learning Sentiment Analysis -->
-                <div class="project-box project-box--4">
-                    <div class="project-box__body-background">
-                        <div class="project-box__title">Machine Learning Sentiment Analysis
-                        </div>
-                        <p class="project-box__description">
-                            Attempting to predict the sentiment of textual phrases from movie reviews. This was my
-                            final project for my Machine Learning class at UC Santa Cruz.
-                        </p>
-                        <div class="project-box__links-container">
-                            <a href="" target="_blank" class="project-box__link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Box for California Housing -->
-                <div class="project-box project-box--2">
-                    <div class="project-box__body-background">
-                        <div class="project-box__title">California Housing
-                        </div>
-                        <p class="project-box__description">
-                            A visualization of 1990 California Housing Prices. This was my
-                            final project for my Data Visualization at UC Santa Cruz.
-                        </p>
-                        <div class="project-box__links-container">
-                            <a href="" target="_blank" class="project-box__link">Live</a>
-                            <a href="" target="_blank" class="project-box__link">GitHub</a>
-                        </div>
+                    <p class="project-box__description">
+                        Internship at Hosoda Laboratory in Osaka Univerity, Japan. <br>
+                        Contributed into the development of the CRANE-X7 by RT CORPORATION.
+                    </p>
+                    <div class="project-box__links-container">
+                        <a href="https://www.youtube.com/watch?v=N_jZu9cy7EY" target="_blank"
+                            class="project-box__link">Demo</a>
+                        <a href="https://www.github.com/andrewypang/Frontier-Lab-Research-at-Osaka" target="_blank"
+                            class="project-box__link">GitHub</a>
                     </div>
                 </div>
             </div>
-
-        </section>
-
-
-        <!-- SECTION FOR PHOTOGRAPHY -->
-        <section class="section-photography">
-            <h2 class="section-photography__title">
-                Photography
-            </h2>
-            <figure class="section-photography__photography-portal">
-                <img src="img/andrewpang-photography.jpg" alt="Link Photo"
-                    class="section-photography__photography-portal__img-src">
-            </figure>
-            <figure class="section-photography__astrophotography-portal">
-                <img src="img/andrewpang-astrophotography.jpg" alt="Link Photo"
-                    class="section-photography__astrophotography-portal__img-src">
-            </figure>
-        </section>
-
-        <!-- SECTION FOR ABOUT ME -->
-        <div class="section-about-me">
-            <h2 class="section-about-me__title">
-                About Me
-            </h2>
-            <div class="section-about-me__bio">
-                Hello, I’m Andrew.
-                <br>
-                <br>
-                I am a graduate of UC Santa Cruz. I studied Computational Mathematics and Computer Science. These days I
-                enjoy spending my free time painting and hiking.
-                <br>
-                <br>
-                <a href="resources/AndrewPangResume.pdf" class="section-about-me__link">View my Resume.</a>
-                <br>
-                <a href="http://www.andrewpang.org/coding-workspace" class="section-about-me__link">View my Coding
-                    Workspace.</a>
+            <!-- Project Box for Gravity Simulator -->
+            <div class="project-box project-box--3">
+                <div class="project-box__body-background">
+                    <div class="project-box__title">Gravity Simulator
+                    </div>
+                    <p class="project-box__description">
+                        A p5.js gravity simulator
+                    </p>
+                    <div class="project-box__links-container">
+                        <a href="" target="_blank" class="project-box__link">Live</a>
+                        <a href="" target="_blank" class="project-box__link">GitHub</a>
+                    </div>
+                </div>
             </div>
-            <img class="section-about-me__img-src" src="img/andrewpang-about-me.jpg" alt="Photo Of Me">
+            <!-- Project Box for Machine Learning Sentiment Analysis -->
+            <div class="project-box project-box--4">
+                <div class="project-box__body-background">
+                    <div class="project-box__title">Machine Learning Sentiment Analysis
+                    </div>
+                    <p class="project-box__description">
+                        Attempting to predict the sentiment of textual phrases from movie reviews. This was my
+                        final project for my Machine Learning class at UC Santa Cruz.
+                    </p>
+                    <div class="project-box__links-container">
+                        <a href="" target="_blank" class="project-box__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Box for California Housing -->
+            <div class="project-box project-box--2">
+                <div class="project-box__body-background">
+                    <div class="project-box__title">California Housing
+                    </div>
+                    <p class="project-box__description">
+                        A visualization of 1990 California Housing Prices. This was my
+                        final project for my Data Visualization at UC Santa Cruz.
+                    </p>
+                    <div class="project-box__links-container">
+                        <a href="" target="_blank" class="project-box__link">Live</a>
+                        <a href="" target="_blank" class="project-box__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </main>
+    </section>
+
+    <!-- SECTION FOR PHOTOGRAPHY -->
+    <section class="section-photography" id="photography">
+        <h2 class="section-photography__title">
+            Photography
+        </h2>
+        <!-- Photography Portal -->
+        <picture class="section-photography__portal section-photography__portal--photography">
+            <source srcset="img/andrewpang-photography.jpg">
+            <img src="img/andrewpang-photography.jpg" alt="Link Photo" class="section-photography__portal__img-src">
+            <a href="https://www.andrewpang.org/photography/" class="section-photography__portal__link">Photography</a>
+        </picture>
+
+        <!-- Astrophotography Portal -->
+        <picture class="section-photography__portal section-photography__portal--astrophotography">
+            <source srcset="img/andrewpang-astrophotography.jpg">
+            <img src="img/andrewpang-astrophotography.jpg" alt="Link Photo"
+                class="section-photography__portal__img-src">
+            <a href="https://www.andrewpang.org/astrophotography/"
+                class="section-photography__portal__link">Astrophotography</a>
+        </picture>
+    </section>
+
+    <!-- SECTION FOR ABOUT ME -->
+    <section class="section-about-me" id="about-me">
+        <h2 class="section-about-me__title">
+            About Me
+        </h2>
+        <div class="section-about-me__bio">
+            Hello, I’m Andrew.
+            <br>
+            <br>
+            I am a graduate of UC Santa Cruz. I studied Computational Mathematics and Computer Science. These days I
+            enjoy spending my free time painting and hiking.
+            <br>
+            <br>
+            <a href="resources/AndrewPangResume.pdf" class="section-about-me__link">View my Resume.</a>
+            <br>
+            <a href="http://www.andrewpang.org/coding-workspace" class="section-about-me__link">View my Coding
+                Workspace.</a>
+        </div>
+        <img class="section-about-me__img-src" src="img/andrewpang-about-me.jpg" alt="Photo Of Me">
+    </section>
 
     <!-- SECTION FOR THE FOOTER -->
     <footer class="section-footer">
@@ -175,7 +177,6 @@
             </p>
         </div>
         <img src="resources/svg/mountains.svg" alt="" class="section-footer__mountains-img-src">
-
     </footer>
 
 </body>
