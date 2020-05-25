@@ -575,10 +575,12 @@ body {
   /* 
         2 stage transition for photography portal:
         |-------------------------------------------------------------------------------|
-        |   1)When the mouse is over the portal,                                        |
+        |   1) section-photography__portal--hovered                                     |
+        |   When the mouse is over the portal,                                          |
         |   fade into white img overlay, and show portal link & underline transition.   |
         |                                                                               |
-        |   2)When the mouse is over the portal link,                                   |
+        |   2) section-photography__portal__link--hovered
+        |   When the mouse is over the portal link,                                     |
         |   fill underline height to 100% and change link color.                        |
         |-------------------------------------------------------------------------------|
     */
