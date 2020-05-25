@@ -571,41 +571,55 @@ body {
   grid-row: 7 / span 5;
 }
 
-.section-photography__portal {
-  /* 
-        2 stage transition for photography portal:
-        |-------------------------------------------------------------------------------|
-        |   1) section-photography__portal--hovered                                     |
-        |   When the mouse is over the portal,                                          |
-        |   fade into white img overlay, and show portal link & underline transition.   |
-        |                                                                               |
-        |   2) section-photography__portal__link--hovered
-        |   When the mouse is over the portal link,                                     |
-        |   fill underline height to 100% and change link color.                        |
-        |-------------------------------------------------------------------------------|
-    */
+/* 
+//         2 stage transition for photography portal:
+//         |-------------------------------------------------------------------------------|
+//         |   1) @mixin section-photography__portal--hovered()                            |         |
+//         |   When the mouse is over the portal,                                          |
+//         |   fade into a white img overlay, and show portal link & underline transition. |
+//         |                                                                               |
+//         |   2) @mixin section-photography__portal__link--hovered()                      |
+//         |   When the mouse is over the portal link,                                     |
+//         |   fill underline height to 100% and change link color.                        |
+//         |-------------------------------------------------------------------------------|
+//     */
+@media (hover: none) {
+  .section-photography__portal .section-photography__portal__img-src {
+    opacity: 0.5;
+    -webkit-transform: scale3d(1.01, 1.01, 1);
+            transform: scale3d(1.01, 1.01, 1);
+  }
+  .section-photography__portal .section-photography__portal__link {
+    opacity: 1;
+  }
+  .section-photography__portal .section-photography__portal__link::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
 }
 
-.section-photography__portal:hover .section-photography__portal__img-src, .section-photography__portal:active .section-photography__portal__img-src {
-  opacity: 0.5;
-  -webkit-transform: scale3d(1.01, 1.01, 1);
-          transform: scale3d(1.01, 1.01, 1);
-}
-
-.section-photography__portal:hover .section-photography__portal__link, .section-photography__portal:active .section-photography__portal__link {
-  opacity: 1;
-}
-
-.section-photography__portal:hover .section-photography__portal__link::before, .section-photography__portal:active .section-photography__portal__link::before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-.section-photography__portal:hover .section-photography__portal__link:hover::before, .section-photography__portal:hover .section-photography__portal__link:active::before, .section-photography__portal:active .section-photography__portal__link:hover::before, .section-photography__portal:active .section-photography__portal__link:active::before {
-  height: 100%;
+@media (hover: hover) {
+  .section-photography__portal:hover .section-photography__portal__img-src, .section-photography__portal:active .section-photography__portal__img-src {
+    opacity: 0.5;
+    -webkit-transform: scale3d(1.01, 1.01, 1);
+            transform: scale3d(1.01, 1.01, 1);
+  }
+  .section-photography__portal:hover .section-photography__portal__link, .section-photography__portal:active .section-photography__portal__link {
+    opacity: 1;
+  }
+  .section-photography__portal:hover .section-photography__portal__link::before, .section-photography__portal:active .section-photography__portal__link::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .section-photography__portal .section-photography__portal__link:hover::before, .section-photography__portal .section-photography__portal__link:active::before {
+    height: 100%;
+  }
 }
 
 .section-about-me__title {
