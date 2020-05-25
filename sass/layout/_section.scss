@@ -1,6 +1,6 @@
 .section {
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     position: relative;
     overflow: hidden;
     padding: 32px;
@@ -12,7 +12,7 @@
 
 }
 
-.section-100vh {
+.section--100vh {
     @extend .section;
     height: 100vh;
 }

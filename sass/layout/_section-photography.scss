@@ -1,35 +1,12 @@
 .section-photography {
 
-    @extend .section-100vh;
+    @extend .section--100vh;
 
     &__title {
         @extend .section-title;
 
         grid-column: 1 / -1;
         justify-self: center;
-    }
-
-    &__link {
-        // position: relative;
-        // text-decoration: none;
-        // color: $color-black;
-        // padding: 0.5rem 0;
-        // // border-radius: 2px;
-        // letter-spacing: .2rem;
-        // background-image: linear-gradient(to bottom, transparent 0, transparent 50%, $color-black 50%);
-        // background-size: 100% 200%;
-        // transition: all .3s ease;
-
-        // &:hover {
-        //     color: $color-white;
-        //     background-position: 0 100%;
-        //     transform: translateY(1rem);
-
-        //     -webkit-backface-visibility: hidden;
-        //     -moz-backface-visibility: hidden;
-        //     -ms-backface-visibility: hidden;
-        //     backface-visibility: hidden;
-        // }
     }
 
     // --------------------------------
