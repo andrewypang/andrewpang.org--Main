@@ -1,9 +1,6 @@
 .section-footer {
-    // @extend .section;
     position: relative;
-    // padding: 0;
     height: 50vh;
-
 
     &__mountains-img-src {
         display: block;
@@ -39,7 +36,5 @@
             align-self: center;
         }
     }
-
-
 
 }
