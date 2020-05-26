@@ -274,9 +274,11 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.project-box .project-box__body-background {
+  height: 96px;
+}
+
 .project-box__body-background {
-  height: auto;
-  min-height: 65%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.85);
   display: -webkit-box;
@@ -288,16 +290,22 @@ body {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: absolute;
   bottom: 0;
   padding: 32px 32px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .project-box__title {
+  height: 32px;
   font-size: 1.8rem;
   text-transform: capitalize;
   text-align: center;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .project-box__description {
@@ -343,6 +351,18 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-cranex7.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-cranex7.jpg);
   background-size: cover;
+}
+
+@media (hover: hover) {
+  .project-box:hover .project-box__body-background, .project-box:active .project-box__body-background {
+    height: 65%;
+  }
+}
+
+@media (hover: none) {
+  .project-box .project-box__body-background {
+    height: 65%;
+  }
 }
 
 .txt-link:link, .project-box__link:link, .txt-link:visited, .project-box__link:visited {
