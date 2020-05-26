@@ -7,10 +7,12 @@ body {
 }
 
 .section-title {
+    @extend .text-color;
+
     font-size: 3rem;
     line-height: 3.2rem;
     align-self: center;
-    color: $text-color-dark;
+
 }
 
 .text-color {

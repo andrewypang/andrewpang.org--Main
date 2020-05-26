@@ -151,10 +151,9 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #323232;
 }
 
-.text-color, .project-box__body-background, .section-header__site-nav, .section-header__social-link-unordered-list__link:link, .section-header__social-link-unordered-list__link:visited, .section-photography__portal__link:link, .section-photography__portal__link:visited {
+.text-color, .section-title, .section-header__title, .section-projects__title, .section-photography__title, .section-about-me__title, .project-box__body-background, .section-header__site-nav, .section-header__social-link-unordered-list__link:link, .section-header__social-link-unordered-list__link:visited, .section-photography__portal__link:link, .section-photography__portal__link:visited, .section-about-me__bio, .section-about-me__link:link, .section-about-me__link:visited, .section-footer__credit-box {
   color: #323232;
 }
 
@@ -641,7 +640,6 @@ body {
 }
 
 .section-about-me__bio {
-  color: green;
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-column: 3 / span 4;
@@ -669,7 +667,6 @@ body {
 }
 
 .section-about-me__link:link, .section-about-me__link:visited {
-  color: green;
   font-style: italic;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
