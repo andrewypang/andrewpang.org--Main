@@ -26,6 +26,8 @@
     @include project-box--collapsed();
 
     &__body-background {
+        @extend .text-color;
+
         width: 100%;
         background-color: rgba($color-white, 0.85);
         display: flex;

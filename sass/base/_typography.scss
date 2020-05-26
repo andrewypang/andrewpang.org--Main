@@ -10,27 +10,9 @@ body {
     font-size: 3rem;
     line-height: 3.2rem;
     align-self: center;
+    color: $text-color-dark;
 }
 
-.heading-primary {
-    font-size: 5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-
-    @include respond(phone) {
-        font-size: 2.5rem;
-    }
-}
-
-.heading-secondary {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.heading-third {
-    font-size: $default-font-size;
-    font-weight: 700;
-    text-transform: uppercase;
+.text-color {
+    color: $text-color-dark;
 }
