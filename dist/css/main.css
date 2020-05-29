@@ -651,6 +651,12 @@ body {
   }
 }
 
+@media (max-width: 64em) {
+  .section-photography__portal {
+    grid-column: 1 / -1;
+  }
+}
+
 .section-about-me__title {
   grid-column: 1 / -1;
   -ms-grid-column-align: center;
@@ -688,6 +694,19 @@ body {
   font-style: italic;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+@media (max-width: 64em) {
+  .section-about-me__bio {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / span 6;
+  }
+  .section-about-me__img-src {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7 / span 6;
+  }
 }
 
 .section-footer {

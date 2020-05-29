@@ -106,13 +106,14 @@
                 line-height: 32px;
                 text-transform: uppercase;
                 z-index: 1;
-
                 text-decoration: none;
                 letter-spacing: 0.2rem;
 
                 opacity: 0;
                 visibility: hidden;
                 transition: inherit;
+
+
 
             }
 
@@ -128,6 +129,7 @@
                 visibility: hidden;
                 transform: scaleX(0);
                 transition: inherit;
+
             }
 
             // &:hover,
@@ -169,5 +171,14 @@
         //  Then bring up underline and swap text & background color for contrast
         @include section-photography__portal__link--hovered();
 
+    }
+}
+
+@include respond(tablet) {
+
+    .section-photography {
+        &__portal {
+            grid-column: 1 / -1;
+        }
     }
 }
