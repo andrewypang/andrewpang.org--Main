@@ -83,4 +83,11 @@
 
 // Top level CSS for phone
 // phone = 37.5em = 600px
-@include respond(phone) {}
+@include respond(phone) {
+
+    .section-header {
+        &__img {
+            grid-column: 1 / -1;
+        }
+    }
+}

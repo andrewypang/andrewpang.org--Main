@@ -19,18 +19,26 @@
     transform: translate(-50%, -50%);
 }
 
-
+// px * .0625 = em
+// phone(iphone SE) = 320px => 52em
+// tablet = 832px
+// desktop = 1024px
+// phone ---- tablet ---- desktop
+// 
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media (max-width: 37.5em) {@content}; //600px
+    @if $breakpoint==phone {
+        @media (max-width: 52em) {
+            @content
+        }
+
+        ;
     }
-    @if $breakpoint == tab-port {
-        @media (max-width: 56.25em) {@content}; //900px
-    }
-    @if $breakpoint == tab-land {
-        @media (max-width: 75em) {@content}; //1200px
-    }
-    @if $breakpoint == big-desktop {
-        @media (min-width: 112.5em) {@content}; //1800px
+
+    @if $breakpoint==tablet {
+        @media (max-width: 64em) {
+            @content
+        }
+
+        ;
     }
 }

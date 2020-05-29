@@ -368,6 +368,12 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 64em) {
+  .section, .section--100vh, .section-header, .section-photography, .section-projects, .section-about-me, .section-footer__credit-box {
+    padding: 64px;
+  }
+}
+
 .section-header__title {
   grid-column: 1 / -1;
   -ms-grid-column-align: center;
@@ -458,6 +464,12 @@ body {
 
 .icon-default {
   font-size: 3rem;
+}
+
+@media (max-width: 52em) {
+  .section-header__img {
+    grid-column: 1 / -1;
+  }
 }
 
 .section-projects__title {

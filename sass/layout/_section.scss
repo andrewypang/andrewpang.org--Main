@@ -16,3 +16,10 @@
     @extend .section;
     height: 100vh;
 }
+
+@include respond(tablet) {
+
+    .section {
+        padding: 64px;
+    }
+}
