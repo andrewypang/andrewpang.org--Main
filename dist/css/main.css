@@ -466,7 +466,7 @@ body {
   font-size: 3rem;
 }
 
-@media (max-width: 52em) {
+@media (max-width: 64em) {
   .section-header__img {
     grid-column: 1 / -1;
   }
@@ -491,6 +491,12 @@ body {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 16px;
+}
+
+@media (max-width: 64em) {
+  .section-projects__project-box-container {
+    grid-column: 1 / -1;
+  }
 }
 
 /* 

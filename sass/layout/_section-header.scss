@@ -80,10 +80,7 @@
 }
 
 
-
-// Top level CSS for phone
-// phone = 37.5em = 600px
-@include respond(phone) {
+@include respond(tablet) {
 
     .section-header {
         &__img {
