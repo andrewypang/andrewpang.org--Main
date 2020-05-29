@@ -23,3 +23,10 @@
         padding: 64px;
     }
 }
+
+@include respond(phone) {
+
+    .section {
+        padding: 32px;
+    }
+}

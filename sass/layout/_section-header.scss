@@ -48,7 +48,7 @@
         }
     }
 
-    &__social-link-unordered-list {
+    &__social-links {
 
         width: 100%;
         display: flex;
@@ -84,6 +84,19 @@
 
     .section-header {
         &__img {
+            grid-column: 1 / -1;
+        }
+    }
+}
+
+@include respond(phone) {
+
+    .section-header {
+        &__site-nav {
+            grid-column: 1 / -1;
+        }
+
+        &__social-links {
             grid-column: 1 / -1;
         }
     }
