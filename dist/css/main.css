@@ -153,7 +153,7 @@ body {
       align-self: center;
 }
 
-.text-color, .section-title, .section-header__title, .section-projects__title, .section-photography__title, .section-about-me__title, .project-box__body-background, .section-header__site-nav, .section-header__social-links__link:link, .section-header__social-links__link:visited, .section-photography__portal__link:link, .section-photography__portal__link:visited, .section-about-me__bio, .section-about-me__link:link, .section-about-me__link:visited, .section-footer__credit-box {
+.text-color, .section-title, .section-header__title, .section-projects__title, .section-photography__title, .section-about-me__title, .project-box__body-background, .txt-link:link, .project-box__link:link, .txt-link:visited, .project-box__link:visited, .section-header__site-nav, .section-header__social-links__link:link, .section-header__social-links__link:visited, .section-photography__portal__link:link, .section-photography__portal__link:visited, .section-about-me__bio, .section-about-me__link:link, .section-about-me__link:visited, .section-footer__credit-box {
   color: #323232;
 }
 
@@ -211,33 +211,6 @@ body {
 
 .u-padding-bottom-big {
   padding-bottom: 8rem !important;
-}
-
-.btn-text, .btn-text:link, .btn-text:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.6rem;
-  background-color: transparent;
-  cursor: pointer;
-  color: #292929;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-bottom: 2px solid #424242;
-}
-
-.btn-text:hover {
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
-}
-
-.btn-text:active {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .project-box {
@@ -300,7 +273,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #292929;
 }
 
 .project-box__link {
@@ -359,7 +331,6 @@ body {
 .txt-link:link, .project-box__link:link, .txt-link:visited, .project-box__link:visited {
   position: relative;
   text-decoration: none;
-  color: #424242;
 }
 
 .section, .section--100vh, .section-header, .section-photography, .section-projects, .section-about-me, .section-footer__credit-box {
