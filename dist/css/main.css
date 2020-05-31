@@ -800,10 +800,11 @@ body {
   position: relative;
   width: 100%;
   height: 50vh;
+  overflow: hidden;
 }
 
 .section-footer__mountains-img-src {
-  width: 104%;
+  width: 100%;
   z-index: -1;
   position: absolute;
   bottom: -5px;
