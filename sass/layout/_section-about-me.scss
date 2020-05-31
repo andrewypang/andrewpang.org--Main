@@ -1,6 +1,8 @@
 .section-about-me {
 
     @extend .section--100vh;
+    @extend .section--anchor;
+
 
     &__title {
         @extend .section-title;

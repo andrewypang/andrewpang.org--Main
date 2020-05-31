@@ -10,8 +10,6 @@
     grid-template-rows: repeat(12, 1fr);
     gap: 16px;
 
-
-
 }
 
 .section__content {
@@ -22,6 +20,10 @@
 .section--100vh {
     @extend .section;
     height: 100vh;
+}
+
+.section--anchor {
+    padding-top: 150px;
 }
 
 @include respond(tablet) {

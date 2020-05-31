@@ -1,6 +1,7 @@
 .section-projects {
 
     @extend .section;
+    @extend .section--anchor;
 
     &__title {
         @extend .section-title;
