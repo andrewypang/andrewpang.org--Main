@@ -19,15 +19,10 @@
     transform: translate(-50%, -50%);
 }
 
-// px * .0625 = em
-// phone(iphone SE) = 320px => 52em
-// tablet = 832px
-// desktop = 1024px
-// phone ---- tablet ---- desktop
-// 
+// (px) * (.0625) = (em)
 @mixin respond($breakpoint) {
     @if $breakpoint==phone {
-        @media (max-width: 52em) {
+        @media only screen and (max-width: 26em) {
             @content
         }
 
@@ -35,7 +30,15 @@
     }
 
     @if $breakpoint==tablet {
-        @media (min-width: 64em) {
+        @media only screen and (max-width: 56.25em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==desktop {
+        @media only screen and (min-width: 75em) {
             @content
         }
 

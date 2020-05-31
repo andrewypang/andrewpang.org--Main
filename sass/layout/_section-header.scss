@@ -83,9 +83,19 @@
 @include respond(tablet) {
 
     .section-header {
+
+        &__site-nav {
+            grid-column: 1 / -1;
+        }
+
         &__img {
             grid-column: 1 / -1;
         }
+
+        &__social-links {
+            grid-column: 1 / -1;
+        }
+
     }
 }
 
