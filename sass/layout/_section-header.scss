@@ -92,12 +92,23 @@
 @include respond(phone) {
 
     .section-header {
+        &__title {
+            grid-row: 1 / span 2;
+        }
+
         &__site-nav {
             grid-column: 1 / -1;
+            grid-row: 3 / span 1;
+        }
+
+        &__img {
+            grid-column: 1 / -1;
+            grid-row: 4 / span 6;
         }
 
         &__social-links {
             grid-column: 1 / -1;
+            grid-row: 9 / -1;
         }
     }
 }
