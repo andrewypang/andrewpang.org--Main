@@ -4,12 +4,14 @@
     height: 50vh;
 
     &__mountains-img-src {
-        display: block;
-        width: 100%;
+        // display: block;
+        width: 104%;
+        // height: 100%;
         z-index: -1;
+        // object-fit: cover;
 
         position: absolute;
-        bottom: 0;
+        bottom: -5px;
     }
 
     &__credit-box {
@@ -21,6 +23,7 @@
 
         position: absolute;
         bottom: 50%;
+        transform: translate(0, 50%);
 
 
 
