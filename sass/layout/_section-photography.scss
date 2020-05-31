@@ -59,12 +59,15 @@
 
     &__title {
         @extend .section-title;
+        @extend .section__content;
 
         grid-column: 1 / -1;
         justify-self: center;
     }
 
     &__portal {
+        @extend .section__content;
+
         position: relative;
         overflow: hidden;
         border-radius: 1rem;

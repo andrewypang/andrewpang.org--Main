@@ -16,7 +16,7 @@
 @mixin absCenterX {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
 }
 
 // (px) * (.0625) = (em)

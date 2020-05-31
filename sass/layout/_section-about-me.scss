@@ -9,24 +9,36 @@
         justify-self: center;
     }
 
+    &__content {
+        @extend .section__content;
+        grid-column: 3 / span 8;
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
     &__bio {
         @extend .text-color;
 
-        grid-column: 3 / span 4;
-        grid-row: 2 / span 10;
+        // grid-column: 3 / span 4;
+        // grid-row: 2 / span 10;
         align-self: center;
+        grid-column: 1 / span 1;
 
         height: 100%;
+        // width: 100%;
     }
 
     &__img {
         width: 100%;
         height: 100%;
-        grid-column: 7 / -1;
-        grid-row: 2 / span 10;
+        // grid-column: 7 / -1;
+        // grid-row: 2 / span 10;
         text-align: center;
+        grid-column: 2 / span 1;
 
         &-src {
+            width: 100%;
             height: 100%;
 
             border-radius: 1rem;

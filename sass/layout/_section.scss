@@ -10,6 +10,13 @@
     grid-template-rows: repeat(12, 1fr);
     gap: 16px;
 
+
+
+}
+
+.section__content {
+    max-width: 960px;
+    justify-self: center;
 }
 
 .section--100vh {

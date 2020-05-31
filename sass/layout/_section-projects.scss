@@ -4,12 +4,15 @@
 
     &__title {
         @extend .section-title;
+        @extend .section__content;
+
 
         grid-column: 1 / -1;
         justify-self: center;
     }
 
     &__project-box-container {
+        @extend .section__content;
         width: 100%;
 
         grid-column: 3 / span 8;

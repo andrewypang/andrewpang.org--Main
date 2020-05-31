@@ -13,16 +13,19 @@
 <body>
     <!-- SECTION FOR THE HOME PAGE -->
     <section class="section-header">
-        <h1 class="section-header__title">Andrew Pang</h1>
-        <ul class="section-header__site-nav">
-            <li class="section-header__site-nav__item"><a href="#projects"
-                    class="section-header__site-nav__link">Projects</a></li>
-            <li class="section-header__site-nav__item"><a href="#photography"
-                    class="section-header__site-nav__link">Photography</a></li>
-            <li class="section-header__site-nav__item"><a href="#about-me" class="section-header__site-nav__link">About
-                    Me</a>
-            </li>
-        </ul>
+        <div class="section-header__menubar-for-sticky" id="site-nav">
+            <h1 class="section-header__title">Andrew Pang</h1>
+            <ul class="section-header__site-nav">
+                <li class="section-header__site-nav__item"><a href="#projects"
+                        class="section-header__site-nav__link">Projects</a></li>
+                <li class="section-header__site-nav__item"><a href="#photography"
+                        class="section-header__site-nav__link">Photography</a></li>
+                <li class="section-header__site-nav__item"><a href="#about-me"
+                        class="section-header__site-nav__link">About
+                        Me</a>
+                </li>
+            </ul>
+        </div>
         <div class="section-header__img">
             <!-- <img src="img/andrewpang-home-img--pointArena.jpg" alt="" class="section-header__img-src"> -->
             <video class="section-header__img-src" autoplay muted loop>
@@ -156,22 +159,25 @@
         <h2 class="section-about-me__title">
             About Me
         </h2>
-        <div class="section-about-me__bio">
-            Hello, I’m Andrew.
-            <br>
-            <br>
-            I am a graduate of UC Santa Cruz. I studied Computational Mathematics and Computer Science. These days I
-            enjoy spending my free time painting and hiking.
-            <br>
-            <br>
-            <a href="resources/AndrewPangResume.pdf" class="section-about-me__link">View my Resume.</a>
-            <br>
-            <a href="http://www.andrewpang.org/coding-workspace" class="section-about-me__link">View my Coding
-                Workspace.</a>
+        <div class="section-about-me__content">
+            <div class="section-about-me__bio">
+                Hello, I’m Andrew.
+                <br>
+                <br>
+                I am a graduate of UC Santa Cruz. I studied Computational Mathematics and Computer Science. These days I
+                enjoy spending my free time painting and hiking.
+                <br>
+                <br>
+                <a href="resources/AndrewPangResume.pdf" class="section-about-me__link">View my Resume.</a>
+                <br>
+                <a href="http://www.andrewpang.org/coding-workspace" class="section-about-me__link">View my Coding
+                    Workspace.</a>
+            </div>
+            <div class="section-about-me__img">
+                <img class="section-about-me__img-src" src="img/andrewpang-about-me.jpg" alt="Photo Of Me">
+            </div>
         </div>
-        <div class="section-about-me__img">
-            <img class="section-about-me__img-src" src="img/andrewpang-about-me.jpg" alt="Photo Of Me">
-        </div>
+
     </section>
 
     <!-- SECTION FOR THE FOOTER -->
@@ -185,6 +191,7 @@
         <img src="resources/svg/mountains.svg" alt="" class="section-footer__mountains-img-src">
     </footer>
 
+    <script src="js/header-sticky.js"></script>
 </body>
 
 </html>
