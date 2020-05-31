@@ -102,7 +102,7 @@
                 @include absCenter;
                 @extend .text-color;
                 font-weight: bold;
-                font-size: 24px;
+                font-size: 2.4rem;
                 line-height: 32px;
                 text-transform: uppercase;
                 z-index: 1;
@@ -192,6 +192,14 @@
 
         &__portal {
             grid-column: 1 / -1;
+
+            &__link {
+
+                &:link,
+                &:visited {
+                    font-size: 1.4rem;
+                }
+            }
 
             &--photography {
                 grid-row: 3 / span 5;
