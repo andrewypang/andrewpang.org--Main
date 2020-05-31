@@ -36,7 +36,6 @@
         @extend .section__content;
 
         grid-column: 1 / -1;
-        // justify-self: stretch;
         width: 100%;
 
         margin: 0 auto;
@@ -50,8 +49,6 @@
         list-style: none;
         justify-content: space-evenly;
 
-        // grid-column: 3 / span 8;
-        // grid-row: 2 / span 1;
 
         &__item {
             align-self: center;
