@@ -692,6 +692,27 @@ body {
   }
 }
 
+@media (max-width: 52em) {
+  .section-photography__title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+  }
+  .section-photography__portal {
+    grid-column: 1 / -1;
+  }
+  .section-photography__portal--photography {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 5;
+    grid-row: 3 / span 5;
+  }
+  .section-photography__portal--astrophotography {
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 5;
+    grid-row: 8 / span 5;
+  }
+}
+
 .section-about-me__title {
   grid-column: 1 / -1;
   -ms-grid-column-align: center;
@@ -708,18 +729,20 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  height: 100%;
+}
+
+.section-about-me__img {
+  width: 100%;
+  grid-column: 7 / -1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 10;
+  grid-row: 2 / span 10;
+  text-align: center;
 }
 
 .section-about-me__img-src {
   width: 100%;
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 4;
-  grid-column: 7 / span 4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 10;
-  grid-row: 2 / span 10;
-  -o-object-fit: contain;
-     object-fit: contain;
   border-radius: 1rem;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -741,6 +764,36 @@ body {
     -ms-grid-column: 7;
     -ms-grid-column-span: 6;
     grid-column: 7 / span 6;
+  }
+}
+
+@media (max-width: 52em) {
+  .section-about-me {
+    height: 100vh;
+  }
+  .section-about-me__title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+  }
+  .section-about-me__img {
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / -1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 5;
+    grid-row: 3 / span 5;
+  }
+  .section-about-me__img-src {
+    width: auto;
+    height: 100%;
+  }
+  .section-about-me__bio {
+    grid-column: 1 / -1;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 5;
+    grid-row: 8 / span 5;
+    font-size: 1.2rem;
   }
 }
 

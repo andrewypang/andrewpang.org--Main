@@ -182,3 +182,24 @@
         }
     }
 }
+
+@include respond(phone) {
+
+    .section-photography {
+        &__title {
+            grid-row: 1 / span 2;
+        }
+
+        &__portal {
+            grid-column: 1 / -1;
+
+            &--photography {
+                grid-row: 3 / span 5;
+            }
+
+            &--astrophotography {
+                grid-row: 8 / span 5;
+            }
+        }
+    }
+}
