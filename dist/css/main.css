@@ -542,10 +542,20 @@ body {
 }
 
 @media (max-width: 52em) {
+  .section-projects {
+    -ms-grid-rows: 32px 32px 1fr;
+        grid-template-rows: 32px 32px 1fr;
+  }
+  .section-projects__title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+  }
   .section-projects__project-box-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-column: 1 / -1;
+    grid-row: 3 / -1;
   }
 }
 
