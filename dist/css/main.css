@@ -338,9 +338,21 @@ body {
   }
 }
 
+@media (hover: hover) and (max-width: 52em) {
+  .project-box:hover .project-box__body-background, .project-box:active .project-box__body-background {
+    height: 100%;
+  }
+}
+
 @media (hover: none) {
   .project-box .project-box__body-background {
     height: 65%;
+  }
+}
+
+@media (hover: none) and (max-width: 52em) {
+  .project-box .project-box__body-background {
+    height: 100%;
   }
 }
 
@@ -368,7 +380,7 @@ body {
   height: 100vh;
 }
 
-@media (max-width: 64em) {
+@media (min-width: 64em) {
   .section, .section--100vh, .section-header, .section-photography, .section-projects, .section-about-me, .section-footer__credit-box {
     padding: 64px;
   }
@@ -472,7 +484,7 @@ body {
   font-size: 3rem;
 }
 
-@media (max-width: 64em) {
+@media (min-width: 64em) {
   .section-header__img {
     grid-column: 1 / -1;
   }
@@ -508,7 +520,7 @@ body {
   gap: 16px;
 }
 
-@media (max-width: 64em) {
+@media (min-width: 64em) {
   .section-projects__project-box-container {
     grid-column: 1 / -1;
   }
@@ -518,8 +530,7 @@ body {
   .section-projects__project-box-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-column: 1 / -1;
   }
 }
 
@@ -675,7 +686,7 @@ body {
   }
 }
 
-@media (max-width: 64em) {
+@media (min-width: 64em) {
   .section-photography__portal {
     grid-column: 1 / -1;
   }
@@ -720,7 +731,7 @@ body {
           text-decoration-line: underline;
 }
 
-@media (max-width: 64em) {
+@media (min-width: 64em) {
   .section-about-me__bio {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;

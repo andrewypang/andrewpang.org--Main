@@ -9,6 +9,14 @@
     .project-box__body-background {
         height: 65%;
     }
+
+    @include respond(phone) {
+        .project-box {
+            &__body-background {
+                height: 100%;
+            }
+        }
+    }
 }
 
 .project-box {
@@ -116,3 +124,11 @@
         @include project-box--full();
     }
 }
+
+// @include respond(phone) {
+//     .project-box {
+//         &__body-background {
+//             height: 100%;
+//         }
+//     }
+// }

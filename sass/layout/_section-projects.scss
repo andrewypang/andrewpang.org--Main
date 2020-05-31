@@ -37,9 +37,7 @@
     .section-projects {
         &__project-box-container {
             grid-template-columns: 1fr;
-            grid-template-rows: auto;
+            grid-column: 1 / -1;
         }
     }
-
-
 }
