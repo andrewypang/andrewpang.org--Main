@@ -412,9 +412,8 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-bottom: 16px;
 }
 
