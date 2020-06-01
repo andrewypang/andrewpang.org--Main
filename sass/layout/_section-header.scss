@@ -113,7 +113,6 @@
         &__menubar-for-sticky {
             grid-row: 1 / span 2;
             grid-column: 1 / -1;
-
         }
 
         &__img {
@@ -129,20 +128,16 @@
 
 @include respond(phone) {
 
+
     .section-header {
 
         &__menubar-for-sticky {
             grid-column: 1 / -1;
             grid-row: 1 / span 3;
-        }
 
-        &__title {
-            // grid-row: 1 / span 2;
-        }
-
-        &__site-nav {
-            // grid-column: 1 / -1;
-            // grid-row: 3 / span 1;
+            &__site-nav {
+                grid-column: 1 / -1;
+            }
         }
 
         &__img {
@@ -175,7 +170,7 @@
 
     .section-header__menubar-for-sticky__site-nav {
         @extend .section__content;
-        width: 100%;
+        // width: 100%;
         grid-column: 3 / span 8;
     }
 
@@ -183,16 +178,7 @@
 
         .section-header {
 
-            &__menubar-for-sticky {
-                grid-column: 1 / -1;
-                grid-row: 1 / span 3;
-            }
-
-            &__title {
-                grid-column: 1 / -1;
-            }
-
-            &__site-nav {
+            &__menubar-for-sticky__site-nav {
                 grid-column: 1 / -1;
             }
         }
