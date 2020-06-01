@@ -357,7 +357,7 @@ body {
 }
 
 .section--anchor, .section-projects, .section-photography, .section-about-me {
-  color: red;
+  padding-top: 100px;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -819,10 +819,11 @@ body {
 }
 
 .section-about-me__bio {
+  width: 50%;
+  padding: 16px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
 }
 
 .section-about-me__img {
