@@ -2,66 +2,61 @@
 
     @extend .section--100vh;
 
+    // STATE 1 of the menubar
+    // this is when the the user is on top & unscrolled
+    // |-------------------------
+    // |menubar-for-sticky
+    // |-- title
+    // |-- site-nav
     &__menubar-for-sticky {
+        // desktop default -- menubar to bounded to a 8w x 2h grid
         grid-column: 3 / span 8;
         grid-row: 1 / span 2;
         align-self: center;
+        justify-items: center;
 
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 0;
+        gap: 16px;
 
         width: 100%;
         z-index: 10;
         background-color: $color-white;
-    }
 
-    &__title {
-        @extend .section-title;
-        @extend .section__content;
-
-        width: 100%;
-        text-align: center;
-        background-color: $color-white;
-        margin: 0 auto;
-
-        grid-column: 1 / -1;
-
-
-    }
-
-    &__site-nav {
-        @extend .text-color;
-        @extend .section__content;
-
-        grid-column: 1 / -1;
-        width: 100%;
-
-        margin: 0 auto;
-        padding: 16px 0;
-
-        justify-self: center;
-        background-color: $color-white;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        list-style: none;
-        justify-content: space-evenly;
-
-
-        &__item {
-            align-self: center;
-            position: relative;
+        &__title {
+            @extend .section-title;
+            grid-column: 1 / -1;
+            text-align: center;
         }
 
-        &__link {
-            text-decoration: none;
-            text-transform: lowercase;
-            color: #0F0F0F;
-        }
+        &__site-nav {
+            @extend .text-color;
+            @extend .section__content; //this is to bound the site nav width to match the other section content
+            grid-column: 1 / -1;
+            width: 100%;
 
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            list-style: none;
+            justify-content: space-between;
+            padding-bottom: 16px;
+
+            &__item {
+                align-self: center;
+                position: relative;
+            }
+
+            &__link {
+                text-decoration: none;
+                text-transform: lowercase;
+                color: $text-color-dark;
+            }
+
+        }
     }
+
 
     &__img {
         @extend .section__content;
@@ -115,6 +110,10 @@
 
     .section-header {
 
+        &__menubar-for-sticky {
+            grid-row: 1 / span 2;
+        }
+
         &__site-nav {
             grid-column: 1 / -1;
         }
@@ -133,13 +132,19 @@
 @include respond(phone) {
 
     .section-header {
+
+        &__menubar-for-sticky {
+            grid-column: 1 / -1;
+            grid-row: 1 / span 3;
+        }
+
         &__title {
-            grid-row: 1 / span 2;
+            // grid-row: 1 / span 2;
         }
 
         &__site-nav {
-            grid-column: 1 / -1;
-            grid-row: 3 / span 1;
+            // grid-column: 1 / -1;
+            // grid-row: 3 / span 1;
         }
 
         &__img {
@@ -170,21 +175,33 @@
     padding-top: 0;
     padding-bottom: 0;
 
-
-
-    .section-header__title {
+    .section-header__menubar-for-sticky__site-nav {
+        @extend .section__content;
+        width: 100%;
         grid-column: 3 / span 8;
     }
 
-    .section-header__site-nav {
-        width: 100%;
-        grid-column: 3 / span 8;
+    @include respond(phone) {
+
+        .section-header {
+
+            &__menubar-for-sticky {
+                grid-column: 1 / -1;
+                grid-row: 1 / span 3;
+            }
+
+            &__title {
+                grid-column: 1 / -1;
+            }
+
+            &__site-nav {
+                grid-column: 1 / -1;
+            }
+        }
     }
 }
 
 #site-nav-list li.active a {
-
-    // font-weight: bold;
 
     // ::before pseudo-element to create an underline for the link
     &::before {

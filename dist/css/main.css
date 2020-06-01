@@ -145,7 +145,7 @@ body {
   line-height: 1.7;
 }
 
-.section-title, .section-header__title, .section-projects__title, .section-photography__title, .section-about-me__title {
+.section-title, .section-header__menubar-for-sticky__title, .section-projects__title, .section-photography__title, .section-about-me__title {
   font-size: 3rem;
   line-height: 3.2rem;
   -ms-flex-item-align: center;
@@ -153,7 +153,7 @@ body {
       align-self: center;
 }
 
-.text-color, .section-title, .section-header__title, .section-projects__title, .section-photography__title, .section-about-me__title, .project-box__body-background, .txt-link:link, .project-box__link:link, .txt-link:visited, .project-box__link:visited, .section-header__site-nav, .section-header__social-links__link:link, .section-header__social-links__link:visited, .section-photography__portal__link:link, .section-photography__portal__link:visited, .section-about-me__bio, .section-about-me__link:link, .section-about-me__link:visited {
+.text-color, .section-title, .section-header__menubar-for-sticky__title, .section-projects__title, .section-photography__title, .section-about-me__title, .project-box__body-background, .txt-link:link, .project-box__link:link, .txt-link:visited, .project-box__link:visited, .section-header__menubar-for-sticky__site-nav, .section-header__social-links__link:link, .section-header__social-links__link:visited, .section-photography__portal__link:link, .section-photography__portal__link:visited, .section-about-me__bio, .section-about-me__link:link, .section-about-me__link:visited {
   color: #323232;
 }
 
@@ -346,7 +346,7 @@ body {
   gap: 16px;
 }
 
-.section__content, .section-header__title, .section-header__site-nav, .section-header__img, .section-projects__title, .section-projects__project-box-container, .section-photography__title, .section-photography__portal, .section-about-me__content {
+.section__content, .section-header__menubar-for-sticky__site-nav, .section-header__img, .sticky .section-header__menubar-for-sticky__site-nav, .section-projects__title, .section-projects__project-box-container, .section-photography__title, .section-photography__portal, .section-about-me__content {
   max-width: 960px;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -357,7 +357,7 @@ body {
 }
 
 .section--anchor, .section-projects, .section-photography, .section-about-me {
-  padding-top: 150px;
+  color: red;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -381,33 +381,27 @@ body {
   grid-row: 1 / span 2;
   -ms-grid-row-align: center;
       align-self: center;
+  justify-items: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  gap: 0;
+  gap: 16px;
   width: 100%;
   z-index: 10;
   background-color: #fff;
 }
 
-.section-header__title {
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  margin: 0 auto;
+.section-header__menubar-for-sticky__title {
   grid-column: 1 / -1;
+  text-align: center;
 }
 
-.section-header__site-nav {
+.section-header__menubar-for-sticky__site-nav {
   grid-column: 1 / -1;
   width: 100%;
-  margin: 0 auto;
-  padding: 16px 0;
-  justify-self: center;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,22 +412,23 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   list-style: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 16px;
 }
 
-.section-header__site-nav__item {
+.section-header__menubar-for-sticky__site-nav__item {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
 }
 
-.section-header__site-nav__link {
+.section-header__menubar-for-sticky__site-nav__link {
   text-decoration: none;
   text-transform: lowercase;
-  color: #0F0F0F;
+  color: #323232;
 }
 
 .section-header__img {
@@ -488,6 +483,11 @@ body {
 }
 
 @media only screen and (max-width: 56.25em) {
+  .section-header__menubar-for-sticky {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+  }
   .section-header__site-nav {
     grid-column: 1 / -1;
   }
@@ -500,16 +500,11 @@ body {
 }
 
 @media only screen and (max-width: 26em) {
-  .section-header__title {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / span 2;
-  }
-  .section-header__site-nav {
+  .section-header__menubar-for-sticky {
     grid-column: 1 / -1;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3 / span 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / span 3;
   }
   .section-header__img {
     grid-column: 1 / -1;
@@ -541,17 +536,26 @@ body {
   padding-bottom: 0;
 }
 
-.sticky .section-header__title {
+.sticky .section-header__menubar-for-sticky__site-nav {
+  width: 100%;
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / span 8;
 }
 
-.sticky .section-header__site-nav {
-  width: 100%;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 8;
-  grid-column: 3 / span 8;
+@media only screen and (max-width: 26em) {
+  .sticky .section-header__menubar-for-sticky {
+    grid-column: 1 / -1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / span 3;
+  }
+  .sticky .section-header__title {
+    grid-column: 1 / -1;
+  }
+  .sticky .section-header__site-nav {
+    grid-column: 1 / -1;
+  }
 }
 
 #site-nav-list li.active a::before {
@@ -812,10 +816,12 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / span 8;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-row: 2 / -1;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section-about-me__bio {
@@ -825,12 +831,11 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / span 1;
-  height: 100%;
+  width: 50%;
 }
 
 .section-about-me__img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
   text-align: center;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -897,7 +902,7 @@ body {
 .section-footer {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 50rem;
 }
 
 .section-footer__mountains-img-src {
