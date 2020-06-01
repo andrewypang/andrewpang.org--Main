@@ -853,15 +853,8 @@ body {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .section-about-me__bio {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1 / span 6;
-  }
-  .section-about-me__img-src {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 6;
-    grid-column: 7 / span 6;
+  .section-about-me__content {
+    grid-column: 1 / -1;
   }
 }
 
