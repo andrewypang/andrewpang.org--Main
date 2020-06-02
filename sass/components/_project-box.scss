@@ -86,7 +86,7 @@
 
         // responsive images
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 56.25em) {
+        only screen and (min-width: $breakpoint--tablet) {
             background-image: linear-gradient(to bottom, rgba($color-white, .2), rgba($color-white, .2)),
                 url(../img/project-cali-housing@2x.jpg);
         }
@@ -100,7 +100,7 @@
 
         // responsive images
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 56.25em) {
+        only screen and (min-width: $breakpoint--tablet) {
             background-image: linear-gradient(to bottom, rgba($color-white, .2), rgba($color-white, .2)),
                 url(../img/project-gravity-sim@2x.jpg);
         }
@@ -114,7 +114,7 @@
 
         // responsive images
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 56.25em) {
+        only screen and (min-width: $breakpoint--tablet) {
             background-image: linear-gradient(to bottom, rgba($color-white, .2), rgba($color-white, .2)),
                 url(../img/project-ml-movie-review@2x.jpg);
         }
@@ -128,7 +128,7 @@
 
         // responsive images
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (min-width: 56.25em) {
+        only screen and (min-width: $breakpoint--tablet) {
             background-image: linear-gradient(to bottom, rgba($color-white, .2), rgba($color-white, .2)),
                 url(../img/project-summer-lab-research@2x.jpg);
         }

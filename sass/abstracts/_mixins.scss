@@ -19,10 +19,13 @@
     transform: translate(-50%, 0);
 }
 
+$breakpoint--phone: 32em;
+$breakpoint--tablet: 64em;
+
 // (px) * (.0625) = (em)
 @mixin respond($breakpoint) {
     @if $breakpoint==phone {
-        @media only screen and (max-width: 26em) {
+        @media only screen and (max-width: $breakpoint--phone) {
             @content
         }
 
@@ -30,7 +33,7 @@
     }
 
     @if $breakpoint==tablet {
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: $breakpoint--tablet) {
             @content
         }
 
