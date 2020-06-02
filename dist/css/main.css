@@ -574,6 +574,12 @@ body {
   grid-column: 3 / span 8;
 }
 
+@media only screen and (max-width: 64em) {
+  .sticky .section-header__menubar-for-sticky__site-nav {
+    grid-column: 1 / -1;
+  }
+}
+
 @media only screen and (max-width: 32em) {
   .sticky .section-header__menubar-for-sticky__site-nav {
     grid-column: 1 / -1;
