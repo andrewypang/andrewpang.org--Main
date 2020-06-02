@@ -389,7 +389,7 @@ body {
 }
 
 .section--anchor, .section-projects, .section-photography, .section-about-me {
-  padding-top: 100px;
+  padding-top: 11rem !important;
 }
 
 @media only screen and (max-width: 64em) {
