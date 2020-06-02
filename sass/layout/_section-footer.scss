@@ -13,11 +13,7 @@
 
     &__credit-box {
         @extend .section;
-        // @extend .text-color;
         color: $color-black;
-
-        // grid-template-columns: repeat(1, 1fr);
-        // grid-template-rows: repeat(2, 1fr);
 
         display: flex;
         flex-direction: column;
