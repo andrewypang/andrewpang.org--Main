@@ -279,28 +279,60 @@ body {
   font-weight: 700;
 }
 
-.project-box--2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-cali-housing-map.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-cali-housing-map.jpg);
+.project-box--cali-housing {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-cali-housing@1x.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-cali-housing@1x.jpg);
   background-size: cover;
+  background-position: 50%;
 }
 
-.project-box--3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-gravity-sim.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-gravity-sim.jpg);
-  background-size: cover;
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 56.25em) {
+  .project-box--cali-housing {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-cali-housing@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-cali-housing@2x.jpg);
+  }
 }
 
-.project-box--4 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-movie-review.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-movie-review.jpg);
+.project-box--gravity-sim {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-gravity-sim@1x.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-gravity-sim@1x.jpg);
   background-size: cover;
+  background-position: 50%;
 }
 
-.project-box--5 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-cranex7.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-cranex7.jpg);
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 56.25em) {
+  .project-box--gravity-sim {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-gravity-sim@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-gravity-sim@2x.jpg);
+  }
+}
+
+.project-box--ml-movie-review {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-ml-movie-review@1x.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-ml-movie-review@1x.jpg);
   background-size: cover;
+  background-position: 50%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 56.25em) {
+  .project-box--ml-movie-review {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-ml-movie-review@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-ml-movie-review@2x.jpg);
+  }
+}
+
+.project-box--summer-lab-research {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-summer-lab-research@1x.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-summer-lab-research@1x.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 56.25em) {
+  .project-box--summer-lab-research {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/project-summer-lab-research@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/project-summer-lab-research@2x.jpg);
+  }
 }
 
 @media (hover: hover) {
